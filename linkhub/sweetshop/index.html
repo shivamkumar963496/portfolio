@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+
+    <style>
+        header{
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            box-sizing: border-box;
+            float: left;
+        
+        }
+
+        #brand_name{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            float: left;
+        }
+#tag_line{
+float: right;
+ padding: 0;
+ margin: 0;
+ margin-top: 6px;
+ font-family: cursive;
+ color: grey;
+
+}
+
+nav{
+    width: 100%;
+    height: 106px;
+    background-color: blue;
+    float: left;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#search{
+    height: 50px;
+    width: 400px;
+    border: none;
+    font-size: 20px;
+    text-align: center;   
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#submit_btn{
+    height: 50px;
+    width: 100px;
+    border: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left: 3px;
+    float: left;
+    box-sizing: border-box;
+}
+#menu_table{
+    width: 600px;
+    height: 40px;
+    float: right;
+    box-sizing: border-box;
+}
+#menu_item{
+background-color: white;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 18px;
+            width:20%;
+           
+            
+}
+
+a{
+    text-decoration: none;
+     color: black;
+     font-family: sans-serif;
+     font-weight: bold;
+}
+#vill{
+    float: left;
+    font-family: sans-serif;
+    color: green;
+    font-weight: bold;
+    
+}
+#phone{
+    float: right;
+    font-family: sans-serif;
+    color: green;
+    font-weight: bold;
+    
+}
+section{
+height: 1580px;
+width: 100%;
+float: left;
+box-sizing: border-box;
+border-width: 3px;
+border-color: red;
+border-style: solid;
+padding: 30px;
+}
+
+#populer_sweets{
+    width: 690px;
+    height: 550px;
+    border-width: 3px;
+    background-color: yellow;
+    margin: 30px;
+    box-sizing: border-box;
+    padding: 40px;
+    float: left;
+
+}
+#best_sweets{
+    font-family: sans-serif;
+    color: red;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+}
+
+#sweet_images{
+    height: 220px;
+    width: 300px;
+    margin: 15 px;
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+#price_table{
+    width: 350px;
+    height:550px;
+    float: right;
+    margin: 30px;
+}
+#price_header{
+    background-color: yellow;
+    height: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+#sweets_name{
+    background-color: blue;
+    }
+
+#s_name{
+    padding: 10px;
+    color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+
+
+}
+#sweets_price{
+    background-color: blue;
+}
+#rate{
+
+    list-style: none;
+}
+
+fieldset{
+height: 520px;
+width: 670px;
+border-width: 2px;
+border-color: #ccc
+border-style: solid;
+padding: 10px;
+margin-left: 25px;
+float: left;
+
+}
+
+legend{
+font-size: 30px;
+font-family: sans-serif;
+font-weight: bold;
+padding: 10px;
+}
+
+#order_details{
+color: #ccc;
+font-family: sans-serif;
+
+}
+
+#order_input{
+width: 100%;
+height: 40px;
+box-sizing: border-box;
+border-width: 1px;
+border-color: #ccc;
+border-style: solid;
+
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+border-width: 1px;
+border-color: #ccc;
+border-style: solid;
+
+}
+
+#order_now{
+    float: right;
+    height: 30px;
+    width: 100px;
+    box-sizing: border-box;
+border-width: 1px;
+border-color: #ccc;
+border-style: solid;
+margin-right: 10px;
+background-color: white;
+}
+#abt_us{
+    height: 525px;
+    width: 400px;
+    float: right;
+    border-width: 2px;
+    border-color: #ccc;
+    box-sizing: border-box;
+    border-style: solid;
+    margin-top: 24px;
+    padding: 15px;
+}
+
+#abt_title{
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+#abt_text{
+    text-align: justify;
+    line-height: 20px;
+}
+
+#more_sweets{
+width: 100%;
+float: left;
+box-sizing: border-box;
+
+}
+#m_sweets{
+text-align: center;
+font-weight: bold;
+}
+
+#s_box{
+    width: 200px;
+    height: 250px;
+    border-width: 2px;
+    border-style: solid;
+    float: left;
+    box-sizing: border-box;
+    border-color: red;
+    margin-right: 43px;
+    padding: 10px;
+}
+
+#s_box_end{
+    width: 200px;
+    height: 250px;
+    border-width: 2px;
+    border-style: solid;
+    float: left;
+    box-sizing: border-box;
+    border-color: red;
+    padding: 10px;
+}
+
+#m_images{
+height: 180px;
+width: 180px;
+box-sizing: border-box;
+}
+
+#buy_btn{
+border-width: 1px;
+border-color: black;
+border-style: solid;
+background-color: white
+width: 150px;
+font-size: 20px;
+padding: 10px;
+color: red;
+font-family: sans-serif;
+font-weight: bold;
+
+}
+
+footer{
+width: 100%;
+height: 250px;
+box-sizing: border-box;
+background-color: black;
+float: left;
+
+}
+
+#contect_details{
+    width: 350px;
+    height: 250px;
+    box-sizing: border-box;
+    float: left;
+}
+#contect_title{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#social_links{
+    width: 350px;
+    height: 250px;
+    box-sizing: border-box;
+    float: right;
+}
+
+#add_det{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+#devloper{
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    font-family: sans-serif;
+    float: left;
+    margin-left: 100px;
+    font-size: 50px;
+    margin-top: 70px;
+}
+#logo{
+    width: 60px;
+    margin-left: 50px;
+}
+    </style>
+</head>
+<body>
+
+<header>
+<h1 id="brand_name">Sweetshop.com</h1>
+<p id="tag_line">The Best Sweet Shop </p>
+</header>
+
+<nav>
+<form>
+<input id="search" type="search" name="search" placeholder="SEARCH YOUR SWEET NAME HERE ">
+<input id="submit_btn" type="submit" value="SEARCH">
+</form>
+
+<table id="menu_table">
+<tr>
+    <td id="menu_item"><a href="index5.html">HOME</a></td>
+    <td id="menu_item"><a href="index6.html">SWEETS</a></td>
+    <td id="menu_item"><a href="index7.html">FASTFOOD</a></td>
+    <td id="menu_item"><a href="#contect_details">CONTECT</a></td>
+    <td id="menu_item"><a href="#abt_us">ABOUT</a></td>
+</tr>
+
+</table>
+</nav>
+
+<section>
+<address id="vill"> vill. toda block-budhana,disst.Muzaffarnagar,251309</address>
+<address id="phone">order online:       9634858896,          9368004646</address>
+
+<div id="populer_sweets">
+<h1 id="best_sweets">BEST SWEETS HERE</h1>
+
+<img src="images/s1.png" alt="s1" id="sweet_images">
+<img src="images/s5.png" alt="s2" id="sweet_images">
+<img src="images/s3.png" alt="s3" id="sweet_images">
+<img src="images/s7.png" alt="s4" id="sweet_images">
+</div>
+
+<table id="price_table">
+<tr>
+    <td id="price_header"> SWEETS NAME</td>
+    <td id="price_header">PRICE</td>
+</tr>
+
+<tr>
+    <td id="sweets_name">
+<ol>
+    <li id="s_name">HALWA</li>
+    <li id="s_name">GULAB</li>
+    <li id="s_name">BARFI</li>
+    <li id="s_name">JALEBI</li>
+    <li id="s_name">MYSORE PAK</li>
+    <li id="s_name">PEDA</li>
+    <li id="s_name">LADDU</li>
+    <li id="s_name">RASGULLA</li>
+    
+</ol>
+
+    </td>
+    <td id="sweets_price">
+
+        <ol id="rate">
+    <li id="s_name">200/kg</li>
+    <li id="s_name">200/kg</li>
+    <li id="s_name">200/kg</li>
+    <li id="s_name">200/kg</li>
+    <li id="s_name">200/kg</li>
+    <li id="s_name">200/kg</li>
+    <li id="s_name">200/kg</li>
+    <li id="s_name">200/kg</li>
+    
+</ol>
+    </td>
+</tr>
+
+</table>
+
+<fieldset id="form_box">
+<legend>ORDER NOW</legend>
+<form id="order_details">
+YOUR NAME<br>
+<input type="text" name="your name" id="order_input">
+<br><br>
+MOBILE NUMBER<br>
+<input type="number" name="MOBILE" id="order_input">
+<br><br>
+SELECT SWEETS<BR>
+    <select id="order_input">
+<option>BARFI</option>
+<option>JALEBI</option>
+<option>PEDA</option>
+<option>LADDU</option>
+<option>RASGULLA</option>
+    </select>
+    <br><br>
+QUENTITY<br>
+<input type="text" name="quentity" id="order_input">
+<br><br>
+YOUR ADDRESS :
+<br>
+<textarea ></textarea>
+
+<input type="submit" value="ORDER NOW" id="order_now">
+
+</form>
+</fieldset>
+
+<div id="abt_us">
+    <h1 id="abt_title">ABOUT US</h1>
+    <hr>
+    <p id="abt_text">
+    Lorem ipsum, dolor sit amet consectetur
+     adipisicing elit. Pariatur sed nostrum 
+     officiis quaerat enim, natus optio id 
+     modi? Reprehenderit possimus velit aperiam quam delectus. 
+     Optio incidunt enim ea atque quod ad facere repudiandae, 
+     ex repellat  eligendi veritatis consectetur 
+    officiis natus eius in est a
+    distinctio accusantium similique. Magni, hic magnam!
+     Voluptatum rem ab doloremque ex dolor, ipsam adipisci numquam? 
+     Consequuntur fuga laudantium tempore autem adipisci aut dicta
+      impedit dignissimos maxime expedita? Ut totam non quos cum 
+      qui quas molestias neque sequi quasi consectetur beatae, 
+      repellendus quaerat? Consequatur mollitia facere eos, tenetur
+       accusantium quos? Libero quasi aut dicta impedit dignissimos
+        maxime expedita? Ut totam non quos cum qui quas molestias neque
+         sequi quasi consectetur beatae, repellendus quaerat? Consequatur 
+         mollitia facere eos, tenetur accusantium quos? Libero quasi esse at
+        voluptas hic dolor. esse at voluptas hic dolor.
+       </p>
+</div>
+
+
+<div id="more_sweets">
+<h1 id="m_sweets">MORE SWEETS</h1>
+</div>
+
+<div id="s_box">
+    <img src="images/s1.png" alt="s1" id="m_images">
+    <center>
+<a href="#form_box"><button id="buy_btn">BYU NOW</button></center></a>
+    </center>
+</div>
+
+<div id="s_box"> 
+<img src="images/s2.jpg" alt="s2" id="m_images">
+    <center>
+   <a href="#form_box"><button id="buy_btn">BYU NOW</button></a>
+    </center>
+</div>
+
+<div id="s_box">
+<img src="images/s3.png" alt="s3" id="m_images">
+    <center>
+  <a href="#form_box"><button id="buy_btn">BYU NOW</button></a>
+    </center>
+</div>
+
+<div id="s_box"> 
+<img src="images/s7.png" alt="s7" id="m_images">
+    <center>
+    <a href="#form_box"><button id="buy_btn">BYU NOW</button></a>
+    </center>
+</div>
+
+<div id="s_box_end">
+    <img src="images/s1.png" alt="s1" id="m_images">
+    <center>
+    <a href="#form_box"><button id="buy_btn">BYU NOW</button></a>
+    </center>
+</div>
+
+</section>
+
+<footer>
+<div id="contect_details">
+    <H1 id="contect_title">CONTECT DETAILS</H1>
+<address id="add_det">MOBILE : 9634858955</address>
+<address id="add_det">EMAIL : SWEETSHOP@GMAIL.COM</address>
+<address id="add_det">WWW.SKT.COM</address>
+<address id="add_det">VILL. TODA,BLOCK : BUDHANA,DISST. M. NAGAR</address>
+</div>
+<div id="devloper">DEVLOPED BY<br> SHIVAM KUMAR</div>
+<div id="social_links">
+<h1 id="contect_title">FOLLOW US</h1>
+<img src="images/facebook.png" alt="facebok" id="logo">
+<img src="images/insta.jfif" alt="instagram" id="logo">
+</div>
+</footer>
+</body>
+</html>

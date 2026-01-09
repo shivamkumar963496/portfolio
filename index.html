@@ -1,99 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Kumar | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8">
+
+<!-- SEO -->
+<meta name="description" content="Shivam Kumar Portfolio | Web Developer & C Programmer">
+<meta name="keywords" content="Shivam Kumar, Web Developer, C Programmer, HTML, CSS, Portfolio">
+<meta name="author" content="Shivam Kumar">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shivam Kumar | Portfolio</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+    --bg:#0f2027;
+    --card:#1e293b;
+    --text:#ffffff;
+    --accent:#00f7ff;
+}
+body.light{
+    --bg:#f4f7fb;
+    --card:#ffffff;
+    --text:#111;
+    --accent:#0077ff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    transition:.4s;
+}
+
+a{ text-decoration:none; color:inherit; }
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* LOADER */
+#loader{
+    position:fixed;
+    inset:0;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+.spinner{
+    width:60px;
+    height:60px;
+    border:6px solid #333;
+    border-top:6px solid var(--accent);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+@keyframes spin{
+    100%{ transform:rotate(360deg); }
+}
+
+/* HEADER */
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#111;
+    z-index:100;
+}
+body.light header{ background:#fff; }
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo span{ color:var(--accent); }
+
+header ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+header ul li a{
+    position:relative;
+}
+header ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:var(--accent);
+    transition:.3s;
+}
+header ul li a:hover::after{ width:100%; }
+
+.btn{
+    padding:10px 25px;
+    border-radius:30px;
+    background:linear-gradient(135deg,var(--accent),#0077ff);
+    color:#fff;
+    font-weight:bold;
+}
+
+.toggle{ cursor:pointer; }
+
+/* SECTIONS */
+section{ padding:90px 0; }
+.hero{ padding-top:150px; }
+
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.hero img{
+    width:250px;
+    border-radius:50%;
+    box-shadow:0 0 30px var(--accent);
+}
+
+.section-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+/* SKILLS */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+.skills-grid div{
+    background:var(--card);
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* PROJECTS */
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card a{
+    display:block;
+    padding:30px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#ff512f,#dd2476);
+    font-weight:bold;
+    text-align:center;
+}
+
+/* CONTACT FORM */
+form{
+    max-width:500px;
+    margin:20px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+input,textarea{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+textarea{ resize:none; height:120px; }
+
+/* SOCIAL */
+.social{
+    margin-top:15px;
+}
+.social a{
+    font-size:22px;
+    margin:0 10px;
+    color:var(--accent);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+}
+body.light footer{ background:#ddd; }
+
+/* SCROLL ANIMATION */
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:.8s;
+}
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero-content{ text-align:center; }
+    .hero img{ margin-top:25px; }
+}
+</style>
 </head>
+
 <body>
 
+<!-- LOADER -->
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+
 <header>
-    <div class="container nav">
-        <h2 class="logo">Shivam<span>.</span></h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="btn">Contact</a></li>
-        </ul>
-    </div>
+<div class="container nav">
+    <h2 class="logo">Shivam<span>.</span></h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+        <li class="toggle" onclick="toggleTheme()">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+        </li>
+    </ul>
+</div>
 </header>
 
-<!-- HERO -->
-<section class="hero" id="home">
-    <div class="container hero-content">
-        <div>
-            <h1>Hello, I'm <span>Shivam Kumar</span></h1>
-            <h3>Web Developer & C Programmer</h3>
-            <p>I build colourful, modern & responsive websites.</p>
-            <br>
-            <a href="#projects" class="btn">Explore Work</a>
-        </div>
-        <img src="profile.png" alt="Profile">
+<section class="hero reveal" id="home">
+<div class="container hero-content">
+    <div>
+        <h1>Hello, I'm <span style="color:var(--accent)">Shivam Kumar</span></h1>
+        <h3><span id="typing"></span></h3>
+        <p>I build colourful, modern & responsive websites.</p><br>
+        <a href="#projects" class="btn">Explore Work</a>
+        <a href="resume.pdf" download class="btn">Download Resume</a>
     </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <p class="text">
-            I am a passionate web developer who loves creating vibrant,
-            interactive and professional websites using HTML, CSS and C.
-        </p>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-    <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-            <div>HTML5</div>
-            <div>CSS3</div>
-            <div>Responsive Design</div>
-            <div>C Programming</div>
-            <div>JavaScript (Basic)</div>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-    <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="project-grid">
-            <div class="card"><a href="linkhub/index.html" target="_blank">
-  MY PROJECTS
-</a>
-
+    <img src="profile.png" alt="Shivam Kumar">
 </div>
-            <div class="card">MY ACHIVEMENTS</div>
-            <div class="card">COMMING SOON</div>
-        </div>
-    </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-    <div class="container contact-box">
-        <h2>Contact Me</h2>
-        <p><i class="fa-solid fa-envelope"></i> shivamtoda9634@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> +91 9634858916</p>
+<section id="about" class="reveal">
+<div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>I am a passionate web developer who loves creating modern & professional websites.</p>
+</div>
+</section>
+
+<section id="skills" class="reveal">
+<div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+        <div>HTML5</div>
+        <div>CSS3</div>
+        <div>Responsive Design</div>
+        <div>C Programming</div>
+        <div>JavaScript (Basic)</div>
     </div>
+</div>
+</section>
+
+<section id="projects" class="reveal">
+<div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+        <div class="card"><a href="linkhub/index.html" target="_blank">LinkHub Website</a></div>
+        <div class="card"><a href="#">C Programs Collection</a></div>
+        <div class="card"><a href="#">Portfolio Website</a></div>
+    </div>
+</div>
+</section>
+
+<section id="contact" class="reveal">
+<div class="container contact-box">
+    <h2 class="section-title">Contact Me</h2>
+
+    <!-- CONTACT FORM -->
+    <form action="mailto:shivamtoda9634@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+
+    <div class="social">
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+</div>
 </section>
 
 <footer>
-    © 2025 Shivam Kumar | Designed with ❤️
+© 2025 Shivam Kumar | Designed with ❤️
 </footer>
+
+<script>
+/* LOADER */
+window.onload=()=>{
+    document.getElementById("loader").style.display="none";
+};
+
+/* DARK/LIGHT */
+function toggleTheme(){
+    document.body.classList.toggle("light");
+}
+
+/* SCROLL REVEAL */
+const reveals=document.querySelectorAll(".reveal");
+window.addEventListener("scroll",()=>{
+    reveals.forEach(r=>{
+        if(r.getBoundingClientRect().top < window.innerHeight-100){
+            r.classList.add("active");
+        }
+    });
+});
+
+/* TYPING ANIMATION */
+const text=["Web Developer","C Programmer","Frontend Designer"];
+let i=0,j=0;
+function type(){
+    if(j<text[i].length){
+        typing.innerHTML+=text[i][j++];
+        setTimeout(type,100);
+    }else setTimeout(erase,1500);
+}
+function erase(){
+    if(j>0){
+        typing.innerHTML=text[i].substring(0,--j);
+        setTimeout(erase,50);
+    }else{
+        i=(i+1)%text.length;
+        setTimeout(type,500);
+    }
+}
+type();
+</script>
 
 </body>
 </html>
-
-
-
-
-

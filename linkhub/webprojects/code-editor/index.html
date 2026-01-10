@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Editor</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: monospace;
+        }
+
+        html,body{
+            height:100%;
+            width:100%;
+        }
+
+        .skt{
+            color:red;
+            text-align:center;
+            background:yellow;
+        }
+
+        /* Header */
+        #name{
+            height:50px;
+            background:blue;
+            color:white;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-weight:bold;
+        }
+
+        /* Main layout */
+        #bigbox{
+            height:calc(100vh - 50px);
+            display:flex;
+        }
+
+        .div1,.div2{
+            width:50%;
+            border:2px solid green;
+        }
+
+        .div1{
+            display:flex;
+            flex-direction:column;
+        }
+
+        #code{
+            flex:1;
+            padding:10px;
+            font-size:15px;
+            resize:none;
+        }
+
+        .div2{
+            position:relative;
+        }
+
+        iframe{
+            width:100%;
+            height:100%;
+            border:none;
+        }
+
+        /* FULL button */
+        #btn{
+            position:absolute;
+            top:0.1px;
+            right:5px;
+            padding:6px 12px;
+            cursor:pointer;
+            z-index:10;
+            background: none;
+        }
+
+        /* Fullscreen iframe */
+        .fullscreen{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100vw;
+            height:100vh;
+            z-index:999;
+            background:white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="name">CODE EDITOR DEVELOPED BY SHIVAM KUMAR</header>
+
+<div id="bigbox">
+
+    <!-- INPUT -->
+    <div class="div1" id="div1">
+        <h1 class="skt">INPUT BOX</h1>
+        <textarea id="code" oninput="run()">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Live Preview</title>
+</head>
+<body>
+<h1>DEVELOPED BY SHIVAM KUMAR</h1>
+<p>THIS IS LIVE CODE EDITOR</p>
+</body>
+</html>
+        </textarea>
+    </div>
+
+    <!-- OUTPUT -->
+    <div class="div2" id="div2">
+        <h1 class="skt">OUTPUT BOX</h1>
+        <input type="button" value="FULL" id="btn" onclick="full()">
+        <iframe id="output"></iframe>
+    </div>
+
+</div>
+
+<script>
+    /* Live preview */
+    function run(){
+        let code = document.getElementById("code").value;
+        document.getElementById("output").srcdoc = code;
+    }
+    run();
+
+    /* Fullscreen mode */
+    function full(){
+        // Browser history me ek state push karo
+        history.pushState({fullscreen:true}, "");
+
+        // Editor hide
+        document.getElementById("div1").style.display="none";
+        document.getElementById("div2").style.display="none";
+
+        // iframe fullscreen
+        let iframe = document.getElementById("output");
+        iframe.classList.add("fullscreen");
+        document.body.appendChild(iframe);
+    }
+
+    /* Chrome BACK button handle */
+    window.onpopstate = function(){
+        let iframe = document.getElementById("output");
+
+        // fullscreen remove
+        iframe.classList.remove("fullscreen");
+
+        // iframe wapas output box me
+        document.getElementById("div2").appendChild(iframe);
+
+        // editor wapas show
+        document.getElementById("div1").style.display="flex";
+        document.getElementById("div2").style.display="block";
+    };
+</script>
+
+</body>
+</html>

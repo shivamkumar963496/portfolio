@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="myname">SHIVAM KUMAR</div>
+
+
+
+    <div id="box">
+        <div id="pic">
+            <img src="download.jfif" width="600px" height="350px" id="img">
+        </div>
+
+
+        <div id="controls">
+            <div id="tool" class="range">
+                BRIGHTNESS
+                <input type="range" id="bright" min="0" max="250" oninput="bright()">
+            </div>
+
+            <div id="tool" class="range">
+                CONTRAST
+                <input type="range" id="contrast" min="0" max="400" oninput="contrast()">
+            </div>
+
+            <div id="tool" class="range">
+                SATURATE
+                <input type="range" id="saturate" min="0" max="500" oninput="saturate()">
+            </div>
+
+            <div id="tool" class="range">
+
+                <button id="uploadbtn" onclick="openFile()">UPLOAD</button>
+                <input type="file" id="filebtn" accept="image/*" onchange="upload()" hidden>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+        function openFile() {
+            document.getElementById("filebtn").click();
+        }
+
+        function bright() {
+            var x = document.getElementById("bright").value;
+            var pic = document.getElementById("pic");
+            pic.style.filter = "brightness(" + x + "%)";
+        }
+
+        function contrast() {
+            var x = document.getElementById("contrast").value;
+            var pic = document.getElementById("pic");
+            pic.style.filter = "contrast(" + x + "%)";
+        }
+
+        function saturate() {
+            var x = document.getElementById("saturate").value;
+            var pic = document.getElementById("pic");
+            pic.style.filter = "saturate(" + x + "%)";
+        }
+
+
+        function upload() {
+            var file = document.getElementById("filebtn").files[0];
+            var b = document.getElementById("img");
+            b.src = URL.createObjectURL(file);
+        }
+
+
+    </script>
+</body>
+
+</html>

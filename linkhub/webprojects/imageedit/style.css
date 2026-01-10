@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Main Box */
+#box{
+   width: 650px;
+    padding: 15px;
+    border: 20px groove navy;
+    background: white;
+     margin: 0 auto;
+}
+
+/* Image container */
+#pic{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+/* Image responsive */
+#img{
+    width: 100%;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 5px solid red;
+    object-fit: cover;   /* image cut nahi hogi */
+   
+}
+
+#controls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.range{
+    width: 30%;
+    border: 2px solid navy;
+    padding: 10px;
+    text-align: center;
+}
+
+#myname{
+    width: 300px;
+    border: 5px dotted red;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+#uploadbtn{
+    height: 40px;
+    width: 100px;
+    position: relative;
+
+}
+
+#filebtn{
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;

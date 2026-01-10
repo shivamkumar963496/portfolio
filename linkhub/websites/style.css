@@ -1,0 +1,533 @@
+body{
+    background-image: url(images/be1.avif);
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+.product-bg{
+    background-image: url(images/product-bg);
+}
+
+.sign-bg{
+    background-image: url(images/product-bg);
+    background-size: cover;
+}
+/* nav part */
+#nav1{
+    width: 100%;
+    height: 260px;
+    background-color: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    float: left;
+    padding: 30px;
+}
+
+#welcome{
+    font-size: 70px;
+    color: pink;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#menu_table{
+    width: 70%;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.menu_btn{
+    width: 20%;
+    height: 50px;
+    border: 2px solid red;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* section part */
+#section1{
+    height: 342px;
+    width: 600px;
+    float: right;
+    background-image: url(images/s_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#logo_div{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    float: right;
+    margin-top: 50px;
+    padding: 30px;
+    margin-right: 90px;
+}
+
+#logo{
+    font-size: 200px;
+    color: white;
+    margin-top: -50px;
+}
+
+#domain{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 50px;
+    margin-left: 150px;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*login page section start */
+
+
+#bg{
+background-image: url(images/bg.jpg);
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+
+}
+
+#login{
+    width:330px;
+    height: 300px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    float: right;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#login_text{
+    font-size: 30px;
+    color: white;
+}
+
+#login_form{
+
+    color:white;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+#username{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: inherit;
+    border: none;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+#password{
+     width: 100%;
+    height: 30px;
+     margin-bottom: 20px;
+    background-color: inherit;
+    border: none;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+
+#submit_btn{
+    float: right;
+    height: 30px;
+    width: 100px;
+    margin-top: 15px;
+    background-color: inherit;
+    color: white;
+    border: none;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+
+
+}
+
+#signup{
+    width:400px;
+    height: 320px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    float: right;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin-right: 23px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+#sign-bg{
+    background-image: url(images/sign-bg.jfif);
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+
+}
+
+#signup_text{
+    font-size: 20px;
+    color: white;
+    text-align: right;
+}
+
+#signup_form{
+    color:white;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+#signup_box{
+width: 100%;
+    height: 30px;
+     margin-bottom: 20px;
+    background-color: inherit;
+    border: none;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+#address_box{
+width: 100%;
+height: 30px;
+background-color: inherit;
+padding: 0;
+margin: 0;
+margin-top: 4px;
+box-sizing: border-box;
+color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+#add{
+    margin: 0;
+    padding: 0;
+     
+}
+
+#signup_btn{
+    float: right;
+     height: 30px;
+    width: 100px;
+    margin-top: 3px;
+    margin-right: 10px;
+    background-color: inherit;
+    color: white;
+    border: none;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+
+#add_det{
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* product page section start */
+
+#product_section{
+    width: 100%;
+    height: 2324px;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    float: left;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#section-div-1{
+    width: 100%;
+    height: 320px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+#brand{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#brand_box{
+    float: left;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    height: 80px;
+    width: 200px;
+    background-color: white;
+    margin: 19px;
+}
+
+#search{
+    width: 60%;
+    height: 50px;
+    background-color: inherit;
+    border: none;
+    border-width: 3px;
+    border-color:#ccc;
+    border-style: solid;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    background-image: url(images/search.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#zest-div{
+width: 100%;
+height: 400px;
+box-sizing: border-box;
+background-color: rgba(0,0,0,0.7);
+padding: 20px;
+margin: 0;
+float: left;
+
+}
+
+#zest-name{
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: pink;
+    margin: 0;
+    padding: 0;
+}
+
+#zest-pic{
+    width: 200px;
+    height: 250px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    box-sizing: border-box;
+    float: left;
+    margin: 21px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+
+#dove-div{
+width: 100%;
+height: 400px;
+box-sizing: border-box;
+background-color: rgba(0,0,0,0.7);
+padding: 20px;
+margin: 0;
+float: left;
+
+}
+
+#dove-name{
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: pink;
+    margin: 0;
+    padding: 0;
+}
+
+#dove-pic{
+    width: 200px;
+    height: 250px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    box-sizing: border-box;
+    float: left;
+    margin: 21px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+
+#amica-div{
+width: 100%;
+height: 400px;
+box-sizing: border-box;
+background-color: rgba(0,0,0,0.7);
+padding: 20px;
+margin: 0;
+float: left;
+
+}
+
+#amica-name{
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: pink;
+    margin: 0;
+    padding: 0;
+}
+
+#amica-pic{
+    width: 200px;
+    height: 250px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    box-sizing: border-box;
+    float: left;
+    margin: 21px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+
+
+#personal-div{
+width: 100%;
+height: 400px;
+box-sizing: border-box;
+background-color: rgba(0,0,0,0.7);
+padding: 20px;
+margin: 0;
+float: left;
+
+}
+
+#personal-name{
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: pink;
+    margin: 0;
+    padding: 0;
+}
+
+#personal-pic{
+    width: 200px;
+    height: 250px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    box-sizing: border-box;
+    float: left;
+    margin: 21px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+
+#amazing-div{
+width: 100%;
+height: 400px;
+box-sizing: border-box;
+background-color: rgba(0,0,0,0.7);
+padding: 20px;
+margin: 0;
+float: left;
+
+}
+
+#amazing-name{
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: pink;
+    margin: 0;
+    padding: 0;
+}
+
+#amazing-pic{
+    width: 200px;
+    height: 250px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    box-sizing: border-box;
+    float: left;
+    margin: 21px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+footer{
+
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+/* product page section end */

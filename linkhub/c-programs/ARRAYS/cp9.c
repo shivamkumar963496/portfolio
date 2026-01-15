@@ -1,3 +1,7 @@
+/*Write a C program to count how many elements of an array are greater than a given number.*/
+
+
+
 #include <stdio.h>
 
 int main()
@@ -13,8 +17,8 @@ int main()
     // Array elements input lena
     for (int i = 0; i <= n - 1; i++)
     {
-        printf("ENTER %d NUMBER = ", i + 1);
-        scanf("%d", &arr[i]);   
+        printf("ENTER %d NUMBER =+ ", i + 1);
+        scanf("%d", &arr[i]);   +
     }
 
     int x;

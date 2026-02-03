@@ -1,0 +1,80 @@
+# ===============================
+# Python String Methods – All in One File
+# ===============================
+
+print("===== STRING METHODS DEMO =====\n")
+
+# 1️⃣ len()
+text = "Shivam"
+print("len():", len(text))  # string ki length
+
+# 2️⃣ upper()
+text = "python programming"
+print("upper():", text.upper())  # capital letters
+
+# 3️⃣ lower()
+text = "PYTHON IS EASY"
+print("lower():", text.lower())  # small letters
+
+# 4️⃣ strip()
+text = "   hello python   "
+print("strip():", text.strip())  # left + right spaces remove
+
+# 5️⃣ lstrip()
+text = "   python"
+print("lstrip():", text.lstrip())  # left spaces remove
+
+# 6️⃣ rstrip()
+text = "python   "
+print("rstrip():", text.rstrip())  # right spaces remove
+
+# 7️⃣ replace()
+text = "I love Java"
+print("replace():", text.replace("Java", "Python"))  # word replace
+
+# 8️⃣ split()
+text = "Python is very easy"
+print("split():", text.split())  # string → list
+
+# 9️⃣ join()
+words = ["Python", "is", "awesome"]
+print("join():", " ".join(words))  # list → string
+
+# 🔟 count()
+text = "banana"
+print("count():", text.count("a"))  # character count
+
+# 1️⃣1️⃣ find()
+text = "python programming"
+print("find():", text.find("programming"))  # index return
+print("find(not found):", text.find("java"))  # -1 if not found
+
+# 1️⃣2️⃣ capitalize()
+text = "pYTHON"
+print("capitalize():", text.capitalize())  # first letter capital
+
+# 1️⃣3️⃣ startswith()
+text = "python programming"
+print("startswith():", text.startswith("python"))  # True/False
+
+# 1️⃣4️⃣ endswith()
+text = "learn python"
+print("endswith():", text.endswith("python"))  # True/False
+
+# 1️⃣5️⃣ isalpha()
+text = "Python"
+print("isalpha():", text.isalpha())  # only alphabets
+
+# 1️⃣6️⃣ isdigit()
+num = "12345"
+print("isdigit():", num.isdigit())  # only digits
+
+# 1️⃣7️⃣ isalnum()
+text = "Python123"
+print("isalnum():", text.isalnum())  # alphabets + digits
+
+# 1️⃣8️⃣ center()
+text = "Python"
+print("center():", text.center(20, "*"))  # center alignment
+
+print("\n===== END OF STRING METHODS =====")

@@ -1,0 +1,4 @@
+name="shivam kumar"
+
+print("FRIST LETTER : ",name[0])
+print("LAST LETTER : ",name[-1])

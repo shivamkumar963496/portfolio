@@ -1,7 +1,0 @@
-#Write a Python program to calculate the area of a 
-# circle when the diameter is given by the user.
-
-diameter = float(input("enter the value of diameter = "))
-radius = diameter/2
-area = 3.1415*(radius**2)
-print("the area of the circle = ",area)

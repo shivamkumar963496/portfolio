@@ -1,6 +1,45 @@
-a=int(input("ENTER 1ST NUMBER = "))
-b=int(input("ENTER 2ND NUMBER = "))
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 3</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
 
+<h2>📌 Python Program 3</h2>
 
-mul=a*b
-print("THE MULTIPLY OF A AND B = ",mul)
+<pre>
+<span class="comment"># Question 3:</span>
+<span class="comment"># Take two integers from user and print their multiplication.</span>
+
+<span class="comment"># user se first number input le rahe hain</span>
+a = int(input("ENTER 1ST NUMBER = "))
+
+<span class="comment"># user se second number input le rahe hain</span>
+b = int(input("ENTER 2ND NUMBER = "))
+
+<span class="comment"># dono numbers ka multiplication calculate kar rahe hain</span>
+mul = a * b
+
+<span class="comment"># result screen par print kar rahe hain</span>
+print("THE MULTIPLICATION OF A AND B =", mul)
+</pre>
+
+</body>
+</html>

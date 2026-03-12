@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 30</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 30</h2>
+
+<pre>
+<span class="comment"># Question 30:</span>
+<span class="comment"># 3 digit number input lo aur uska reverse print karo</span>
+
+<span class="comment"># user se number input le rahe hain</span>
+num = int(input("ENTER A NUMBER = "))
+
+<span class="comment"># reverse calculate kar rahe hain</span>
+rev = (num % 10) * 100 + ((num // 10) % 10) * 10 + (num // 100)
+
+<span class="comment"># result print kar rahe hain</span>
+print("REVERSE NUMBER =", rev)
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 23</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 23</h2>
+
+<pre>
+<span class="comment"># Question 23:</span>
+<span class="comment"># 3 digit number input lo aur uske digits ka sum print karo</span>
+
+<span class="comment"># user se number input le rahe hain</span>
+n = int(input("ENTER 3 DIGIT NUMBER = "))
+
+<span class="comment"># digits nikal kar sum calculate kar rahe hain</span>
+d1 = n % 10
+d2 = (n // 10) % 10
+d3 = n // 100
+
+total = d1 + d2 + d3
+
+<span class="comment"># result print kar rahe hain</span>
+print("THE SUM OF DIGITS =", total)
+</pre>
+
+</body>
+</html>

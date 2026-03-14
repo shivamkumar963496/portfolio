@@ -1,119 +1,177 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Chapter 3 - Python | Shivam Kumar</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #020617;
-            color: #e5e7eb;
-            padding: 20px;
-        }
+<meta charset="UTF-8">
+<title>Conditional Statements | Shivam Kumar</title>
 
-        /* Profile Section */
-        .profile {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#020617;
+    color:#e5e7eb;
+    padding:20px;
+}
 
-        .profile img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid #38bdf8;
-        }
+.profile{
+    text-align:center;
+    margin-bottom:30px;
+}
 
-        .profile h1 {
-            margin: 10px 0 5px;
-            color: #38bdf8;
-        }
+.profile img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:3px solid #38bdf8;
+}
 
-        .profile p {
-            color: #94a3b8;
-            font-size: 14px;
-        }
+.profile h1{
+    color:#38bdf8;
+    margin:10px 0 5px;
+}
 
-        /* Chapter Box */
-        .chapter {
-            max-width: 600px;
-            margin: auto;
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 12px;
-        }
+.profile p{
+    color:#94a3b8;
+}
 
-        .chapter h2 {
-            text-align: center;
-            color: #facc15;
-            margin-bottom: 20px;
-        }
+.section{
+    max-width:950px;
+    margin:auto;
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:30px;
+}
 
-        .chapter a {
-            display: block;
-            padding: 10px;
-            margin-bottom: 10px;
-            background: #334155;
-            color: #a5f3fc;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 16px;
-        }
+.section h2{
+    text-align:center;
+    color:#facc15;
+    margin-bottom:20px;
+}
 
-        .chapter a:hover {
-            background: #475569;
-            color: #22d3ee;
-        }
+.level{
+    color:#22d3ee;
+    margin-top:25px;
+    margin-bottom:10px;
+    font-size:18px;
+}
 
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 13px;
-            color: #94a3b8;
-        }
-    </style>
+.programs{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:10px;
+}
+
+.programs a{
+    text-align:center;
+    padding:10px;
+    background:#334155;
+    color:#a5f3fc;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.programs a:hover{
+    background:#475569;
+    color:#22d3ee;
+}
+
+footer{
+    text-align:center;
+    margin-top:30px;
+    font-size:13px;
+    color:#94a3b8;
+}
+</style>
+
 </head>
+
 <body>
 
-    <!-- Profile -->
-    <div class="profile">
-        <img src="profile.jpeg" alt="Shivam Kumar">
-        <h1>Shivam Kumar</h1>
-        <p>Python Learner | Chapter 3</p>
-    </div>
+<div class="profile">
+<img src="profile.jpeg" alt="Shivam Kumar">
+<h1>Shivam Kumar</h1>
+<p>Conditional Statements Programs</p>
+</div>
 
-    <!-- Chapter 3 Programs -->
-    <div class="chapter">
-        <h2>📘 Chapter 3: Python Programs</h2>
+<div class="section">
+<h2>📕 Conditional Statements</h2>
 
-        <a href="chapter-3/python1.html">PYTHON PROGRAM-1</a><br>
-        <a href="chapter-3/python2.html">PYTHON PROGRAM-2</a><br>
-        <a href="chapter-3/python3.html">PYTHON PROGRAM-3</a><br>
-        <a href="chapter-3/python4.html">PYTHON PROGRAM-4</a><br>
-        <a href="chapter-3/python5.html">PYTHON PROGRAM-5</a><br>
-        <a href="chapter-3/python6.html">PYTHON PROGRAM-6</a><br>
-        <a href="chapter-3/python7.html">PYTHON PROGRAM-7</a><br>
-        <a href="chapter-3/python8.html">PYTHON PROGRAM-8</a><br>
-        <a href="chapter-3/python9.html">PYTHON PROGRAM-9</a><br>
-        <a href="chapter-3/python10.html">PYTHON PROGRAM-10</a><br>
-        <a href="chapter-3/python11.html">PYTHON PROGRAM-11</a><br>
-        <a href="chapter-3/python12.html">PYTHON PROGRAM-12</a>
-        <a href="chapter-3/python13.html">PYTHON PROGRAM-13</a><br>
-        <a href="chapter-3/python14.html">PYTHON PROGRAM-14</a><br>
-        <a href="chapter-3/python15.html">PYTHON PROGRAM-15</a><br>
-        <a href="chapter-3/python16.html">PYTHON PROGRAM-16</a><br>
-        <a href="chapter-3/python17.html">PYTHON PROGRAM-17</a><br>
-        <a href="chapter-3/python18.html">PYTHON PROGRAM-18</a><br>
-        <a href="chapter-3/python19.html">PYTHON PROGRAM-19</a><br>
-        <a href="chapter-3/python20.html">PYTHON PROGRAM-20</a>
+<div class="level">Basic Level</div>
+<div class="programs">
 
+<a href="chapter-3/conditional/basic/python1.html">Program 1</a> 
+<a href="chapter-3/conditional/basic/python2.html">Program 2</a>
+<a href="chapter-3/conditional/basic/python3.html">Program 3</a> 
+<a href="chapter-3/conditional/basic/python4.html">Program 4</a> 
+<a href="chapter-3/conditional/basic/python5.html">Program 5</a>
 
-    </div>
+<a href="chapter-3/conditional/basic/python6.html">Program 6</a>
+<a href="chapter-3/conditional/basic/python7.html">Program 7</a>
+<a href="chapter-3/conditional/basic/python8.html">Program 8</a>
+<a href="chapter-3/conditional/basic/python9.html">Program 9</a>
+<a href="chapter-3/conditional/basic/python10.html">Program 10</a>
 
-    <footer>
-        © 2026 | coding_with_shivam
-    </footer>
+<a href="chapter-3/conditional/basic/python11.html">Program 11</a> 
+<a href="chapter-3/conditional/basic/python12.html">Program 12</a> 
+<a href="chapter-3/conditional/basic/python13.html">Program 13</a>
+<a href="chapter-3/conditional/basic/python14.html">Program 14</a> 
+<a href="chapter-3/conditional/basic/python15.html">Program 15</a>
+
+</div>
+
+<div class="level">Intermediate Level</div>
+<div class="programs">
+
+<a href="chapter-3/conditional/intermediate/python16.html">Program 16</a>
+    <a href="chapter-3/conditional/intermediate/python17.html">Program 17</a> 
+    <a href="chapter-3/conditional/intermediate/python18.html">Program 18</a> 
+    <a href="chapter-3/conditional/intermediate/python19.html">Program 19</a> 
+    <a href="chapter-3/conditional/intermediate/python20.html">Program 20</a>
+
+<a href="chapter-3/conditional/intermediate/python21.html">Program 21</a> 
+    <a href="chapter-3/conditional/intermediate/python22.html">Program 22</a> 
+    <a href="chapter-3/conditional/intermediate/python23.html">Program 23</a> 
+    <a href="chapter-3/conditional/intermediate/python24.html">Program 24</a> 
+    <a href="chapter-3/conditional/intermediate/python25.html">Program 25</a>
+
+<a href="chapter-3/conditional/intermediate/python26.html">Program 26</a> 
+    <a href="chapter-3/conditional/intermediate/python27.html">Program 27</a> 
+    <a href="chapter-3/conditional/intermediate/python28.html">Program 28</a> 
+    <a href="chapter-3/conditional/intermediate/python29.html">Program 29</a> 
+    <a href="chapter-3/conditional/intermediate/python30.html">Program 30</a>
+
+<a href="chapter-3/conditional/intermediate/python31.html">Program 31</a> <a href="chapter-3/conditional/intermediate/python32.html">Program 32</a> <a href="chapter-3/conditional/intermediate/python33.html">Program 33</a> <a href="chapter-3/conditional/intermediate/python34.html">Program 34</a> <a href="chapter-3/conditional/intermediate/python35.html">Program 35</a>
+
+</div>
+
+<div class="level">Advanced Level</div>
+<div class="programs">
+
+<a href="chapter-3/conditional/advanced/python36.html">Program 36</a>
+    <a href="chapter-3/conditional/advanced/python37.html">Program 37</a> 
+    <a href="chapter-3/conditional/advanced/python38.html">Program 38</a> <a href="chapter-3/conditional/advanced/python39.html">Program 39</a> <a href="chapter-3/conditional/advanced/python40.html">Program 40</a>
+
+<a href="chapter-3/conditional/advanced/python41.html">Program 41</a> 
+    <a href="chapter-3/conditional/advanced/python42.html">Program 42</a> 
+    <a href="chapter-3/conditional/advanced/python43.html">Program 43</a>
+    <a href="chapter-3/conditional/advanced/python44.html">Program 44</a>
+    <a href="chapter-3/conditional/advanced/python45.html">Program 45</a>
+
+<a href="chapter-3/conditional/advanced/python46.html">Program 46</a> 
+    <a href="chapter-3/conditional/advanced/python47.html">Program 47</a> 
+    <a href="chapter-3/conditional/advanced/python48.html">Program 48</a>
+    <a href="chapter-3/conditional/advanced/python49.html">Program 49</a> 
+    <a href="chapter-3/conditional/advanced/python50.html">Program 50</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 | coding_with_shivam
+</footer>
 
 </body>
 </html>

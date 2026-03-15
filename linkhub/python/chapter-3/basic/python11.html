@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 11</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 11</h2>
+
+<pre>
+<span class="comment"># Question 11:</span>
+<span class="comment"># Take a number from the user and check whether it is 1-digit, 2-digit, or 3-digit</span>
+
+<span class="comment"># Taking number input</span>
+num = int(input("ENTER A NUMBER = "))
+
+<span class="comment"># Checking digit count</span>
+if 0 <= num <= 9:
+    print("1 DIGIT NUMBER")
+elif 10 <= num <= 99:
+    print("2 DIGIT NUMBER")
+elif 100 <= num <= 999:
+    print("3 DIGIT NUMBER")
+else:
+    print("MORE THAN 3 DIGITS")
+</pre>
+
+</body>
+</html>

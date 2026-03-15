@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 7</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 7</h2>
+
+<pre>
+<span class="comment"># Question 7:</span>
+<span class="comment"># Take a number from the user and check whether it is divisible by 3, 5, or both</span>
+
+<span class="comment"># Taking number input</span>
+num = int(input("ENTER A NUMBER = "))
+
+<span class="comment"># Checking divisibility</span>
+if num % 3 == 0 and num % 5 == 0:
+    print("DIVISIBLE BY BOTH 3 AND 5")
+elif num % 3 == 0:
+    print("DIVISIBLE BY 3")
+elif num % 5 == 0:
+    print("DIVISIBLE BY 5")
+else:
+    print("NOT DIVISIBLE BY 3 OR 5")
+</pre>
+
+</body>
+</html>

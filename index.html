@@ -26,13 +26,16 @@ body.light{
     font-family:'Segoe UI',sans-serif;
 }
 
+/* remove underline */
+a,a:hover,a:focus{
+    text-decoration:none;
+    color:inherit;
+}
+
 body{
     background:var(--bg);
     color:var(--text);
-    overflow-x:hidden;
 }
-
-a{text-decoration:none;color:inherit}
 
 /* LOADER */
 #loader{
@@ -57,44 +60,41 @@ a{text-decoration:none;color:inherit}
 /* HEADER */
 header{
     position:fixed;
+    top:0;
     width:100%;
     background:#111;
     z-index:100;
 }
 .nav{
-    width:92%;
-    max-width:1200px;
+    width:90%;
+    max-width:1100px;
     margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:15px 0;
 }
-.logo span{color:#00f7ff}
-
+.logo span{color:#00f7ff;}
 ul{
     list-style:none;
     display:flex;
-    gap:12px;
+    gap:15px;
     align-items:center;
 }
 
-.menu-btn{
-    display:none;
-    font-size:26px;
-    cursor:pointer;
-    color:#00f7ff;
-}
-
-/* BUTTON */
+/* 3D BUTTONS */
 .btn{
-    padding:10px 22px;
+    padding:12px 26px;
     border-radius:30px;
+    color:#fff;
     font-weight:bold;
     display:inline-block;
-    color:#fff;
     background:linear-gradient(135deg,#ff512f,#dd2476);
+    box-shadow:0 6px 0 #b91c1c,0 12px 25px rgba(0,0,0,.4);
+    transition:.2s;
 }
+.btn:hover{transform:translateY(-3px);}
+.btn:active{transform:translateY(4px);}
 .btn.blue{background:linear-gradient(135deg,#00c6ff,#0072ff);}
 .btn.green{background:linear-gradient(135deg,#00b09b,#96c93d);}
 .btn.orange{background:linear-gradient(135deg,#ff8008,#ffc837);}
@@ -106,25 +106,21 @@ ul{
 }
 
 /* SECTIONS */
-section{padding:90px 0}
-.hero{padding-top:150px}
-
+section{padding:100px 0;}
+.hero{padding-top:160px;}
 .container{
-    width:92%;
-    max-width:1200px;
+    width:90%;
+    max-width:1100px;
     margin:auto;
 }
-
 .hero-content{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:40px;
+    flex-wrap:wrap;
 }
-
 .hero img{
     width:260px;
-    max-width:100%;
     border-radius:50%;
     box-shadow:0 0 35px #00f7ff;
 }
@@ -132,7 +128,7 @@ section{padding:90px 0}
 /* SKILLS */
 .skills-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
     gap:15px;
 }
 .skills-grid div{
@@ -142,17 +138,18 @@ section{padding:90px 0}
     text-align:center;
 }
 
-/* PROJECT */
+/* PROJECTS */
 .project-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
     gap:20px;
 }
 .card a{
     display:block;
-    padding:30px;
+    padding:35px;
     border-radius:18px;
     background:linear-gradient(135deg,#667eea,#764ba2);
+    box-shadow:0 8px 0 #4c1d95;
     text-align:center;
     font-weight:bold;
 }
@@ -165,67 +162,48 @@ section{padding:90px 0}
     padding:30px;
     border-radius:18px;
     text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
 }
 .contact-item{
     display:flex;
     justify-content:center;
+    align-items:center;
     gap:12px;
-    margin-bottom:15px;
+    font-size:18px;
+    margin-bottom:18px;
+}
+.contact-item i{
+    font-size:22px;
+    color:#00f7ff;
+}
+.btn.whatsapp{
+    background:linear-gradient(135deg,#25D366,#128C7E);
+    box-shadow:0 6px 0 #0f5132,0 14px 30px rgba(0,0,0,.4);
 }
 
+/* SOCIAL */
 .social{
     text-align:center;
     margin-top:20px;
 }
 .social a{
     font-size:26px;
-    margin:0 10px;
+    margin:0 12px;
     color:#00f7ff;
 }
 
+/* FOOTER */
 footer{
     text-align:center;
     padding:20px;
     background:#111;
 }
 
-/* MOBILE RESPONSIVE */
-@media(max-width:900px){
-
-.hero-content{
-    flex-direction:column;
-    text-align:center;
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero-content{text-align:center;}
+    .hero img{margin-top:30px;}
 }
-
-ul{
-    position:fixed;
-    top:70px;
-    right:-100%;
-    background:#111;
-    flex-direction:column;
-    width:220px;
-    height:100vh;
-    padding-top:30px;
-    transition:.3s;
-}
-
-ul.active{right:0}
-
-.menu-btn{display:block}
-
-}
-
-@media(max-width:500px){
-
-.hero img{width:200px}
-
-.btn{padding:8px 18px;font-size:14px}
-
-h1{font-size:26px}
-h2{font-size:22px}
-
-}
-
 </style>
 </head>
 
@@ -235,72 +213,91 @@ h2{font-size:22px}
 
 <header>
 <div class="nav">
-<h2 class="logo">Shivam<span>.</span></h2>
-
-<i class="fa-solid fa-bars menu-btn" onclick="menuToggle()"></i>
-
-<ul id="menu">
-<li><a class="btn blue" href="#home">Home</a></li>
-<li><a class="btn green" href="#about">About</a></li>
-<li><a class="btn orange" href="#skills">Skills</a></li>
-<li><a class="btn blue" href="#projects">Projects</a></li>
-<li><a class="btn green" href="#contact">Contact</a></li>
-<li class="toggle" onclick="toggleTheme()">
-<i class="fa-solid fa-circle-half-stroke"></i>
-</li>
-</ul>
+    <h2 class="logo">Shivam<span>.</span></h2>
+    <ul>
+        <li><a class="btn blue" href="#home">Home</a></li>
+        <li><a class="btn green" href="#about">About</a></li>
+        <li><a class="btn orange" href="#skills">Skills</a></li>
+        <li><a class="btn blue" href="#projects">Projects</a></li>
+        <li><a class="btn green" href="#contact">Contact</a></li>
+        <li class="toggle" onclick="toggleTheme()">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+        </li>
+    </ul>
 </div>
 </header>
 
+<!-- HERO -->
 <section class="hero" id="home">
 <div class="container hero-content">
-<div>
-<h1>Hello, I'm <span style="color:#00f7ff">Shivam Kumar</span></h1>
-<h3 id="typing"></h3><br>
-<a class="btn blue" href="#projects">Explore Work</a>
-<a class="btn green" href="resume.pdf" download>Download Resume</a>
-</div>
-<img src="MY PHOTO.jpeg">
+    <div>
+        <h1>Hello, I'm <span style="color:#00f7ff">Shivam Kumar</span></h1>
+        <h3 id="typing"></h3><br>
+        <a class="btn blue" href="#projects">Explore Work</a>
+        <a class="btn green" href="resume.pdf" download>Download Resume</a>
+    </div>
+    <img src="MY PHOTO.jpeg" alt="Shivam Kumar">
 </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
 <div class="container">
 <h2>About Me</h2>
-<p>I create modern responsive websites.</p>
+<p>I create modern, colourful & responsive websites.</p>
 </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
 <div class="container">
 <h2>Skills</h2>
 <div class="skills-grid">
-<div>HTML</div>
-<div>CSS</div>
+<div>HTML5</div>
+<div>CSS3</div>
 <div>JavaScript</div>
-<div>C</div>
+<div>C Programming</div>
 <div>Responsive Design</div>
 </div>
 </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
 <div class="container">
 <h2>Projects</h2>
 <div class="project-grid">
-<div class="card"><a href="#">LINKHUB</a></div>
-<div class="card"><a href="#">CERTIFICATES</a></div>
+<div class="card"><a href="linkhub/index.html" target="_blank">LINKHUB</a></div>
+<div class="card"><a href="certificates/index.html">MY CERTIFICATES</a></div>
+<div class="card"><a href="#">Coming Soon</a></div>
 </div>
 </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
 <div class="container">
-<h2>Contact</h2>
+<h2>Contact Me</h2>
+
 <div class="contact-box">
-<div class="contact-item"><i class="fas fa-envelope"></i>shivam@gmail.com</div>
-<div class="contact-item"><i class="fas fa-phone"></i>+91 96348</div>
-<a href="#" class="btn green">WhatsApp</a>
+    <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>shivamtoda9634@gmail.com</span>
+    </div>
+
+    <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span>+91 96348 58916</span>
+    </div>
+
+    <a href="https://wa.me/919634858916" target="_blank" class="btn whatsapp">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+    </a>
+</div>
+
+<div class="social">
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
 </div>
 </div>
 </section>
@@ -308,39 +305,36 @@ h2{font-size:22px}
 <footer>© 2025 Shivam Kumar</footer>
 
 <script>
-
-window.onload=()=>{loader.style.display="none"}
+window.onload=()=>{document.getElementById("loader").style.display="none";}
 
 function toggleTheme(){
-document.body.classList.toggle("light")
+    document.body.classList.toggle("light");
 }
 
-function menuToggle(){
-document.getElementById("menu").classList.toggle("active")
-}
-
-const text=["Web Developer","Frontend Designer","Programmer"]
-let i=0,j=0
-const typing=document.getElementById("typing")
-
+/* typing animation */
+const text=["Web Developer","C Programmer","Frontend Designer"];
+let i=0,j=0;
+const typing=document.getElementById("typing");
 function type(){
-if(j<text[i].length){
-typing.innerHTML+=text[i][j++]
-setTimeout(type,100)
-}else setTimeout(erase,1500)
+ if(j<text[i].length){
+  typing.innerHTML+=text[i][j++];
+  setTimeout(type,100);
+ }else setTimeout(erase,1500);
 }
 function erase(){
-if(j>0){
-typing.innerHTML=text[i].substring(0,--j)
-setTimeout(erase,50)
-}else{
-i=(i+1)%text.length
-setTimeout(type,400)
+ if(j>0){
+  typing.innerHTML=text[i].substring(0,--j);
+  setTimeout(erase,50);
+ }else{
+  i=(i+1)%text.length;
+  setTimeout(type,400);
+ }
 }
-}
-type()
-
+type();
 </script>
 
 </body>
 </html>
+
+
+  ise full responsive bana do jo har device me sahi se dikhe

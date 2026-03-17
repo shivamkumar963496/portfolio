@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 9</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 9</h2>
+
+<pre>
+<span class="comment"># Question 9:</span>
+<span class="comment"># Take electricity units from the user and calculate the bill based on given rates</span>
+
+<span class="comment"># Taking units input</span>
+units = int(input("ENTER YOUR UNITS = "))
+
+<span class="comment"># Calculating electricity bill</span>
+if units <= 100:
+    bill = units * 5
+elif units <= 200:
+    bill = units * 7
+else:
+    bill = units * 10
+
+<span class="comment"># Printing bill</span>
+print("ELECTRICITY BILL =", bill, "RS")
+</pre>
+
+</body>
+</html>

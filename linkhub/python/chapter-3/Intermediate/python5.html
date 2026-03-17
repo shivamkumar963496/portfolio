@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 5</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 5</h2>
+
+<pre>
+<span class="comment"># Question 5:</span>
+<span class="comment"># Take income from the user and calculate tax based on given slabs</span>
+
+<span class="comment"># Taking income input</span>
+income = int(input("ENTER YOUR INCOME = "))
+
+<span class="comment"># Calculating tax</span>
+if income < 250000:
+    print("NO TAX")
+elif income <= 500000:
+    print("TAX =", income * 0.05)
+elif income <= 1000000:
+    print("TAX =", income * 0.10)
+else:
+    print("TAX =", income * 0.20)
+</pre>
+
+</body>
+</html>

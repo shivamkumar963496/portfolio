@@ -1,167 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Certificates</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Certificates</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f6f9;
-      color: #222;
-    }
+<style>
 
-    header {
-      background: #0d6efd;
-      color: white;
-      padding: 25px 15px;
-      text-align: center;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
+body{
+  font-family: Arial, sans-serif;
+  background:#f4f6f9;
+  color:#222;
+}
 
-    header p {
-      margin-top: 8px;
-      font-size: 14px;
-      opacity: 0.9;
-    }
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#0d6efd,#0b5ed7);
+  color:white;
+  padding:30px 15px;
+  text-align:center;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: 25px auto;
-      padding: 0 15px;
-    }
+header h1{
+  font-size: clamp(22px, 4vw, 32px);
+}
 
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
-    }
+header p{
+  font-size:14px;
+  margin-top:6px;
+  opacity:0.9;
+}
 
-    /* Certificate Frame */
-    .card {
-      background: white;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0px 4px 14px rgba(0,0,0,0.10);
-      transition: 0.2s;
-      border: 1px solid #e5e5e5;
-    }
+/* CONTAINER */
+.container{
+  width:95%;
+  max-width:1200px;
+  margin:auto;
+  padding:25px 0;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+/* GRID */
+.cert-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap:22px;
+}
 
-    /* Title bar on top */
-    .card-title {
-      background: #111827;
-      color: white;
-      padding: 12px;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-    }
+/* CARD */
+.card{
+  background:white;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 6px 18px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
 
-    /* Certificate image */
-    .card img {
-      width: 100%;
-      height: 190px;
-      object-fit: cover;
-      display: block;
-    }
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 28px rgba(0,0,0,0.15);
+}
 
-    /* Card content */
-    .card-content {
-      padding: 14px;
-      text-align: center;
-    }
+/* TITLE */
+.card-title{
+  background:#111827;
+  color:white;
+  padding:14px;
+  font-weight:bold;
+  text-align:center;
+  font-size:16px;
+}
 
-    .card-content p {
-      margin: 0 0 12px;
-      font-size: 13px;
-      color: #555;
-    }
+/* IMAGE */
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
 
-    .btn {
-      display: inline-block;
-      text-decoration: none;
-      background: #0d6efd;
-      color: white;
-      padding: 10px 16px;
-      border-radius: 10px;
-      font-size: 14px;
-      font-weight: bold;
-    }
+/* CONTENT */
+.card-content{
+  padding:18px;
+  text-align:center;
+}
 
-    .btn:hover {
-      background: #0b5ed7;
-    }
+.card-content p{
+  font-size:14px;
+  color:#555;
+  margin-bottom:14px;
+}
 
-    footer {
-      text-align: center;
-      padding: 18px;
-      font-size: 13px;
-      color: #666;
-      margin-top: 30px;
-    }
-  </style>
+/* BUTTON */
+.btn{
+  display:inline-block;
+  background:#0d6efd;
+  color:white;
+  text-decoration:none;
+  padding:10px 18px;
+  border-radius:8px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#0b5ed7;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+  color:#666;
+}
+
+/* MOBILE FIX */
+@media (max-width:500px){
+
+  .card img{
+    height:170px;
+  }
+
+  .card-title{
+    font-size:14px;
+  }
+
+  .card-content p{
+    font-size:13px;
+  }
+
+  .btn{
+    font-size:13px;
+    padding:8px 14px;
+  }
+
+}
+
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>📜 My Certificates</h1>
-    <p>All my verified certificates in one place</p>
-  </header>
+<header>
+<h1>📜 My Certificates</h1>
+<p>All my verified certificates in one place</p>
+</header>
 
-  <div class="container">
-    <div class="cert-grid">
+<div class="container">
+<div class="cert-grid">
 
-      <!-- ✅ Certificate 1 -->
-      <div class="card">
-        <div class="card-title">Python Programming Certificate</div>
-        <img src="python_certificate.jpeg" alt="Python Certificate">
-        <div class="card-content">
-          <p>Issued by: Simplilearn SkillUp | Year: 2026</p>
-          <a class="btn" href="https://drive.google.com/file/d/1MN6LZAuyu7Bl2KECylJihomB94h0qWyN/view?usp=drivesdk" target="_blank">View Certificate</a>
-        </div>
-      </div>
+<div class="card">
+<div class="card-title">Python Programming Certificate</div>
+<img src="python_certificate.jpeg">
+<div class="card-content">
+<p>Issued by: Simplilearn SkillUp | Year: 2026</p>
+<a class="btn" href="https://drive.google.com/file/d/1MN6LZAuyu7Bl2KECylJihomB94h0qWyN/view?usp=drivesdk" target="_blank">View Certificate</a>
+</div>
+</div>
 
-      <!-- ✅ Certificate 2 -->
-      <div class="card">
-        <div class="card-title">Ms Excel Certificate</div>
-        <img src="ms_excel.jpeg" alt="Ms Excel Certificate">
-        <div class="card-content">
-          <p>Issued by: Simplilearn SkillUp (Powered by Microsoft) | Year: 2026</p>
-          <a class="btn" href="https://drive.google.com/file/d/12yJjIPQRL-V-5nwKjnNZhZwYA3UncVjM/view?usp=drivesdk">View Certificate</a>
-        </div>
-      </div>
+<div class="card">
+<div class="card-title">Ms Excel Certificate</div>
+<img src="ms_excel.jpeg">
+<div class="card-content">
+<p>Issued by: Simplilearn SkillUp (Microsoft) | Year: 2026</p>
+<a class="btn" href="https://drive.google.com/file/d/12yJjIPQRL-V-5nwKjnNZhZwYA3UncVjM/view?usp=drivesdk">View Certificate</a>
+</div>
+</div>
 
-      <!-- ✅ Certificate 3 -->
-      <div class="card">
-        <div class="card-title">C Programming Certificate</div>
-        <img src="c_programming.jpeg" alt="C Programming certificate">
-        <div class="card-content">
-          <p>Issued by:  Simplilearn SkillUp | Year: 2026</p>
-          <a class="btn" href="https://drive.google.com/file/d/1XU1xxkprjNG80I1PhFdwFFJZkaLDup_F/view?usp=drivesdk" target="_blank">View Certificate</a>
-        </div>
-      </div>
+<div class="card">
+<div class="card-title">C Programming Certificate</div>
+<img src="c_programming.jpeg">
+<div class="card-content">
+<p>Issued by: Simplilearn SkillUp | Year: 2026</p>
+<a class="btn" href="https://drive.google.com/file/d/1XU1xxkprjNG80I1PhFdwFFJZkaLDup_F/view?usp=drivesdk" target="_blank">View Certificate</a>
+</div>
+</div>
 
-      <!-- ✅ Aap isi format me jitne chahe add kar sakte ho -->
-      <!-- Copy-Paste the card block and change title, image, link -->
+</div>
+</div>
 
-    </div>
-  </div>
-
-  <footer>
-    © 2026 | All Certificates are Authentic | Made by Shivam
-  </footer>
+<footer>
+© 2026 | All Certificates are Authentic | Made by Shivam
+</footer>
 
 </body>
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 7</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 7</h2>
+
+<pre>
+<span class="comment"># Question 7:</span>
+<span class="comment"># Check the type of triangle: Equilateral, Isosceles, or Scalene</span>
+<span class="comment"># Also check whether the triangle is valid or not</span>
+
+<span class="comment"># Taking sides input</span>
+a = int(input("ENTER SIDE 1 = "))
+b = int(input("ENTER SIDE 2 = "))
+c = int(input("ENTER SIDE 3 = "))
+
+<span class="comment"># Checking triangle validity</span>
+if a + b <= c or a + c <= b or b + c <= a:
+    print("INVALID TRIANGLE")
+elif a == b == c:
+    print("EQUILATERAL TRIANGLE")
+elif a == b or b == c or c == a:
+    print("ISOSCELES TRIANGLE")
+else:
+    print("SCALENE TRIANGLE")
+</pre>
+
+</body>
+</html>

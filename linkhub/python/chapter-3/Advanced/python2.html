@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 2</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 2</h2>
+
+<pre>
+<span class="comment"># Question 2:</span>
+<span class="comment"># Check special ticket discount eligibility</span>
+<span class="comment"># Discount is available if age <= 12 OR age >= 60 OR gender is Female</span>
+
+<span class="comment"># Taking age input</span>
+age = int(input("ENTER YOUR AGE = "))
+
+<span class="comment"># Taking gender input</span>
+gender = input("ENTER YOUR GENDER (M/F) = ").lower()
+
+<span class="comment"># Checking discount eligibility</span>
+if age <= 12 or age >= 60 or gender == "f":
+    print("SPECIAL DISCOUNT AVAILABLE")
+else:
+    print("NO DISCOUNT AVAILABLE")
+</pre>
+
+</body>
+</html>

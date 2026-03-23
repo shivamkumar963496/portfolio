@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 13</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 13</h2>
+
+<pre>
+<span class="comment"># Question 13:</span>
+<span class="comment"># Display time of day based on hour</span>
+<span class="comment"># <12 → Morning, 12–15 → Afternoon, 16–19 → Evening, >=20 → Night</span>
+
+<span class="comment"># Taking time input</span>
+time = int(input("ENTER TIME (0-23) = "))
+
+<span class="comment"># Time classification</span>
+if time < 12:
+    print("MORNING")
+elif time < 16:
+    print("AFTERNOON")
+elif time < 20:
+    print("EVENING")
+else:
+    print("NIGHT")
+</pre>
+
+</body>
+</html>

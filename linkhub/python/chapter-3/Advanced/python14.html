@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 14</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 14</h2>
+
+<pre>
+<span class="comment"># Question 14:</span>
+<span class="comment"># Calculate discount based on customer type</span>
+<span class="comment"># Premium → 20%, Regular → 10%</span>
+
+<span class="comment"># Taking product price input</span>
+price = float(input("ENTER PRODUCT PRICE = "))
+
+<span class="comment"># Taking customer type input</span>
+ctype = input("ENTER CUSTOMER TYPE (REGULAR/PREMIUM) = ").lower()
+
+<span class="comment"># Calculating discount</span>
+if ctype == "premium":
+    discount = price * 0.20
+elif ctype == "regular":
+    discount = price * 0.10
+else:
+    discount = 0
+    print("INVALID CUSTOMER TYPE")
+
+<span class="comment"># Displaying discount</span>
+print("DISCOUNT =", discount)
+</pre>
+
+</body>
+</html>

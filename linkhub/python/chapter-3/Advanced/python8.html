@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 8</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 8</h2>
+
+<pre>
+<span class="comment"># Question 8:</span>
+<span class="comment"># Check whether a number is an Armstrong number (for any number of digits)</span>
+
+<span class="comment"># Taking number input</span>
+n = int(input("ENTER A NUMBER = "))
+
+<span class="comment"># Calculating number of digits</span>
+digits = len(str(n))
+
+<span class="comment"># Calculating Armstrong sum</span>
+temp = n
+armstrong_sum = 0
+
+while temp > 0:
+    digit = temp % 10
+    armstrong_sum += digit ** digits
+    temp //= 10
+
+<span class="comment"># Checking Armstrong number</span>
+if armstrong_sum == n:
+    print("ARMSTRONG NUMBER")
+else:
+    print("NOT ARMSTRONG NUMBER")
+</pre>
+
+</body>
+</html>

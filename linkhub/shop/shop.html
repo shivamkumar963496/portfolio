@@ -2,11 +2,10 @@
 
 <html>
 <head>
-<title>Myntra Final</title>
+<title>Myntra Final Full</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-
 body{margin:0;font-family:Arial;background:#fafafa}
 
 .navbar{
@@ -97,7 +96,6 @@ width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc
 .productBox img{width:100%}
 .navbar{flex-direction:column;gap:10px}
 }
-
 </style>
 
 </head>
@@ -107,9 +105,10 @@ width:100%;padding:10px;margin-bottom:10px;border:1px solid #ccc
 <nav class="navbar">
 <div class="logo">MYNTRA</div>
 <div class="menu">
-<span>MEN</span>
-<span>WOMEN</span>
-<span>KIDS</span>
+<span onclick="filterCat('Men')">MEN</span>
+<span onclick="filterCat('Women')">WOMEN</span>
+<span onclick="filterCat('Kids')">KIDS</span>
+<span onclick="showAll()">ALL</span>
 </div>
 </nav>
 
@@ -194,14 +193,15 @@ let currentID=""
 
 let data=[
 {cat:"Men",products:Array.from({length:10},(_,i)=>({id:"M"+i,name:"Men Product "+i,price:999+i,img:"https://picsum.photos/300?random="+i}))},
-{cat:"Women",products:Array.from({length:10},(_,i)=>({id:"W"+i,name:"Women Product "+i,price:1299+i,img:"https://picsum.photos/300?random="+(i+20)}))}
+{cat:"Women",products:Array.from({length:10},(_,i)=>({id:"W"+i,name:"Women Product "+i,price:1299+i,img:"https://picsum.photos/300?random="+(i+20)}))},
+{cat:"Kids",products:Array.from({length:10},(_,i)=>({id:"K"+i,name:"Kids Product "+i,price:799+i,img:"https://picsum.photos/300?random="+(i+40)}))}
 ]
 
 data.forEach(c=>c.products.forEach(p=>{p.cat=c.cat;all.push(p)}))
 
 function render(arr){
 home.innerHTML=arr.map(p=>`
-<div class="card" onclick="openProduct('${p.id}','${p.name}','${p.price}','${p.img}')">
+<div class="card" onclick="openProduct('${p.id}')">
 <img src="${p.img}">
 <div class="info">
 <h4>${p.name}</h4>
@@ -213,18 +213,53 @@ home.innerHTML=arr.map(p=>`
 
 render(all)
 
-function openProduct(id,n,p,i){
+function openProduct(id){
+let pr=all.find(x=>x.id==id)
+if(!pr)return
+
 currentID=id
+history.pushState({id:id},"","?id="+id)
+
 home.style.display="none"
 productPage.style.display="block"
-pname.innerText=n
-pprice.innerText="₹"+p
-pimg.src=i
+
+pname.innerText=pr.name
+pprice.innerText="₹"+pr.price
+pimg.src=pr.img
 }
 
 function goBack(){
-home.style.display="grid"
+history.pushState({}, "", "/")
 productPage.style.display="none"
+home.style.display="grid"
+}
+
+function filterCat(cat){
+render(all.filter(p=>p.cat==cat))
+goBack()
+}
+
+function showAll(){
+render(all)
+goBack()
+}
+
+window.onload=function(){
+let params=new URLSearchParams(window.location.search)
+let id=params.get("id")
+if(id){
+openProduct(id)
+}
+}
+
+window.onpopstate=function(){
+let params=new URLSearchParams(window.location.search)
+let id=params.get("id")
+if(id){
+openProduct(id)
+}else{
+goBack()
+}
 }
 
 function chgQty(x){
@@ -280,14 +315,13 @@ let message=
 "State: "+state+"%0A"+
 "Address: "+address
 
-let whatsappNumber="919634858916"
+let whatsappNumber="91XXXXXXXXXX"
 
 window.open("https://wa.me/"+whatsappNumber+"?text="+message)
 
 popup.style.display="none"
 productPage.style.display="none"
 successPage.style.display="block"
-
 }
 
 function backHome(){
@@ -299,3 +333,4 @@ home.style.display="grid"
 
 </body>
 </html>
+

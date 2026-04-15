@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 30</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 30</h2>
+
+<pre>
+<span class="comment"># Question 30:</span>
+<span class="comment"># Simple menu-driven calculator.</span>
+
+<span class="comment"># infinite loop</span>
+while True:
+    print("\n1. Add")
+    print("2. Subtract")
+    print("3. Exit")
+    
+    choice = int(input("Enter choice: "))
+    
+    if choice == 3:
+        print("Program ended")
+        break
+    
+    <span class="comment"># input numbers</span>
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    
+    <span class="comment"># operations</span>
+    if choice == 1:
+        print("Result =", a + b)
+        
+    elif choice == 2:
+        print("Result =", a - b)
+        
+    else:
+        print("Invalid choice")
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+1. Add<br>
+2. Subtract<br>
+3. Exit<br>
+Enter choice: 1<br>
+Enter first number: 5<br>
+Enter second number: 3<br>
+Result = 8<br><br>
+
+1. Add<br>
+2. Subtract<br>
+3. Exit<br>
+Enter choice: 3<br>
+Program ended
+</div>
+
+</body>
+</html>

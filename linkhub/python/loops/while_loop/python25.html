@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 25</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 25</h2>
+
+<pre>
+<span class="comment"># Question 25:</span>
+<span class="comment"># Find HCF (GCD) of two numbers.</span>
+
+<span class="comment"># input lena</span>
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+<span class="comment"># Euclid method (subtraction)</span>
+while a != b:
+    if a > b:
+        a = a - b
+    else:
+        b = b - a
+
+<span class="comment"># result print</span>
+print("HCF =", a)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter first number: 12<br>
+Enter second number: 18<br>
+HCF = 6
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 29</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 29</h2>
+
+<pre>
+<span class="comment"># Question 29:</span>
+<span class="comment"># Simulate ATM withdrawal with balance check.</span>
+
+<span class="comment"># initial balance</span>
+balance = 10000
+
+<span class="comment"># loop for withdrawal</span>
+while True:
+    w = int(input("Enter withdrawal amount: "))
+    
+    if w > balance:
+        print("Insufficient balance")
+        break   <span class="comment"># stop if balance low</span>
+    
+    balance -= w
+    print("Remaining balance:", balance)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter withdrawal amount: 3000<br>
+Remaining balance: 7000<br>
+Enter withdrawal amount: 5000<br>
+Remaining balance: 2000<br>
+Enter withdrawal amount: 3000<br>
+Insufficient balance
+</div>
+
+</body>
+</html>

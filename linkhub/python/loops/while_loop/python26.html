@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 26</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 26</h2>
+
+<pre>
+<span class="comment"># Question 26:</span>
+<span class="comment"># Find LCM of two numbers.</span>
+
+<span class="comment"># input lena</span>
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+<span class="comment"># maximum se start</span>
+maximum_number = max(a, b)
+
+<span class="comment"># LCM find</span>
+while True:
+    if maximum_number % a == 0 and maximum_number % b == 0:
+        print("LCM =", maximum_number)
+        break
+        
+    maximum_number += 1
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter first number: 4<br>
+Enter second number: 6<br>
+LCM = 12
+</div>
+
+</body>
+</html>

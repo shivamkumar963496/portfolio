@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 12</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 12</h2>
+
+<pre>
+<span class="comment"># Question 12:</span>
+<span class="comment"># Check if a number is Armstrong number.</span>
+
+<span class="comment"># input lena</span>
+n = int(input("Enter a number: "))
+
+<span class="comment"># original value save</span>
+temp = n
+sum_of_digits_cube = 0
+
+<span class="comment"># cube sum calculate</span>
+while n != 0:
+    last_digit = n % 10
+    sum_of_digits_cube += (last_digit ** 3)
+    n //= 10
+
+<span class="comment"># compare</span>
+if temp == sum_of_digits_cube:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter a number: 153<br>
+Armstrong number
+</div>
+
+</body>
+</html>

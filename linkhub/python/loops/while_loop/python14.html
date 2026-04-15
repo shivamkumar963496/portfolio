@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 14</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 14</h2>
+
+<pre>
+<span class="comment"># Question 14:</span>
+<span class="comment"># Check if a number is prime.</span>
+
+<span class="comment"># input lena</span>
+n = int(input("Enter a number: "))
+
+<span class="comment"># assume prime</span>
+i = 2
+flag = True
+
+<span class="comment"># check 2 se n-1 tak</span>
+while i &lt; n:
+    if n % i == 0:
+        flag = False   <span class="comment"># divisible mila</span>
+        break
+    i += 1
+
+<span class="comment"># result print</span>
+if flag and n > 1:
+    print("Prime number")
+else:
+    print("Not a prime number")
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter a number: 7<br>
+Prime number
+</div>
+
+</body>
+</html>

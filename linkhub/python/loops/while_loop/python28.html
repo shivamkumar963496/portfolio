@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 28</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 28</h2>
+
+<pre>
+<span class="comment"># Question 28:</span>
+<span class="comment"># Keep asking password until correct.</span>
+
+<span class="comment"># correct password</span>
+correct_password = "1234"
+
+<span class="comment"># loop until correct input</span>
+while True:
+    p = input("Enter your password: ")
+    
+    if p == correct_password:
+        break   <span class="comment"># access allowed</span>
+
+<span class="comment"># success message</span>
+print("Access granted")
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter your password: 1111<br>
+Enter your password: 2222<br>
+Enter your password: 1234<br>
+Access granted
+</div>
+
+</body>
+</html>

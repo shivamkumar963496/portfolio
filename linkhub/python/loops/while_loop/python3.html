@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 3</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 3</h2>
+
+<pre>
+<span class="comment"># Question 3:</span>
+<span class="comment"># Write a Python program to take a number as input</span>
+<span class="comment"># and print all even numbers from 1 to n using while loop.</span>
+<span class="comment"># (Ek number input lo aur 1 se n tak ke sabhi even numbers print karo)</span>
+
+<span class="comment"># user se number input liya ja raha hai</span>
+n = int(input("Enter number: "))
+
+<span class="comment"># starting value 1 se li gayi hai</span>
+i = 1
+
+<span class="comment"># jab tak i n se chhota ya barabar hai tab tak loop chalega</span>
+while i <= n:
+    <span class="comment"># agar number even hai to print hoga</span>
+    if i % 2 == 0:
+        print(i, end=" ")
+    i += 1
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter number: 10<br>
+2 4 6 8 10
+</div>
+
+</body>
+</html>

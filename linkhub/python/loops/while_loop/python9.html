@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 9</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 9</h2>
+
+<pre>
+<span class="comment"># Question 9:</span>
+<span class="comment"># Find sum of digits of a number.</span>
+
+<span class="comment"># input lena</span>
+n = int(input("Enter a number: "))
+
+<span class="comment"># sum store karne ke liye</span>
+sum = 0
+
+<span class="comment"># jab tak number 0 nahi hota</span>
+while n != 0:
+    last_digit = n % 10   <span class="comment"># last digit nikalo</span>
+    sum += last_digit     <span class="comment"># sum me add karo</span>
+    n //= 10              <span class="comment"># last digit hatao</span>
+
+<span class="comment"># result print</span>
+print("Sum of digits =", sum)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter a number: 1234<br>
+Sum of digits = 10
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 17</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 17</h2>
+
+<pre>
+<span class="comment"># Question 17:</span>
+<span class="comment"># Count occurrences of a digit in a number.</span>
+
+<span class="comment"># input lena</span>
+n = int(input("Enter a number: "))
+d = int(input("Enter a digit: "))
+
+<span class="comment"># count start</span>
+count = 0
+
+<span class="comment"># digits check</span>
+while n != 0:
+    last_digit = n % 10
+    if last_digit == d:
+        count += 1
+    n //= 10
+
+<span class="comment"># result print</span>
+print(f"Digit {d} appears {count} times")
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter a number: 122333<br>
+Enter a digit: 3<br>
+Digit 3 appears 3 times
+</div>
+
+</body>
+</html>

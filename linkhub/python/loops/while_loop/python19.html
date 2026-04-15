@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 19</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 19</h2>
+
+<pre>
+<span class="comment"># Question 19:</span>
+<span class="comment"># Convert decimal number to binary.</span>
+
+<span class="comment"># input lena</span>
+n = int(input("Enter a decimal number: "))
+
+<span class="comment"># original value save</span>
+temp = n
+binary = ""   <span class="comment"># empty string</span>
+
+<span class="comment"># conversion process</span>
+while n > 0:
+    last_digit = n % 2
+    binary = str(last_digit) + binary
+    n //= 2
+
+<span class="comment"># result print</span>
+print(f"{temp} in binary = {binary}")
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter a decimal number: 5<br>
+5 in binary = 101
+</div>
+
+</body>
+</html>

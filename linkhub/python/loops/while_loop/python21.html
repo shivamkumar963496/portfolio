@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 21</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 21</h2>
+
+<pre>
+<span class="comment"># Question 21:</span>
+<span class="comment"># Print inverted star pattern.</span>
+
+<span class="comment"># input lena</span>
+n = int(input("Enter a number: "))
+
+<span class="comment"># outer loop (rows)</span>
+i = n
+
+while i &gt;= 1:
+    j = 1
+    
+    <span class="comment"># inner loop (stars)</span>
+    while j &lt;= i:
+        print("*", end=" ")
+        j += 1
+    
+    print()   <span class="comment"># next line</span>
+    i -= 1
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter a number: 5<br>
+* * * * *<br>
+* * * *<br>
+* * *<br>
+* *<br>
+* 
+</div>
+
+</body>
+</html>

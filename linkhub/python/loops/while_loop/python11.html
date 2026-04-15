@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 11</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 11</h2>
+
+<pre>
+<span class="comment"># Question 11:</span>
+<span class="comment"># Check if a number is palindrome.</span>
+
+<span class="comment"># input lena</span>
+n = int(input("Enter a number: "))
+
+<span class="comment"># original value save</span>
+temp = n
+reverse = 0
+
+<span class="comment"># reverse banana</span>
+while n != 0:
+    last_digit = n % 10
+    reverse = reverse * 10 + last_digit
+    n //= 10
+
+<span class="comment"># compare</span>
+if temp == reverse:
+    print("Palindrome number")
+else:
+    print("Not a palindrome number")
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter a number: 121<br>
+Palindrome number
+</div>
+
+</body>
+</html>

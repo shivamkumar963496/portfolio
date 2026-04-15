@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 16</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 16</h2>
+
+<pre>
+<span class="comment"># Question 16:</span>
+<span class="comment"># Find the maximum digit in a number.</span>
+
+<span class="comment"># input lena</span>
+n = int(input("Enter a number: "))
+
+<span class="comment"># max digit store</span>
+max_digit = 0
+
+<span class="comment"># digits check</span>
+while n != 0:
+    digit = n % 10
+    if digit > max_digit:
+        max_digit = digit
+    n //= 10
+
+<span class="comment"># result print</span>
+print("Maximum digit =", max_digit)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter a number: 5832<br>
+Maximum digit = 8
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 18</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 18</h2>
+
+<pre>
+<span class="comment"># Question 18:</span>
+<span class="comment"># Calculate power of a number (base^power).</span>
+
+<span class="comment"># input lena</span>
+base = int(input("Enter base: "))
+power = int(input("Enter power: "))
+
+<span class="comment"># original power save</span>
+temp = power
+
+<span class="comment"># result start</span>
+result = 1
+
+<span class="comment"># multiply base, power times</span>
+while power > 0:
+    result *= base
+    power -= 1
+
+<span class="comment"># result print</span>
+print(f"{base}^{{temp}} =", result)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter base: 2<br>
+Enter power: 3<br>
+2^3 = 8
+</div>
+
+</body>
+</html>

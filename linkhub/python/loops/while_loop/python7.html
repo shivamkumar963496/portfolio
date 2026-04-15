@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 7</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 7</h2>
+
+<pre>
+<span class="comment"># Question 7:</span>
+<span class="comment"># Count digits in a number.</span>
+
+<span class="comment"># input lena</span>
+n = int(input("ENTER A NUMBER = "))
+
+<span class="comment"># count start 0 se</span>
+count = 0
+
+<span class="comment"># jab tak number 0 nahi hota</span>
+while n != 0:
+    n //= 10   <span class="comment"># last digit remove</span>
+    count += 1 <span class="comment"># count increase</span>
+
+<span class="comment"># result print</span>
+print("TOTAL DIGITS IN GIVEN NUMBER =", count)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+ENTER A NUMBER = 12345<br>
+TOTAL DIGITS IN GIVEN NUMBER = 5
+</div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 12</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 12</h2>
+
+<pre>
+<span class="comment"># Question 12:</span>
+<span class="comment"># Write a Python program to print Fibonacci series up to n terms.</span>
+
+<span class="comment"># user se limit input liya ja raha hai</span>
+n = int(input("ENTER LIMIT : "))
+
+<span class="comment"># first two numbers initialize kiye</span>
+a = 0
+b = 1
+
+<span class="comment"># loop n terms tak chalega</span>
+for i in range(n):
+    print(a, end=" ")
+    c = a + b
+    a = b
+    b = c
+</pre>
+
+</body>
+</html>

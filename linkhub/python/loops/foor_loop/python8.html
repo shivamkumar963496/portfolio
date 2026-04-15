@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 8</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 8</h2>
+
+<pre>
+<span class="comment"># Question 8:</span>
+<span class="comment"># Write a Python program to take a number as input</span>
+<span class="comment"># and find the sum of its digits.</span>
+
+<span class="comment"># user se number input liya ja raha hai</span>
+num = int(input("ENTER A NUMBER : "))
+
+<span class="comment"># sum store karne ke liye variable</span>
+total = 0
+
+<span class="comment"># number ko string me convert karke har digit ko add kiya</span>
+for i in str(num):
+    total += int(i)
+
+<span class="comment"># final sum print kiya</span>
+print("SUM OF DIGITS :", total)
+</pre>
+
+</body>
+</html>

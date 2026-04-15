@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 13</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 13</h2>
+
+<pre>
+<span class="comment"># Question 13:</span>
+<span class="comment"># Write a Python program to check whether a number is prime or not.</span>
+
+<span class="comment"># user se number input liya ja raha hai</span>
+n = int(input("ENTER A NUMBER : "))
+
+<span class="comment"># prime check karne ke liye flag variable</span>
+flag = True
+
+<span class="comment"># 1 ya usse chhote numbers prime nahi hote</span>
+if n <= 1:
+    flag = False
+else:
+    <span class="comment"># 2 se n-1 tak check kiya</span>
+    for i in range(2, n):
+        if n % i == 0:
+            flag = False
+            break
+
+<span class="comment"># result print kiya</span>
+if flag:
+    print("PRIME NUMBER")
+else:
+    print("NOT PRIME")
+</pre>
+
+</body>
+</html>

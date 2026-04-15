@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 15</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 15</h2>
+
+<pre>
+<span class="comment"># Question 15:</span>
+<span class="comment"># Write a Python program to take a number as input</span>
+<span class="comment"># and find the largest digit in the number.</span>
+
+<span class="comment"># user se number input liya ja raha hai</span>
+n = int(input("ENTER A NUMBER : "))
+
+<span class="comment"># maximum digit store karne ke liye variable</span>
+max_digit = 0
+
+<span class="comment"># number ke har digit ko check kiya</span>
+while n > 0:
+    digit = n % 10
+    if digit > max_digit:
+        max_digit = digit
+    n //= 10
+
+<span class="comment"># final result print kiya</span>
+print("LARGEST DIGIT IN GIVEN NUMBER =", max_digit)
+</pre>
+
+</body>
+</html>

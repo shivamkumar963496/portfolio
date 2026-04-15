@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 16</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 16</h2>
+
+<pre>
+<span class="comment"># Question 16:</span>
+<span class="comment"># Write a Python program to check whether a number is Armstrong or not.</span>
+
+<span class="comment"># user se number input liya ja raha hai</span>
+n = int(input("ENTER A NUMBER : "))
+
+<span class="comment"># original number ko store kiya</span>
+temp = n
+
+<span class="comment"># sum store karne ke liye variable</span>
+total = 0
+
+<span class="comment"># har digit ka cube add kiya</span>
+while temp > 0:
+    digit = temp % 10
+    total += digit**3
+    temp //= 10
+
+<span class="comment"># Armstrong condition check ki</span>
+if total == n:
+    print("ARMSTRONG NUMBER")
+else:
+    print("NOT ARMSTRONG")
+</pre>
+
+</body>
+</html>

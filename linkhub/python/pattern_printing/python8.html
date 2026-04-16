@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 8</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 8</h2>
+
+<pre>
+<span class="comment"># Question 8:</span>
+<span class="comment"># Print right aligned pyramid star pattern using nested loop.</span>
+
+<span class="comment"># outer loop for rows</span>
+for i in range(1,5):
+
+    <span class="comment"># space loop</span>
+    for j in range(4 - i):
+        print(" ", end="")
+
+    <span class="comment"># star loop</span>
+    for k in range(i):
+        print("*", end=" ")
+
+    <span class="comment"># move to next line</span>
+    print()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+   *<br>
+  * *<br>
+ * * *<br>
+* * * *<br>
+</div>
+
+</body>
+</html>

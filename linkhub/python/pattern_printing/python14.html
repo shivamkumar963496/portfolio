@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 14</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 14</h2>
+
+<pre>
+<span class="comment"># Question 14:</span>
+<span class="comment"># Print alphabet triangle pattern using nested loop.</span>
+
+<span class="comment"># outer loop</span>
+for i in range(1,5):
+
+    <span class="comment"># starting ASCII value (A = 65)</span>
+    ch = 65
+
+    <span class="comment"># inner loop</span>
+    for j in range(i):
+        print(chr(ch), end=" ")
+        ch += 1
+
+    <span class="comment"># move to next line</span>
+    print()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+A<br>
+A B<br>
+A B C<br>
+A B C D<br>
+</div>
+
+</body>
+</html>

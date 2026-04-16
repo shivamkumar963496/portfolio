@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 7</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 7</h2>
+
+<pre>
+<span class="comment"># Question 7:</span>
+<span class="comment"># Print continuous number triangle pattern using nested loop.</span>
+
+<span class="comment"># starting number</span>
+num = 1
+
+<span class="comment"># outer loop for rows</span>
+for i in range(1,5):
+
+    <span class="comment"># inner loop</span>
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+        
+    <span class="comment"># move to next line</span>
+    print()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+1<br>
+2 3<br>
+4 5 6<br>
+7 8 9 10<br>
+</div>
+
+</body>
+</html>

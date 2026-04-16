@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 11</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 11</h2>
+
+<pre>
+<span class="comment"># Question 11:</span>
+<span class="comment"># Print hollow square star pattern using nested loop.</span>
+
+<span class="comment"># size of square</span>
+n = 5
+
+<span class="comment"># outer loop</span>
+for i in range(n):
+
+    <span class="comment"># inner loop</span>
+    for j in range(n):
+
+        <span class="comment"># print border stars</span>
+        if i == 0 or i == n-1 or j == 0 or j == n-1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+
+    <span class="comment"># move to next line</span>
+    print()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+* * * * *<br>
+*       *<br>
+*       *<br>
+*       *<br>
+* * * * *<br>
+</div>
+
+</body>
+</html>

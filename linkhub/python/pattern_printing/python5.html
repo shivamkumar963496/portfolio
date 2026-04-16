@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 5</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 5</h2>
+
+<pre>
+<span class="comment"># Question 5:</span>
+<span class="comment"># Print reverse number triangle pattern using nested loop.</span>
+
+<span class="comment"># total rows</span>
+n = 5
+
+<span class="comment"># outer loop (reverse)</span>
+for i in range(n, 0, -1):
+
+    <span class="comment"># inner loop for numbers (reverse)</span>
+    for j in range(i, 0, -1):
+        print(j, end=" ")
+        
+    <span class="comment"># move to next line</span>
+    print()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+5 4 3 2 1<br>
+4 3 2 1<br>
+3 2 1<br>
+2 1<br>
+1<br>
+</div>
+
+</body>
+</html>

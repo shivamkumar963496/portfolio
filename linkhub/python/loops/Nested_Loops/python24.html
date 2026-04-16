@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 24</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 24</h2>
+
+<pre>
+<span class="comment"># Question 24:</span>
+<span class="comment"># Password validation with length check using nested loop.</span>
+
+<span class="comment"># correct password</span>
+correct = "shivam123"
+
+<span class="comment"># 3 attempts</span>
+for attempts in range(3):
+
+    password = input("enter password = ")
+
+    <span class="comment"># validation loop</span>
+    while True:
+
+        <span class="comment"># check password length</span>
+        if len(password) &lt; 5:
+            print("short password")
+            break
+
+        <span class="comment"># check correct password</span>
+        if password == correct:
+            print("Login Successful")
+            break
+
+        else:
+            print("Wrong Password")
+            break
+
+    <span class="comment"># break outer loop if login success</span>
+    if password == correct:
+        break
+    else:
+        continue
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+enter password = 123<br>
+short password<br>
+enter password = 11111<br>
+Wrong Password<br>
+enter password = shivam123<br>
+Login Successful
+</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 21</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 21</h2>
+
+<pre>
+<span class="comment"># Question 21:</span>
+<span class="comment"># Print prime numbers from 1 to 50 using continue, break and for-else.</span>
+
+<span class="comment"># loop from 1 to 50</span>
+for num in range(1,51):
+
+    <span class="comment"># skip numbers less than 2</span>
+    if num &lt; 2:
+        continue
+
+    <span class="comment"># check divisibility</span>
+    for i in range(2, num):
+
+        <span class="comment"># if divisible then not prime</span>
+        if num % i == 0:
+            break
+
+    <span class="comment"># else runs if no break → prime number</span>
+    else:
+        print(num, end=" ")
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
+</div>
+
+</body>
+</html>

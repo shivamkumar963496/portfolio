@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 17</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 17</h2>
+
+<pre>
+<span class="comment"># Question 17:</span>
+<span class="comment"># Print inner stars by skipping border positions using continue.</span>
+
+<span class="comment"># outer loop</span>
+for i in range(5):
+
+    <span class="comment"># inner loop</span>
+    for j in range(5):
+
+        <span class="comment"># skip border (first & last row/column)</span>
+        if i == 0 or i == 4 or j == 0 or j == 4:
+            continue
+
+        print("*", end=" ")
+
+    <span class="comment"># move to next line</span>
+    print()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+<br>
+* * *<br>
+* * *<br>
+* * *<br>
+</div>
+
+</body>
+</html>

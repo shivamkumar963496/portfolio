@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 30</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 30 (Final Project)</h2>
+
+<pre>
+<span class="comment"># Final Project: Advanced ATM System with PIN & History</span>
+
+<span class="comment"># correct pin</span>
+correct_pin = "1234"
+
+<span class="comment"># initial balance</span>
+balance = 1000
+
+<span class="comment"># transaction history</span>
+history = []
+
+<span class="comment"># PIN attempts</span>
+for attempt in range(3):
+    pin = input("ENTER PIN: ")
+
+    if pin == correct_pin:
+        print("Login Successful")
+        break
+    else:
+        print("Wrong PIN")
+
+else:
+    print("Card Blocked")
+    exit()
+
+<span class="comment"># ATM Menu</span>
+while True:
+
+    print("\n1. Check Balance")
+    print("2. Deposit")
+    print("3. Withdraw")
+    print("4. History")
+    print("5. Exit")
+
+    choice = int(input("Enter choice: "))
+
+    if choice == 5:
+        print("Thank You")
+        break
+
+    if choice == 1:
+        print("Balance :", balance)
+
+    elif choice == 2:
+        amount = int(input("Enter Deposit Amount: "))
+        balance += amount
+        history.append(f"Deposited {amount}")
+        print("Updated Balance:", balance)
+
+    elif choice == 3:
+        amount = int(input("Enter Withdraw Amount: "))
+
+        if amount > balance:
+            print("Insufficient Balance")
+            continue
+
+        balance -= amount
+        history.append(f"Withdraw {amount}")
+        print("Updated Balance:", balance)
+
+    elif choice == 4:
+        print("Transaction History:")
+        for h in history:
+            print("-", h)
+
+    else:
+        print("Invalid Choice")
+</pre>
+
+<div class="box">
+<b>📊 Output (Example):</b><br><br>
+ENTER PIN: 1234<br>
+Login Successful<br><br>
+
+1. Check Balance<br>
+2. Deposit<br>
+3. Withdraw<br>
+4. History<br>
+5. Exit<br>
+
+Enter choice: 2<br>
+Enter Deposit Amount: 500<br>
+Updated Balance: 1500<br><br>
+
+Enter choice: 4<br>
+Transaction History:<br>
+- Deposited 500<br>
+</div>
+
+</body>
+</html>

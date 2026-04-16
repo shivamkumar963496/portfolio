@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 11</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 11</h2>
+
+<pre>
+<span class="comment"># Question 11:</span>
+<span class="comment"># Print prime numbers from 2 to 20 using for-else loop.</span>
+
+<span class="comment"># loop from 2 to 20</span>
+for num in range(2,21):
+
+    <span class="comment"># check divisibility</span>
+    for i in range(2, num):
+
+        <span class="comment"># if divisible then not prime</span>
+        if num % i == 0:
+            break
+
+    <span class="comment"># else runs only if loop not broken</span>
+    else:
+        print(num)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+2<br>
+3<br>
+5<br>
+7<br>
+11<br>
+13<br>
+17<br>
+19
+</div>
+
+</body>
+</html>

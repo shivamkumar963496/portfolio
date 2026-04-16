@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 18</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 18</h2>
+
+<pre>
+<span class="comment"># Question 18:</span>
+<span class="comment"># Password check with 3 attempts using break and continue.</span>
+
+<span class="comment"># correct password</span>
+correct = "1234"
+
+<span class="comment"># loop for 3 attempts</span>
+for attempts in range(3):
+
+    password = input("ENTER YOUR PASSWORD : ")
+
+    <span class="comment"># check password</span>
+    if password == correct:
+        print("LOGIN SUCCESS")
+        break
+
+    else:
+        print("WRONG PASSWORD")
+        continue
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+ENTER YOUR PASSWORD : 1111<br>
+WRONG PASSWORD<br>
+ENTER YOUR PASSWORD : 2222<br>
+WRONG PASSWORD<br>
+ENTER YOUR PASSWORD : 1234<br>
+LOGIN SUCCESS
+</div>
+
+</body>
+</html>

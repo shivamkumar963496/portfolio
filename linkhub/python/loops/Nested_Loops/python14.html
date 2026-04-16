@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 14</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 14</h2>
+
+<pre>
+<span class="comment"># Question 14:</span>
+<span class="comment"># Print (i,j) pairs and stop row when i == j using break.</span>
+
+<span class="comment"># outer loop</span>
+for i in range(1,4):
+
+    <span class="comment"># inner loop</span>
+    for j in range(1,4):
+
+        print(f"({i},{j})", end=" ")
+
+        <span class="comment"># stop row when i == j</span>
+        if i == j:
+            print("→ stoprow")
+            break
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+(1,1) → stoprow<br>
+(2,1) (2,2) → stoprow<br>
+(3,1) (3,2) (3,3) → stoprow
+</div>
+
+</body>
+</html>

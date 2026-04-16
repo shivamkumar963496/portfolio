@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 28</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 28</h2>
+
+<pre>
+<span class="comment"># Question 28:</span>
+<span class="comment"># Print pairs (i,j) where sum is odd using continue.</span>
+
+<span class="comment"># lists</span>
+a = [1,2,3,4]
+b = [9,8,7,6]
+
+<span class="comment"># nested loop</span>
+for i in a:
+    for j in b:
+
+        <span class="comment"># skip even sum</span>
+        if (i + j) % 2 == 0:
+            continue
+
+        print(i, j)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+1 8<br>
+1 6<br>
+2 9<br>
+2 7<br>
+3 8<br>
+3 6<br>
+4 9<br>
+4 7
+</div>
+
+</body>
+</html>

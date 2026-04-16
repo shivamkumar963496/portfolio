@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 29</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 29</h2>
+
+<pre>
+<span class="comment"># Question 29:</span>
+<span class="comment"># Simple ATM system using while loop, break and continue.</span>
+
+<span class="comment"># initial balance</span>
+balance = 1000
+
+<span class="comment"># infinite loop</span>
+while True:
+
+    print("\n1. Check Balance")
+    print("2. Deposit")
+    print("3. Withdraw")
+    print("4. Exit")
+
+    choice = int(input("Enter choice: "))
+
+    <span class="comment"># exit condition</span>
+    if choice == 4:
+        print("Thank You")
+        break
+
+    <span class="comment"># invalid choice</span>
+    if choice not in [1,2,3,4]:
+        print("Invalid Choice")
+        continue
+
+    <span class="comment"># check balance</span>
+    if choice == 1:
+        print("Balance :", balance)
+
+    <span class="comment"># deposit</span>
+    elif choice == 2:
+        amount = int(input("ENTER AMOUNT : "))
+        balance += amount
+        print("Updated Balance :", balance)
+
+    <span class="comment"># withdraw</span>
+    elif choice == 3:
+        amount = int(input("Enter withdraw: "))
+
+        if amount > balance:
+            print("Insufficient Balance")
+            continue
+
+        balance -= amount
+        print("Updated Balance =", balance)
+</pre>
+
+<div class="box">
+<b>📊 Output (Example):</b><br><br>
+1. Check Balance<br>
+2. Deposit<br>
+3. Withdraw<br>
+4. Exit<br>
+Enter choice: 1<br>
+Balance : 1000<br><br>
+
+Enter choice: 2<br>
+ENTER AMOUNT : 500<br>
+Updated Balance : 1500<br><br>
+
+Enter choice: 3<br>
+Enter withdraw: 200<br>
+Updated Balance = 1300<br><br>
+
+Enter choice: 4<br>
+Thank You
+</div>
+
+</body>
+</html>

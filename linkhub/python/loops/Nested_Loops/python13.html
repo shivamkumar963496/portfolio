@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 13</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 13</h2>
+
+<pre>
+<span class="comment"># Question 13:</span>
+<span class="comment"># Print square star pattern of size n, stop if n == 0.</span>
+
+<span class="comment"># input size</span>
+n = int(input("Enter size: "))
+
+<span class="comment"># check if n is 0</span>
+if n == 0:
+    print("Program Stopped")
+
+else:
+    <span class="comment"># outer loop for rows</span>
+    for i in range(n):
+
+        <span class="comment"># inner loop for columns</span>
+        for j in range(n):
+            print("*", end=" ")
+
+        <span class="comment"># move to next line</span>
+        print()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Enter size: 4<br>
+* * * *<br>
+* * * *<br>
+* * * *<br>
+* * * *<br>
+</div>
+
+</body>
+</html>

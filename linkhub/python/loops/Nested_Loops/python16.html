@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 16</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 16</h2>
+
+<pre>
+<span class="comment"># Question 16:</span>
+<span class="comment"># Search a character in 2D list using nested loop and break.</span>
+
+<span class="comment"># 2D list (grid)</span>
+grid = [
+    ['a','b','c'],
+    ['d','e','f'],
+    ['g','h','i']
+]
+
+<span class="comment"># user input</span>
+target = input("ENTER TARGET STRING LIKE A TO I : ")
+
+<span class="comment"># flag variable</span>
+found = False
+
+<span class="comment"># outer loop</span>
+for i in grid:
+
+    <span class="comment"># inner loop</span>
+    for j in i:
+
+        <span class="comment"># check match</span>
+        if j == target:
+            print("found :", j)
+            found = True
+            break
+
+    <span class="comment"># break outer loop</span>
+    if found:
+        break
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+ENTER TARGET STRING LIKE A TO I : e<br>
+found : e
+</div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 8</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 8</h2>
+
+<pre>
+<span class="comment"># Question 8:</span>
+<span class="comment"># Search an element in 2D list using nested loop and break.</span>
+
+<span class="comment"># 2D list (grid)</span>
+grid = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+<span class="comment"># target element</span>
+target = 5
+
+<span class="comment"># flag variable</span>
+found = False
+
+<span class="comment"># outer loop for rows</span>
+for row in grid:
+
+    <span class="comment"># inner loop for elements</span>
+    for element in row:
+
+        <span class="comment"># check if element found</span>
+        if element == target:
+            print("ELEMENT FOUND:", element)
+            found = True
+            break   <span class="comment"># inner loop break</span>
+    
+    <span class="comment"># break outer loop if found</span>
+    if found:
+        break
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+ELEMENT FOUND: 5
+</div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 22</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 22</h2>
+
+<pre>
+<span class="comment"># Question 22:</span>
+<span class="comment"># Print numbers with Fizz-Buzz logic in matrix form.</span>
+
+<span class="comment"># starting number</span>
+num = 1
+
+<span class="comment"># outer loop</span>
+for i in range(5):
+
+    <span class="comment"># inner loop</span>
+    for j in range(5):
+
+        <span class="comment"># check fizz-buzz (divisible by 3 and 5)</span>
+        if num % 3 == 0 and num % 5 == 0:
+            print("fizz-buzz", end=" ")
+            num += 1
+            continue
+
+        <span class="comment"># check fizz (divisible by 3)</span>
+        if num % 3 == 0:
+            print("fizz", end=" ")
+            num += 1
+            continue
+
+        <span class="comment"># check buzz (divisible by 5)</span>
+        if num % 5 == 0:
+            print("buzz", end=" ")
+            num += 1
+            continue
+
+        <span class="comment"># print number</span>
+        print(num, end=" ")
+        num += 1
+
+    <span class="comment"># move to next line</span>
+    print()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+1 2 fizz 4 buzz<br>
+fizz 7 8 fizz buzz<br>
+11 fizz 13 14 fizz-buzz<br>
+16 17 fizz 19 buzz<br>
+fizz 22 23 fizz buzz
+</div>
+
+</body>
+</html>

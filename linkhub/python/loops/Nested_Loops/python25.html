@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 25</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 25</h2>
+
+<pre>
+<span class="comment"># Question 25:</span>
+<span class="comment"># Print multiplication values but skip when i == j using continue.</span>
+
+<span class="comment"># outer loop</span>
+for i in range(1,4):
+
+    <span class="comment"># inner loop</span>
+    for j in range(1,4):
+
+        <span class="comment"># skip when i == j</span>
+        if i == j:
+            continue
+
+        print(i * j, end=" ")
+
+    <span class="comment"># move to next line</span>
+    print()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+2 3<br>
+2 6<br>
+3 6
+</div>
+
+</body>
+</html>

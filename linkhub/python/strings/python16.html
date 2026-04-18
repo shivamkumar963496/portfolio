@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 16</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 16</h2>
+
+<pre>
+<span class="comment"># Question 16:</span>
+<span class="comment"># Count uppercase and lowercase characters in a string.</span>
+
+<span class="comment"># input from user</span>
+s = input("enter sentence : ")
+
+<span class="comment"># initialize counters</span>
+upper = 0
+lower = 0
+
+<span class="comment"># loop through string</span>
+for ch in s:
+    if ch.isupper():
+        upper += 1
+    elif ch.islower():
+        lower += 1
+
+<span class="comment"># print result</span>
+print("Uppercase:", upper)
+print("Lowercase:", lower)
+</pre>
+
+<div class="box">
+<b>📊 Output (Example):</b><br><br>
+Input: Hello World<br>
+Uppercase: 2<br>
+Lowercase: 8
+</div>
+
+</body>
+</html>

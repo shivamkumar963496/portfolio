@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 22</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 22</h2>
+
+<pre>
+<span class="comment"># Question 22:</span>
+<span class="comment"># Print all substrings of a string.</span>
+
+<span class="comment"># input string</span>
+s = "abc"
+
+<span class="comment"># generate substrings</span>
+for i in range(len(s)):
+    for j in range(i+1, len(s)+1):
+        print(s[i:j])
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+a<br>
+ab<br>
+abc<br>
+b<br>
+bc<br>
+c
+</div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 17</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 17</h2>
+
+<pre>
+<span class="comment"># Question 17:</span>
+<span class="comment"># Replace all vowels in a string with '*'.</span>
+
+<span class="comment"># input from user</span>
+s = input("enter a sentence : ")
+
+<span class="comment"># initialize result</span>
+result = " "
+
+<span class="comment"># loop through string</span>
+for ch in s:
+    if ch in "aeiouAEIOU":
+        result += "*"
+    else:
+        result += ch
+
+<span class="comment"># print result</span>
+print(result)
+</pre>
+
+<div class="box">
+<b>📊 Output (Example):</b><br><br>
+Input: Shivam<br>
+Output:  Sh*v*m
+</div>
+
+</body>
+</html>

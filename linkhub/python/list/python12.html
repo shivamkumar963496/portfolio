@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 12</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 12</h2>
+
+<pre>
+<span class="comment"># Question 12:</span>
+<span class="comment"># Count frequency of each element in a list.</span>
+
+num = [78,52,11,23,11,22,22,14,14,56,56,87,78,78,78]
+
+freq = {}
+
+for i in num:
+    freq[i] = num.count(i)
+
+print(freq)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{78: 4, 52: 1, 11: 2, 23: 1, 22: 2, 14: 2, 56: 2, 87: 1}
+</div>
+
+</body>
+</html>

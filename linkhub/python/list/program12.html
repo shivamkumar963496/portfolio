@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Python Program - Second Smallest</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>📌 Python Program 12</h2>
+
+<pre>
+<span class="comment"># Question 12:</span>
+<span class="comment"># List me se duplicate hata kar second smallest element find karna hai</span>
+
+<span class="comment"># List create ki</span>
+nums = [10,25,5,40,12,36,98,75,45,68,92,91,5]
+
+<span class="comment"># set se duplicates remove kiye aur sorted list banayi</span>
+sorted_list = sorted(set(nums))
+
+<span class="comment"># Sorted list print ki</span>
+print("Sorted list :", sorted_list)
+
+<span class="comment"># Second smallest element nikala</span>
+print("Second smallest number :", sorted_list[1])
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Sorted list : [5, 10, 12, 25, 36, 40, 45, 68, 75, 91, 92, 98] <br>
+Second smallest number : 10
+</div>
+
+</body>
+</html>

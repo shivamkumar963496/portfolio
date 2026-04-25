@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Python Program - Min & Second Largest</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>📌 Python Program 35</h2>
+
+<pre>
+<span class="comment"># Question 35:</span>
+<span class="comment"># List ka minimum aur 2nd largest element find karna hai</span>
+
+<span class="comment"># List create ki</span>
+nums = [1,2,2,3,3,3]
+
+<span class="comment"># Minimum element nikala</span>
+print("List ka sabse chota digit :", min(nums)) 
+
+<span class="comment"># 2nd largest (duplicate safe) nikala</span>
+print("\nList ka 2nd largest number :", sorted(set(nums))[-2])
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+List ka sabse chota digit : 1 <br>
+List ka 2nd largest number : 2
+</div>
+
+</body>
+</html>

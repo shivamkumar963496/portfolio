@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Python Program - Even Sum</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>📌 Python Program 4</h2>
+
+<pre>
+<span class="comment"># Question 4:</span>
+<span class="comment"># User se list input lekar sirf even numbers ka sum nikalna hai</span>
+
+<span class="comment"># User input liya aur list me convert kiya</span>
+nums = list(map(int, input("enter list elements : ").split()))
+
+<span class="comment"># total variable initialize kiya</span>
+total = 0
+
+<span class="comment"># Loop chala kar even numbers ka sum nikala</span>
+for i in nums:
+    if i % 2 == 0:     <span class="comment"># check even number</span>
+        total += i     <span class="comment"># even number add ho raha hai</span>
+
+<span class="comment"># Output print kiya</span>
+print("Even Sum =", total)
+</pre>
+
+<div class="box">
+<b>📊 Output Example:</b><br><br>
+Input: 1 2 3 4 5 6 <br>
+Even Sum = 12
+</div>
+
+</body>
+</html>

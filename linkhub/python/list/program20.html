@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Python Program - Odd Numbers List</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>📌 Python Program 20</h2>
+
+<pre>
+<span class="comment"># Question 20:</span>
+<span class="comment"># List me se odd numbers nikal kar unki count find karni hai</span>
+
+<span class="comment"># List create ki</span>
+nums = [10,25,5,40,12,36,98,75,45,68,92,91]
+
+<span class="comment"># List comprehension se odd numbers nikale</span>
+odd_list = [i for i in nums if i % 2 != 0]
+
+<span class="comment"># Total count nikali</span>
+total = len(odd_list)
+
+<span class="comment"># Output print kiya</span>
+print("Odd Numbers:", odd_list)
+print("Total Odd Count:", total)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Odd Numbers : [25, 5, 75, 45, 91] <br>
+Total Odd Count : 5
+</div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Python Program - Second Maximum (Unique)</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>📌 Python Program 32</h2>
+
+<pre>
+<span class="comment"># Question 32:</span>
+<span class="comment"># List me se duplicates hata kar 2nd maximum element find karna hai</span>
+
+<span class="comment"># List create ki</span>
+nums = [10,25,5,40,12,36,98,75,45,68,92,91,5,25,10,98]
+
+<span class="comment"># set se duplicates remove kiye aur sorted list banayi</span>
+unique_sorted = sorted(set(nums))
+
+<span class="comment"># 2nd maximum element nikala</span>
+print(unique_sorted[-2])
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+92
+</div>
+
+</body>
+</html>

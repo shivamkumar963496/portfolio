@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Python Program - Odd Sum</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>📌 Python Program 5</h2>
+
+<pre>
+<span class="comment"># Question 5:</span>
+<span class="comment"># List me sirf odd numbers ka sum nikalna hai</span>
+
+<span class="comment"># List create ki</span>
+nums = [2,6,7,8,9,5,4,6,2]
+
+<span class="comment"># Generator expression se odd numbers ka sum nikala</span>
+print(sum(i for i in nums if i % 2 != 0))
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+21
+</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Python Program - Second Maximum</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>📌 Python Program 7</h2>
+
+<pre>
+<span class="comment"># Question 7:</span>
+<span class="comment"># List ko sort karke second maximum element find karna hai</span>
+
+<span class="comment"># List create ki</span>
+nums = [10,25,5,40,12,36,98,75,45,68,92,91]
+
+<span class="comment"># List ko sort kiya</span>
+nums.sort()
+
+<span class="comment"># Sorted list print ki</span>
+print("\nSorted list :", nums)
+
+<span class="comment"># Second last element (second maximum) nikala</span>
+print("\nThe 2nd maximum element of the list :", nums[-2])
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Sorted list : [5, 10, 12, 25, 36, 40, 45, 68, 75, 91, 92, 98] <br>
+The 2nd maximum element of the list : 92
+</div>
+
+</body>
+</html>

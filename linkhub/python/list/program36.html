@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Python Program - Frequency Count</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>📌 Python Program 36</h2>
+
+<pre>
+<span class="comment"># Question 36:</span>
+<span class="comment"># List ke har element ki frequency (count) nikalni hai</span>
+
+<span class="comment"># List create ki</span>
+nums = [10,25,5,40,12,36,98,75,45,68,92,91,5,25,10,98]
+
+<span class="comment"># Empty dictionary banayi</span>
+freq = {}
+
+<span class="comment"># Loop chala kar frequency count ki</span>
+for i in nums:
+    freq[i] = nums.count(i)   <span class="comment"># har element ka count</span>
+
+<span class="comment"># Output print kiya</span>
+print(freq)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{10: 2, 25: 2, 5: 2, 40: 1, 12: 1, 36: 1, 98: 2, 75: 1, 45: 1, 68: 1, 92: 1, 91: 1}
+</div>
+
+</body>
+</html>

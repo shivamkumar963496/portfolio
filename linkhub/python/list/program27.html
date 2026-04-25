@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Python Program - Unique Elements (Order Safe)</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>📌 Python Program 27</h2>
+
+<pre>
+<span class="comment"># Question 27:</span>
+<span class="comment"># List me se duplicate elements hata kar unique list banani hai (order same rakhte hue)</span>
+
+<span class="comment"># List create ki</span>
+nums = [10,25,5,40,12,36,98,75,45,68,92,91,5,25,10,98]
+
+<span class="comment"># dict.fromkeys() se duplicates remove kiye (order safe)</span>
+print(list(dict.fromkeys(nums)))
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+[10, 25, 5, 40, 12, 36, 98, 75, 45, 68, 92, 91]
+</div>
+
+</body>
+</html>

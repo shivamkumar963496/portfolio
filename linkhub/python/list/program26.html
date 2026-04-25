@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Python Program - Unique Elements</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>📌 Python Program 26</h2>
+
+<pre>
+<span class="comment"># Question 26:</span>
+<span class="comment"># List me se duplicate elements hata kar unique list banani hai</span>
+
+<span class="comment"># List create ki</span>
+nums = [10,25,5,40,12,36,98,75,45,68,92,91,5,25,10,98]
+
+<span class="comment"># Empty list banayi unique elements ke liye</span>
+unique_list = []
+
+<span class="comment"># Loop chala kar unique elements add kiye</span>
+for i in nums:
+    if i not in unique_list:   <span class="comment"># agar pehle se exist nahi karta</span>
+        unique_list.append(i) <span class="comment"># to add kar do</span>
+
+<span class="comment"># Output print kiya</span>
+print(unique_list)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+[10, 25, 5, 40, 12, 36, 98, 75, 45, 68, 92, 91]
+</div>
+
+</body>
+</html>

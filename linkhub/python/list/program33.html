@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Python Program - Second Maximum (Without Sorting)</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>📌 Python Program 33</h2>
+
+<pre>
+<span class="comment"># Question 33:</span>
+<span class="comment"># List me second maximum element find karna hai (without sorting)</span>
+
+<span class="comment"># List create ki</span>
+nums = [10,25,5,40,12,36,98,75,45,68,92,91,5,25,10,98]
+
+<span class="comment"># Do variables banaye (max aur second max ke liye)</span>
+m1 = m2 = float('-inf')
+
+<span class="comment"># Loop chala kar max aur second max find kiya</span>
+for i in nums:
+    if i > m1:
+        m2 = m1     <span class="comment"># purana max second max ban gaya</span>
+        m1 = i      <span class="comment"># naya max update hua</span>
+        
+    elif i > m2 and i != m1:
+        m2 = i      <span class="comment"># second max update hua</span>
+
+<span class="comment"># Output print kiya</span>
+print(m2)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+92
+</div>
+
+</body>
+</html>

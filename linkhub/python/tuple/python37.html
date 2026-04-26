@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 37</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 37</h2>
+
+<pre>
+<span class="comment"># Question 37:</span>
+<span class="comment"># Ek Python program likho jo do tuples ka index-wise sum nikaale.</span>
+
+<span class="comment"># tuples create karna</span>
+t1 = (2, 4, 8, 9, 7, 5, 6, 4, 8, 9)
+t2 = (4, 8, 5, 7, 9, 6, 2, 3, 5, 8)
+
+<span class="comment"># index-wise sum nikalna</span>
+result = tuple(t1[i] + t2[i] for i in range(len(t1)))
+
+<span class="comment"># output print karna</span>
+print("Tuples ka index-wise sum :", result)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Tuples ka index-wise sum : (6, 12, 13, 16, 16, 11, 8, 7, 13, 17)
+</div>
+
+</body>
+</html>

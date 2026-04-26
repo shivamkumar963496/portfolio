@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 21</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 21</h2>
+
+<pre>
+<span class="comment"># Question 21:</span>
+<span class="comment"># Ek Python program likho jo tuple ke odd aur even elements alag-alag tuples me store kare.</span>
+
+<span class="comment"># tuple create karna</span>
+t = (22, 36, 98, 75, 49, 86, 91, 43, 25, 77, 89)
+
+<span class="comment"># odd elements nikalna</span>
+odd_tuple = tuple(i for i in t if i % 2 != 0)
+
+<span class="comment"># even elements nikalna</span>
+even_tuple = tuple(i for i in t if i % 2 == 0)
+
+<span class="comment"># output print karna</span>
+print("Tuple ke odd elements :", odd_tuple)
+print("Tuple ke even elements :", even_tuple)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Tuple ke odd elements : (75, 49, 91, 43, 25, 77, 89) <br>
+Tuple ke even elements : (22, 36, 98, 86)
+</div>
+
+</body>
+</html>

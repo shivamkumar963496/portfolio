@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 36</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 36</h2>
+
+<pre>
+<span class="comment"># Question 36:</span>
+<span class="comment"># Ek Python program likho jo tuple ke positive aur negative elements alag-alag tuples me store kare.</span>
+
+<span class="comment"># tuple create karna</span>
+t = (-5, 1, 4, 5, 6, -7, -4, -2, -8, 6, 4, 8, 7)
+
+<span class="comment"># positive elements nikalna</span>
+positive_tuple = tuple(i for i in t if i > 0)
+
+<span class="comment"># negative elements nikalna</span>
+negative_tuple = tuple(i for i in t if i < 0)
+
+<span class="comment"># output print karna</span>
+print("Mix tuple :", t)
+print("Positive elements tuple :", positive_tuple)
+print("Negative elements tuple :", negative_tuple)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Mix tuple : (-5, 1, 4, 5, 6, -7, -4, -2, -8, 6, 4, 8, 7) <br>
+Positive elements tuple : (1, 4, 5, 6, 6, 4, 8, 7) <br>
+Negative elements tuple : (-5, -7, -4, -2, -8)
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 35</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 35</h2>
+
+<pre>
+<span class="comment"># Question 35:</span>
+<span class="comment"># Ek Python program likho jo tuple ke har element ka square nikaal kar naya tuple banaye.</span>
+
+<span class="comment"># tuple create karna</span>
+t = (25, 65, 47, 89, 65, 18, 28, 96, 35, 89, 99)
+
+<span class="comment"># square tuple banana</span>
+square_tuple = tuple(i * i for i in t)
+
+<span class="comment"># output print karna</span>
+print("Normal tuple :", t)
+print("Square tuple :", square_tuple)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+Normal tuple : (25, 65, 47, 89, 65, 18, 28, 96, 35, 89, 99) <br>
+Square tuple : (625, 4225, 2209, 7921, 4225, 324, 784, 9216, 1225, 7921, 9801)
+</div>
+
+</body>
+</html>

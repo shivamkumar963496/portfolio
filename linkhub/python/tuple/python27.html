@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 27</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 27</h2>
+
+<pre>
+<span class="comment"># Question 27:</span>
+<span class="comment"># Ek Python program likho jo nested tuple ko flatten kare.</span>
+
+<span class="comment"># nested tuple create karna</span>
+t = ((1, 2, 3), (4, 5, 6), (7, 8, 9))
+
+<span class="comment"># empty tuple banana</span>
+flat = ()
+
+<span class="comment"># nested loop se flatten karna</span>
+for i in t:
+    for j in i:
+        flat += (j,)
+
+<span class="comment"># output print karna</span>
+print(flat)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+(1, 2, 3, 4, 5, 6, 7, 8, 9)
+</div>
+
+</body>
+</html>

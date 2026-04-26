@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Program 15</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Program 15</h2>
+
+<pre>
+<span class="comment"># Question 15:</span>
+<span class="comment"># Ek Python program likho jo user se element lekar uski index value tuple me find kare.</span>
+
+<span class="comment"># tuple create karna</span>
+t = (22, 36, 98, 75, 49, 86, 91, 43, 25, 77, 89)
+
+<span class="comment"># tuple print karna</span>
+print(t)
+
+<span class="comment"># user se input lena</span>
+n = int(input("Kis element ki index value nikalni hai: "))
+
+<span class="comment"># index find karna</span>
+print(f"{n} ki index value :", t.index(n))
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+(22, 36, 98, 75, 49, 86, 91, 43, 25, 77, 89) <br>
+Kis element ki index value nikalni hai: 75 <br>
+75 ki index value : 3
+</div>
+
+</body>
+</html>

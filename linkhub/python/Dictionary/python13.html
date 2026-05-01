@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 13</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 13</h2>
+
+<pre>
+<span class="comment"># Question 13:</span>
+<span class="comment"># Ek Python program likho jo dictionary ke keys aur values ko swap kare.</span>
+
+<span class="comment"># dictionary create karna</span>
+d = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+<span class="comment"># keys aur values swap karna</span>
+new_d = {v: k for k, v in d.items()}
+
+<span class="comment"># output print karna</span>
+print(new_d)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{1: 'a', 2: 'b', 3: 'c', 4: 'd'}
+</div>
+
+</body>
+</html>

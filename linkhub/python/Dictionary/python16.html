@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 16</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 16</h2>
+
+<pre>
+<span class="comment"># Question 16:</span>
+<span class="comment"># Ek Python program likho jo dictionary ko values ke basis par sort kare.</span>
+
+<span class="comment"># dictionary create karna</span>
+d = {
+    "a": 3,
+    "b": 1,
+    "c": 2
+}
+
+<span class="comment"># values ke basis par sort karna</span>
+sorted_d = dict(sorted(d.items(), key=lambda item: item[1]))
+
+<span class="comment"># output print karna</span>
+print(sorted_d)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'b': 1, 'c': 2, 'a': 3}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 11</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 11</h2>
+
+<pre>
+<span class="comment"># Question 11:</span>
+<span class="comment"># Ek Python program likho jo string ke characters ki frequency count kare.</span>
+
+<span class="comment"># string create karna</span>
+s = "banana"
+
+<span class="comment"># empty dictionary banana</span>
+freq = {}
+
+<span class="comment"># frequency count karna</span>
+for ch in s:
+    freq[ch] = freq.get(ch, 0) + 1
+
+<span class="comment"># output print karna</span>
+print(freq)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'b': 1, 'a': 3, 'n': 2}
+</div>
+
+</body>
+</html>

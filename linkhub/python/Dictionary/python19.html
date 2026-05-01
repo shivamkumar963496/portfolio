@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 19</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 19</h2>
+
+<pre>
+<span class="comment"># Question 19:</span>
+<span class="comment"># Ek Python program likho jo dictionary se specific value wale elements remove kare.</span>
+
+<span class="comment"># dictionary create karna</span>
+d = {"a": 10, "b": 20, "c": 10}
+
+<span class="comment"># target value define karna</span>
+target = 10
+
+<span class="comment"># new dictionary banana (filtering)</span>
+new_dic = {k: v for k, v in d.items() if v != target}
+
+<span class="comment"># output print karna</span>
+print(new_dic)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'b': 20}
+</div>
+
+</body>
+</html>

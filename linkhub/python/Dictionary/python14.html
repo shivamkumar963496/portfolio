@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 14</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 14</h2>
+
+<pre>
+<span class="comment"># Question 14:</span>
+<span class="comment"># Ek Python program likho jo dictionary me maximum value aur uski key find kare.</span>
+
+<span class="comment"># dictionary create karna</span>
+d = {"a": 10, "b": 25, "c": 5}
+
+<span class="comment"># initial values set karna</span>
+max_key = None
+max_value = float("-inf")
+
+<span class="comment"># loop se max find karna</span>
+for k, v in d.items():
+    if v > max_value:
+        max_value = v
+        max_key = k
+
+<span class="comment"># output print karna</span>
+print(max_key, ":", max_value)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+b : 25
+</div>
+
+</body>
+</html>

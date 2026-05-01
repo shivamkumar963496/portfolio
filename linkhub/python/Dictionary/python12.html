@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 12</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 12</h2>
+
+<pre>
+<span class="comment"># Question 12:</span>
+<span class="comment"># Ek Python program likho jo sentence ke words ki frequency count kare.</span>
+
+<span class="comment"># string create karna</span>
+s = "my name is shivam kumar i love python i am learning python"
+
+<span class="comment"># words me split karna</span>
+words = s.split()
+
+<span class="comment"># empty dictionary banana</span>
+freq = {}
+
+<span class="comment"># word frequency count karna</span>
+for w in words:
+    if w in freq:
+        freq[w] += 1
+    else:
+        freq[w] = 1
+
+<span class="comment"># output print karna</span>
+print(freq)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'my': 1, 'name': 1, 'is': 1, 'shivam': 1, 'kumar': 1, 'i': 3, 'love': 1, 'python': 2, 'am': 1, 'learning': 1}
+</div>
+
+</body>
+</html>

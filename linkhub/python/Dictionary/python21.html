@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 21</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 21</h2>
+
+<pre>
+<span class="comment"># Question 21:</span>
+<span class="comment"># Ek Python program likho jo anagrams ko group kare.</span>
+
+<span class="comment"># words list create karna</span>
+words = ["eat", "tea", "tan", "ate", "nat", "bat"]
+
+<span class="comment"># empty dictionary banana</span>
+d = {}
+
+<span class="comment"># anagram grouping karna</span>
+for w in words:
+    key = "".join(sorted(w))
+    d.setdefault(key, []).append(w)
+
+<span class="comment"># output print karna</span>
+print(list(d.values()))
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+[['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
+</div>
+
+</body>
+</html>

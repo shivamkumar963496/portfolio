@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 22</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 22</h2>
+
+<pre>
+<span class="comment"># Question 22:</span>
+<span class="comment"># Ek Python program likho jo string ka first non-repeating character ka index find kare.</span>
+
+<span class="comment"># string create karna</span>
+s = "leetcode"
+
+<span class="comment"># frequency dictionary banana</span>
+freq = {}
+
+for ch in s:
+    freq[ch] = freq.get(ch, 0) + 1
+
+<span class="comment"># first non-repeating character ka index nikalna</span>
+for i, ch in enumerate(s):
+    if freq[ch] == 1:
+        print(i)
+        break
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+0
+</div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 26</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 26</h2>
+
+<pre>
+<span class="comment"># Question 26:</span>
+<span class="comment"># Ek Python program likho jo dictionary ki duplicate values find kare.</span>
+
+<span class="comment"># dictionary create karna</span>
+d = {"a": 1, "b": 2, "c": 1}
+
+<span class="comment"># values list me convert karna</span>
+values = list(d.values())
+
+<span class="comment"># duplicate values nikalna</span>
+duplicate = [v for v in set(values) if values.count(v) > 1]
+
+<span class="comment"># output print karna</span>
+print(duplicate)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+[1]
+</div>
+
+</body>
+</html>

@@ -5,6 +5,7 @@
 <title>Dictionary | Shivam Kumar</title>
 
 <style>
+
 body{
     margin:0;
     font-family:Arial;
@@ -40,6 +41,7 @@ body{
     background:#1e293b;
     padding:20px;
     border-radius:12px;
+    margin-bottom:25px;
 }
 
 .section h2{
@@ -50,9 +52,10 @@ body{
 
 .level{
     color:#22d3ee;
-    margin-top:25px;
-    margin-bottom:10px;
+    margin-top:10px;
+    margin-bottom:15px;
     font-size:18px;
+    text-align:center;
 }
 
 .programs{
@@ -68,11 +71,13 @@ body{
     color:#a5f3fc;
     text-decoration:none;
     border-radius:8px;
+    transition:0.3s;
 }
 
 .programs a:hover{
     background:#475569;
     color:#22d3ee;
+    transform:scale(1.05);
 }
 
 footer{
@@ -81,6 +86,25 @@ footer{
     font-size:13px;
     color:#94a3b8;
 }
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .programs{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:480px){
+
+    .programs{
+        grid-template-columns:1fr;
+    }
+
+}
+
 </style>
 
 </head>
@@ -88,15 +112,23 @@ footer{
 <body>
 
 <div class="profile">
+
 <img src="profile.jpeg" alt="Shivam Kumar">
+
 <h1>Shivam Kumar</h1>
+
 <p>Dictionary Programs</p>
+
 </div>
 
+<!-- First Box -->
+
 <div class="section">
+
 <h2>📘 Python Dictionary Programs</h2>
 
 <div class="level">Programs (1–27)</div>
+
 <div class="programs">
 
 <a href="Dictionary/python1.html">Program 1</a>
@@ -136,7 +168,14 @@ footer{
 
 </div>
 
-    <div class="level">Programs (1–50)</div>
+<!-- Second Box -->
+
+<div class="section">
+
+<h2>📘 Python Dictionary Programs</h2>
+
+<div class="level">Programs (1–50)</div>
+
 <div class="programs">
 
 <a href="Dictionary/program1.html">Program 1</a>
@@ -198,6 +237,8 @@ footer{
 <a href="Dictionary/program48.html">Program 48</a>
 <a href="Dictionary/program49.html">Program 49</a>
 <a href="Dictionary/program50.html">Program 50</a>
+
+</div>
 
 </div>
 

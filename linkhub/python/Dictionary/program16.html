@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 16</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 16</h2>
+
+<pre>
+<span class="comment"># Question 16:</span>
+<span class="comment"># String ke har character ka frequency count karo</span>
+
+<span class="comment"># string create karna</span>
+s = "my name is shivam kumar i love python"
+
+<span class="comment"># empty dictionary banana</span>
+freq = {}
+
+<span class="comment"># loop ke through frequency count karna</span>
+for ch in s:
+    freq[ch] = freq.get(ch, 0) + 1
+
+<span class="comment"># output print karna</span>
+print(freq)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'m': 5, 'y': 2, ' ': 7, 'n': 2, 'a': 4, 'e': 3, 'i': 3, 's': 2, 'h': 2, 'v': 2, 'k': 1, 'u': 1, 'r': 1, 'l': 1, 'o': 2, 'p': 1, 't': 1}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 32</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 32</h2>
+
+<pre>
+<span class="comment"># Question 32:</span>
+<span class="comment"># Nested dictionary ki sabhi values ka sum nikalo</span>
+
+<span class="comment"># dictionary create karna</span>
+d = {
+    "a": {"x": 1, "y": 2},
+    "b": {"z": 3}
+}
+
+<span class="comment"># total variable</span>
+total = 0
+
+<span class="comment"># nested loop ke through sum nikalna</span>
+for inner_dict in d.values():
+    for value in inner_dict.values():
+        total += value
+
+<span class="comment"># output print karna</span>
+print(total)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+6
+</div>
+
+</body>
+</html>

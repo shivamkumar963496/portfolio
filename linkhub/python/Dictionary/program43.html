@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 43</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 43</h2>
+
+<pre>
+<span class="comment"># Question 43:</span>
+<span class="comment"># Words ko unke first letter ke basis par group karo</span>
+
+<span class="comment"># list create karna</span>
+words = ["apple", "ant", "bat", "ball", "cat"]
+
+<span class="comment"># empty dictionary</span>
+group = {}
+
+<span class="comment"># grouping karna</span>
+for w in words:
+    key = w[0]
+
+    if key not in group:
+        group[key] = []
+
+    group[key].append(w)
+
+<span class="comment"># output print karna</span>
+print(group)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'a': ['apple', 'ant'], 'b': ['bat', 'ball'], 'c': ['cat']}
+</div>
+
+</body>
+</html>

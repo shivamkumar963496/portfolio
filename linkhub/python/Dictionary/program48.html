@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 48</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 48</h2>
+
+<pre>
+<span class="comment"># Question 48:</span>
+<span class="comment"># 2 se 19 tak prime numbers ko dictionary me store karo</span>
+
+<span class="comment"># empty dictionary</span>
+d = {}
+
+<span class="comment"># prime check karke store karna</span>
+for num in range(2, 20):
+    is_prime = True
+
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+            break
+
+    if is_prime:
+        d[num] = "prime"
+
+<span class="comment"># output print karna</span>
+print(d)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{2: 'prime', 3: 'prime', 5: 'prime', 7: 'prime', 11: 'prime', 13: 'prime', 17: 'prime', 19: 'prime'}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 19</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 19</h2>
+
+<pre>
+<span class="comment"># Question 19:</span>
+<span class="comment"># Dictionary ko reverse karo (value → key)</span>
+
+<span class="comment"># dictionary create karna</span>
+d = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5}
+
+<span class="comment"># empty dictionary banana</span>
+rev = {}
+
+<span class="comment"># reverse mapping karna</span>
+for k, v in d.items():
+    rev[v] = k
+
+<span class="comment"># output print karna</span>
+print(rev)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e'}
+</div>
+
+</body>
+</html>

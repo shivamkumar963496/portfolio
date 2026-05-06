@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Dictionary Program 21</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 21</h2>
+
+<pre>
+<span class="comment"># Question 21:</span>
+<span class="comment"># Dictionary me sirf odd values ko filter karo</span>
+
+<span class="comment"># dictionary create karna</span>
+d = {"a": 1, "b": 2, "c": 3}
+
+<span class="comment"># empty dictionary banana</span>
+odd = {}
+
+<span class="comment"># odd values filter karna</span>
+for k, v in d.items():
+    if v % 2 != 0:
+        odd[k] = v
+
+<span class="comment"># output print karna</span>
+print(odd)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'a': 1, 'c': 3}
+</div>
+
+</body>
+</html>

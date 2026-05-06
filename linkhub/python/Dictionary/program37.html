@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 37</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 37</h2>
+
+<pre>
+<span class="comment"># Question 37:</span>
+<span class="comment"># Do dictionaries ko merge karke unki values ka sum nikalo</span>
+
+<span class="comment"># dictionaries create karna</span>
+d1 = {"a": 1, "b": 2}
+d2 = {"b": 3, "c": 4}
+
+<span class="comment"># result dictionary</span>
+result = {}
+
+<span class="comment"># union of keys par loop</span>
+for k in set(d1) | set(d2):
+    result[k] = d1.get(k, 0) + d2.get(k, 0)
+
+<span class="comment"># output print karna</span>
+print(result)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'a': 1, 'b': 5, 'c': 4}
+</div>
+
+</body>
+</html>

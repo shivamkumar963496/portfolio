@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 39</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 39</h2>
+
+<pre>
+<span class="comment"># Question 39:</span>
+<span class="comment"># Dictionary ke items ko value ke basis par descending order me sort karo</span>
+<span class="comment"># aur top 3 items print karo</span>
+
+<span class="comment"># dictionary create karna</span>
+d = {"a": 10, "b": 50, "c": 30, "d": 40}
+
+<span class="comment"># sorting karna (value ke basis par)</span>
+sorted_items = sorted(d.items(), key=lambda x: x[1], reverse=True)
+
+<span class="comment"># top 3 items print karna</span>
+print(sorted_items[:3])
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+[('b', 50), ('d', 40), ('c', 30)]
+</div>
+
+</body>
+</html>

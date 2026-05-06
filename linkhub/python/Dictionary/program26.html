@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 26</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 26</h2>
+
+<pre>
+<span class="comment"># Question 26:</span>
+<span class="comment"># Dictionary ki values ka square karke new dictionary me store karo</span>
+
+<span class="comment"># dictionary create karna</span>
+d = {"a": 2, "b": 4, "c": 3}
+
+<span class="comment"># new dictionary banana</span>
+result = {}
+
+<span class="comment"># loop ke through square nikalna</span>
+for k, v in d.items():
+    result[k] = v ** 2
+
+<span class="comment"># output print karna</span>
+print(result)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'a': 4, 'b': 16, 'c': 9}
+</div>
+
+</body>
+</html>

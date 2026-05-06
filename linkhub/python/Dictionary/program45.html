@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 45</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 45</h2>
+
+<pre>
+<span class="comment"># Question 45:</span>
+<span class="comment"># String me uppercase aur lowercase characters count karo</span>
+
+<span class="comment"># string create karna</span>
+s = "My name Is Shivam Kumar And I Am Learning Python"
+
+<span class="comment"># dictionary create karna</span>
+d = {"upper": 0, "lower": 0}
+
+<span class="comment"># count karna</span>
+for ch in s:
+    if ch.isupper():
+        d["upper"] += 1
+    elif ch.islower():
+        d["lower"] += 1
+
+<span class="comment"># output print karna</span>
+print(d)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'upper': 7, 'lower': 39}
+</div>
+
+</body>
+</html>

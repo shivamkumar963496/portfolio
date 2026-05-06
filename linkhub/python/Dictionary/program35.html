@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 35</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 35</h2>
+
+<pre>
+<span class="comment"># Question 35:</span>
+<span class="comment"># String ke words ka frequency count dictionary me store karo</span>
+
+<span class="comment"># string create karna</span>
+text = "python code python is easy code"
+
+<span class="comment"># words me convert karna</span>
+words = text.split()
+
+<span class="comment"># empty dictionary</span>
+freq = {}
+
+<span class="comment"># frequency count karna</span>
+for w in words:
+    freq[w] = freq.get(w, 0) + 1
+
+<span class="comment"># output print karna</span>
+print(freq)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'python': 2, 'code': 2, 'is': 1, 'easy': 1}
+</div>
+
+</body>
+</html>

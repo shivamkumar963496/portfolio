@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 42</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 42</h2>
+
+<pre>
+<span class="comment"># Question 42:</span>
+<span class="comment"># Nested dictionary ko flatten karke ek single dictionary banao</span>
+
+<span class="comment"># dictionary create karna</span>
+d = {
+    "a": {"x": 1, "y": 2},
+    "b": {"z": 3}
+}
+
+<span class="comment"># empty dictionary</span>
+flat = {}
+
+<span class="comment"># flatten karna</span>
+for k1, v1 in d.items():
+    for k2, v2 in v1.items():
+        new_key = k1 + "-" + k2
+        flat[new_key] = v2
+
+<span class="comment"># output print karna</span>
+print(flat)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'a-x': 1, 'a-y': 2, 'b-z': 3}
+</div>
+
+</body>
+</html>

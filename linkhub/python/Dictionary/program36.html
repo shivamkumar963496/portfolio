@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 36</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 36</h2>
+
+<pre>
+<span class="comment"># Question 36:</span>
+<span class="comment"># Do dictionaries ki common keys nikaalo</span>
+
+<span class="comment"># dictionaries create karna</span>
+d1 = {"a": 1, "b": 2, "c": 3}
+d2 = {"b": 5, "c": 6, "d": 7}
+
+<span class="comment"># keys ko set me convert karna</span>
+keys1 = set(d1.keys())
+keys2 = set(d2.keys())
+
+<span class="comment"># common keys nikalna</span>
+common = keys1 & keys2
+
+<span class="comment"># output print karna</span>
+print(common)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'b', 'c'}
+</div>
+
+</body>
+</html>

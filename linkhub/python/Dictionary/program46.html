@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 46</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 46</h2>
+
+<pre>
+<span class="comment"># Question 46:</span>
+<span class="comment"># Do dictionaries me same key aur same value wale items nikaalo</span>
+
+<span class="comment"># dictionaries create karna</span>
+d1 = {"a": 1, "b": 2, "c": 3}
+d2 = {"b": 2, "c": 4, "d": 5}
+
+<span class="comment"># empty dictionary</span>
+common = {}
+
+<span class="comment"># matching items find karna</span>
+for k in d1:
+    if k in d2 and d1[k] == d2[k]:
+        common[k] = d1[k]
+
+<span class="comment"># output print karna</span>
+print(common)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'b': 2}
+</div>
+
+</body>
+</html>

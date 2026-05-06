@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 41</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 41</h2>
+
+<pre>
+<span class="comment"># Question 41:</span>
+<span class="comment"># List of dictionaries ko ek single dictionary me merge karo</span>
+
+<span class="comment"># list create karna</span>
+lst = [{"a": 1}, {"b": 2}, {"c": 3}]
+
+<span class="comment"># result dictionary</span>
+result = {}
+
+<span class="comment"># loop ke through merge karna</span>
+for d in lst:
+    result.update(d)
+
+<span class="comment"># output print karna</span>
+print(result)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+{'a': 1, 'b': 2, 'c': 3}
+</div>
+
+</body>
+</html>

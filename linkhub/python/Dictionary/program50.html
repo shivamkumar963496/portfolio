@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Python Dictionary Program 50</title>
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+.comment{
+    color:#22c55e;
+}
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+</head>
+<body>
+
+<h2>📌 Python Dictionary Program 50</h2>
+
+<pre>
+<span class="comment"># Question 50:</span>
+<span class="comment"># Do strings anagram hain ya nahi check karo (dictionary use karke)</span>
+
+<span class="comment"># function define karna</span>
+def count(s):
+    d = {}
+
+    for ch in s:
+        d[ch] = d.get(ch, 0) + 1
+
+    return d
+
+<span class="comment"># strings</span>
+s1 = "listen"
+s2 = "silent"
+
+<span class="comment"># compare karna</span>
+print(count(s1) == count(s2))
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+True
+</div>
+
+</body>
+</html>

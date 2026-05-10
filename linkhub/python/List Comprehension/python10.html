@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python List Comprehension Program 10</title>
+
+<style>
+
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+    line-height:1.6;
+}
+
+h2{
+    color:#38bdf8;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+    border-left:4px solid #38bdf8;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+    border-left:4px solid #22c55e;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>📌 Python List Comprehension Program 10</h2>
+
+<pre>
+<span class="comment"># Question 10:</span>
+<span class="comment"># List comprehension ka use karke</span>
+<span class="comment"># empty strings ko remove karo.</span>
+
+<span class="comment"># Word list create karna</span>
+words = ["a", "", "b", ""]
+
+<span class="comment"># Empty strings remove karna</span>
+result = [word for word in words if word != ""]
+
+<span class="comment"># Final output print karna</span>
+print(result)
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b>
+
+<br><br>
+
+['a', 'b']
+
+</div>
+
+</body>
+</html>

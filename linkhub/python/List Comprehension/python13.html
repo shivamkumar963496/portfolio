@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Python List Comprehension Program 13</title>
+
+<style>
+
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+    line-height:1.8;
+}
+
+h2{
+    color:#38bdf8;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:10px;
+    overflow-x:auto;
+    border-left:4px solid #38bdf8;
+    font-size:15px;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+    border-left:4px solid #22c55e;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python List Comprehension Program 13</h2>
+
+<pre>
+<span class="comment"># Question 13:</span>
+<span class="comment"># List comprehension ka use karke</span>
+<span class="comment"># 1 se 100 tak jo numbers</span>
+<span class="comment"># 3 aur 5 dono se divide hote hain</span>
+<span class="comment"># unko find karo.</span>
+
+<span class="comment"># 1 se 100 tak numbers create karna</span>
+nums = list(range(1, 101))
+
+<span class="comment"># 3 aur 5 dono se divisible numbers find karna</span>
+result = [x for x in nums if x % 3 == 0 and x % 5 == 0]
+
+<span class="comment"># Final output print karna</span>
+print(result)
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b>
+
+<br><br>
+
+[15, 30, 45, 60, 75, 90]
+
+</div>
+
+</body>
+</html>

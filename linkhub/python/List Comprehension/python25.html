@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Python Dictionary Comprehension Program 25</title>
+
+<style>
+
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+    line-height:1.8;
+}
+
+h2{
+    color:#38bdf8;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:10px;
+    overflow-x:auto;
+    border-left:4px solid #38bdf8;
+    font-size:15px;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+    border-left:4px solid #22c55e;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Dictionary Comprehension Program 25</h2>
+
+<pre>
+<span class="comment"># Question 25:</span>
+<span class="comment"># Dictionary comprehension ka use karke</span>
+<span class="comment"># keys aur values ko dictionary me convert karo.</span>
+
+<span class="comment"># Keys list create karna</span>
+keys = ["a", "b"]
+
+<span class="comment"># Values list create karna</span>
+values = [1, 2]
+
+<span class="comment"># Dictionary create karna</span>
+result = {k: v for k, v in zip(keys, values)}
+
+<span class="comment"># Final output print karna</span>
+print(result)
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b>
+
+<br><br>
+
+{'a': 1, 'b': 2}
+
+</div>
+
+</body>
+</html>

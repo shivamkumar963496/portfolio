@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Python List Comprehension Program 18</title>
+
+<style>
+
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+    line-height:1.8;
+}
+
+h2{
+    color:#38bdf8;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:10px;
+    overflow-x:auto;
+    border-left:4px solid #38bdf8;
+    font-size:15px;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+    border-left:4px solid #22c55e;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python List Comprehension Program 18</h2>
+
+<pre>
+<span class="comment"># Question 18:</span>
+<span class="comment"># List comprehension ka use karke</span>
+<span class="comment"># do lists ka Cartesian Product banao.</span>
+
+<span class="comment"># First list create karna</span>
+a = [1, 2]
+
+<span class="comment"># Second list create karna</span>
+b = ["a", "b"]
+
+<span class="comment"># Cartesian Product banana</span>
+result = [(x, y) for x in a for y in b]
+
+<span class="comment"># Final output print karna</span>
+print(result)
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b>
+
+<br><br>
+
+[(1, 'a'), (1, 'b'), (2, 'a'), (2, 'b')]
+
+</div>
+
+</body>
+</html>

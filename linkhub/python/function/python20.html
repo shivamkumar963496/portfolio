@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 20</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 20</h2>
+
+<pre>
+<span class="comment"># Question 20:</span>
+<span class="comment"># Ek Python program likho jo function ka use karke</span>
+<span class="comment"># do numbers ko swap kare.</span>
+
+<span class="comment"># function create karna</span>
+def swap(a, b):
+
+    <span class="comment"># swapping karna</span>
+    a, b = b, a
+
+    <span class="comment"># swapped values print karna</span>
+    print("After Swapping :")
+    print("a =", a)
+    print("b =", b)
+
+<span class="comment"># user se input lena</span>
+a = int(input("Enter Value of a : "))
+b = int(input("Enter Value of b : "))
+
+<span class="comment"># function call karna</span>
+swap(a, b)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Enter Value of a : 10 <br>
+Enter Value of b : 20 <br><br>
+
+After Swapping : <br>
+a = 20 <br>
+b = 10
+
+</div>
+
+</body>
+</html>

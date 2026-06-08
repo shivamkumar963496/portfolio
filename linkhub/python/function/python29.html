@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 29</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 29</h2>
+
+<pre>
+<span class="comment"># Question 29:</span>
+<span class="comment"># Ek Python program likho jo recursion function ka use karke</span>
+<span class="comment"># 1 se n tak numbers ka sum calculate kare.</span>
+
+<span class="comment"># recursive function create karna</span>
+def total(n):
+
+    <span class="comment"># base condition check karna</span>
+    if n == 1:
+
+        return 1
+
+    else:
+
+        <span class="comment"># recursive sum calculate karna</span>
+        return n + total(n - 1)
+
+<span class="comment"># user se number input lena</span>
+n = int(input("Enter a Number : "))
+
+<span class="comment"># total sum calculate karna</span>
+sum = total(n)
+
+<span class="comment"># final output print karna</span>
+print("Sum of Given Number :", sum)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Enter a Number : 5 <br>
+Sum of Given Number : 15
+
+</div>
+
+</body>
+</html>

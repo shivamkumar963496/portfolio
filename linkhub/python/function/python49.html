@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 49</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 49</h2>
+
+<pre>
+<span class="comment"># Question 49:</span>
+<span class="comment"># Ek Python program likho jo function ka use karke</span>
+<span class="comment"># username aur password check kare.</span>
+
+<span class="comment"># function create karna</span>
+def login(user, password):
+
+    <span class="comment"># username aur password verify karna</span>
+    if user == "admin" and password == "1234":
+
+        print("Login Success")
+
+    else:
+
+        print("Login Failed")
+
+<span class="comment"># user se username input lena</span>
+user = input("Enter User Name : ")
+
+<span class="comment"># user se password input lena</span>
+password = input("Enter Password : ")
+
+<span class="comment"># function call karna</span>
+login(user, password)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Enter User Name : admin <br>
+Enter Password : 1234 <br>
+Login Success
+
+</div>
+
+</body>
+</html>

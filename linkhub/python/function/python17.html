@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 17</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 17</h2>
+
+<pre>
+<span class="comment"># Question 17:</span>
+<span class="comment"># Ek Python program likho jo function ka use karke</span>
+<span class="comment"># check kare ki candidate voting ke liye eligible hai ya nahi.</span>
+
+<span class="comment"># function create karna</span>
+def check_age(age):
+
+    <span class="comment"># age check karna</span>
+    if age >= 18:
+
+        print("ELIGIBLE FOR VOTING")
+
+    else:
+
+        print("NOT ELIGIBLE FOR VOTING")
+
+<span class="comment"># heading print karna</span>
+print("===== CHECK VOTING ELIGIBILITY =====")
+
+<span class="comment"># user se age input lena</span>
+age = int(input("Enter Candidate Age : "))
+
+<span class="comment"># function call karna</span>
+check_age(age)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+===== CHECK VOTING ELIGIBILITY =====<br>
+Enter Candidate Age : 20 <br>
+ELIGIBLE FOR VOTING
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 42</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 42</h2>
+
+<pre>
+<span class="comment"># Question 42:</span>
+<span class="comment"># Ek Python program likho jo function ka use karke</span>
+<span class="comment"># kisi string me vowels ki total counting kare.</span>
+
+<span class="comment"># function create karna</span>
+def vowel(s):
+
+    <span class="comment"># vowel counter variable</span>
+    count = 0
+
+    <span class="comment"># string ke characters par loop chalana</span>
+    for i in s:
+
+        <span class="comment"># vowel check karna</span>
+        if i in "aeiouAEIOU":
+
+            count += 1
+
+    <span class="comment"># total vowels print karna</span>
+    print("Vowels in Given String :", count)
+
+<span class="comment"># user se text input lena</span>
+s = input("Enter Any Text : ")
+
+<span class="comment"># function call karna</span>
+vowel(s)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Enter Any Text : Shivam Kumar <br>
+Vowels in Given String : 4
+
+</div>
+
+</body>
+</html>

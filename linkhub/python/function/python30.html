@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 30</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 30</h2>
+
+<pre>
+<span class="comment"># Question 30:</span>
+<span class="comment"># Ek Python program likho jo recursion function ka use karke</span>
+<span class="comment"># kisi number ka power calculate kare.</span>
+
+<span class="comment"># recursive function create karna</span>
+def power(a, b):
+
+    <span class="comment"># base condition check karna</span>
+    if b == 0:
+
+        return 1
+
+    else:
+
+        <span class="comment"># recursive power calculate karna</span>
+        return a * power(a, b - 1)
+
+<span class="comment"># user se base input lena</span>
+m = int(input("Enter the Base : "))
+
+<span class="comment"># user se power input lena</span>
+n = int(input("Enter the Power : "))
+
+<span class="comment"># power calculate karna</span>
+result = power(m, n)
+
+<span class="comment"># final output print karna</span>
+print("Result :", result)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Enter the Base : 2 <br>
+Enter the Power : 5 <br>
+Result : 32
+
+</div>
+
+</body>
+</html>

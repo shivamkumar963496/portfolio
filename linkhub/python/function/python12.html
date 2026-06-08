@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 12</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 12</h2>
+
+<pre>
+<span class="comment"># Question 12:</span>
+<span class="comment"># Ek Python program likho jo function ka use karke</span>
+<span class="comment"># Simple Interest calculate kare.</span>
+
+<span class="comment"># function create karna</span>
+def si(p, r, t):
+
+    <span class="comment"># simple interest calculate karna</span>
+    print((p * r * t) / 100)
+
+<span class="comment"># user se input lena</span>
+p = int(input("Enter Principal Amount : "))
+r = int(input("Enter Rate of Interest : "))
+t = int(input("Enter Time in Months : "))
+
+<span class="comment"># function call karna</span>
+si(p, r, t)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Enter Principal Amount : 1000 <br>
+Enter Rate of Interest : 5 <br>
+Enter Time in Months : 2 <br>
+100.0
+
+</div>
+
+</body>
+</html>

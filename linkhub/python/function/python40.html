@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 40</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 40</h2>
+
+<pre>
+<span class="comment"># Question 40:</span>
+<span class="comment"># Ek Python program likho jo nested function ka use karke</span>
+<span class="comment"># outer aur inner function ko call kare.</span>
+
+<span class="comment"># outer function create karna</span>
+def outer():
+
+    <span class="comment"># outer function message print karna</span>
+    print("Outer Function")
+
+    <span class="comment"># inner function create karna</span>
+    def inner():
+
+        <span class="comment"># inner function message print karna</span>
+        print("Inner Function")
+
+    <span class="comment"># inner function call karna</span>
+    inner()
+
+<span class="comment"># outer function call karna</span>
+outer()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Outer Function <br>
+Inner Function
+
+</div>
+
+</body>
+</html>

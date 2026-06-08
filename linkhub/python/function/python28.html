@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 28</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 28</h2>
+
+<pre>
+<span class="comment"># Question 28:</span>
+<span class="comment"># Ek Python program likho jo recursion function ka use karke</span>
+<span class="comment"># Fibonacci series ka nth term print kare.</span>
+
+<span class="comment"># recursive function create karna</span>
+def fib(n):
+
+    <span class="comment"># base condition check karna</span>
+    if n <= 1:
+
+        return n
+
+    else:
+
+        <span class="comment"># fibonacci calculate karna</span>
+        return fib(n - 1) + fib(n - 2)
+
+<span class="comment"># user se number input lena</span>
+n = int(input("Enter a Number : "))
+
+<span class="comment"># fibonacci term print karna</span>
+print(fib(n))
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Enter a Number : 6 <br>
+8
+
+</div>
+
+</body>
+</html>

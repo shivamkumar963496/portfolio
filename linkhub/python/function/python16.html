@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 16</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 16</h2>
+
+<pre>
+<span class="comment"># Question 16:</span>
+<span class="comment"># Ek Python program likho jo function ka use karke</span>
+<span class="comment"># check kare ki number Prime hai ya nahi.</span>
+
+<span class="comment"># function create karna</span>
+def prime(n):
+
+    <span class="comment"># counter variable initialize karna</span>
+    c = 0
+
+    <span class="comment"># factors count karna</span>
+    for i in range(1, n + 1):
+
+        if n % i == 0:
+
+            c += 1
+
+    <span class="comment"># prime condition check karna</span>
+    if c == 2:
+
+        print("PRIME NUMBER")
+
+    else:
+
+        print("NOT PRIME NUMBER")
+
+<span class="comment"># heading print karna</span>
+print("===== CHECK NUMBER PRIME OR NOT =====")
+
+<span class="comment"># user se number input lena</span>
+n = int(input("Enter a Number : "))
+
+<span class="comment"># function call karna</span>
+prime(n)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+===== CHECK NUMBER PRIME OR NOT =====<br>
+Enter a Number : 7 <br>
+PRIME NUMBER
+
+</div>
+
+</body>
+</html>

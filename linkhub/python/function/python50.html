@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 50</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 50</h2>
+
+<pre>
+<span class="comment"># Question 50:</span>
+<span class="comment"># Ek Python program likho jo function aur global keyword ka use karke</span>
+<span class="comment"># bank account se withdrawal kare.</span>
+
+<span class="comment"># global balance variable create karna</span>
+balance = 10000
+
+<span class="comment"># function create karna</span>
+def withdrawal(amount):
+
+    <span class="comment"># global variable access karna</span>
+    global balance
+
+    <span class="comment"># balance update karna</span>
+    balance = balance - amount
+
+    <span class="comment"># remaining balance print karna</span>
+    print("Remaining Balance After Withdrawal :", balance)
+
+<span class="comment"># current balance print karna</span>
+print("Total Balance in Your Account :", balance)
+
+<span class="comment"># user se withdrawal amount input lena</span>
+amount = int(input("Enter Withdrawal Amount : "))
+
+<span class="comment"># function call karna</span>
+withdrawal(amount)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Total Balance in Your Account : 10000 <br>
+Enter Withdrawal Amount : 2500 <br>
+Remaining Balance After Withdrawal : 7500
+
+</div>
+
+</body>
+</html>

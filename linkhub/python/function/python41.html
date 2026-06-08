@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Function Program 41</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Function Program 41</h2>
+
+<pre>
+<span class="comment"># Question 41:</span>
+<span class="comment"># Ek Python program likho jo function ka use karke</span>
+<span class="comment"># check kare ki diya gaya text Palindrome hai ya nahi.</span>
+
+<span class="comment"># function create karna</span>
+def palindrome(s):
+
+    <span class="comment"># palindrome check karna</span>
+    if s == s[::-1]:
+
+        <span class="comment"># reversed text print karna</span>
+        print("After Reverse :", s[::-1])
+
+        <span class="comment"># palindrome message print karna</span>
+        print("Palindrome")
+
+    else:
+
+        <span class="comment"># reversed text print karna</span>
+        print("After Reverse :", s[::-1])
+
+        <span class="comment"># not palindrome message print karna</span>
+        print("Not Palindrome")
+
+<span class="comment"># user se text input lena</span>
+text = input("Enter Any Text : ")
+
+<span class="comment"># function call karna</span>
+palindrome(text)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Enter Any Text : madam <br>
+After Reverse : madam <br>
+Palindrome
+
+</div>
+
+</body>
+</html>

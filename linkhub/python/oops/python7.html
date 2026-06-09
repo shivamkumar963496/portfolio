@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 7</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 7</h2>
+
+<pre>
+<span class="comment"># Question 7:</span>
+<span class="comment"># Ek Python program likho jo constructor ka use karke</span>
+<span class="comment"># car ka brand name print kare.</span>
+
+<span class="comment"># class create karna</span>
+class Car:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self, brand):
+
+        <span class="comment"># instance variable create karna</span>
+        self.brand = brand
+
+<span class="comment"># object create karna</span>
+c = Car("BMW")
+
+<span class="comment"># car brand print karna</span>
+print("Car Brand :", c.brand)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Car Brand : BMW
+
+</div>
+
+</body>
+</html>

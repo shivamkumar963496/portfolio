@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 35</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 35</h2>
+
+<pre>
+<span class="comment"># Question 35:</span>
+<span class="comment"># Ek Python program likho jo class method ka use karke</span>
+<span class="comment"># class variable ki value print kare.</span>
+
+<span class="comment"># class create karna</span>
+class Demo:
+
+    <span class="comment"># class variable create karna</span>
+    x = 10
+
+    <span class="comment"># class method create karna</span>
+    @classmethod
+    def show(cls):
+
+        <span class="comment"># class variable print karna</span>
+        print(cls.x)
+
+<span class="comment"># class method call karna</span>
+Demo.show()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+10
+
+</div>
+
+</body>
+</html>

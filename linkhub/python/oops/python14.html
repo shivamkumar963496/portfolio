@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 14</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 14</h2>
+
+<pre>
+<span class="comment"># Question 14:</span>
+<span class="comment"># Ek Python program likho jo inheritance ka use karke</span>
+<span class="comment"># parent aur child class methods ko call kare.</span>
+
+<span class="comment"># parent class create karna</span>
+class Animal:
+
+    <span class="comment"># parent class method create karna</span>
+    def sound(self):
+
+        <span class="comment"># animal sound print karna</span>
+        print("Animal Sound")
+
+<span class="comment"># child class create karna</span>
+class Dog(Animal):
+
+    <span class="comment"># child class method create karna</span>
+    def bark(self):
+
+        <span class="comment"># dog bark sound print karna</span>
+        print("Dog Bark")
+
+<span class="comment"># object create karna</span>
+d = Dog()
+
+<span class="comment"># parent class method call karna</span>
+d.sound()
+
+<span class="comment"># child class method call karna</span>
+d.bark()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Animal Sound <br>
+Dog Bark
+
+</div>
+
+</body>
+</html>

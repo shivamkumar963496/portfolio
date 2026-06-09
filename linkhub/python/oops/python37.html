@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 37</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 37</h2>
+
+<pre>
+<span class="comment"># Question 37:</span>
+<span class="comment"># Ek Python program likho jo class method ka use karke</span>
+<span class="comment"># car ki speed print kare.</span>
+
+<span class="comment"># class create karna</span>
+class Car:
+
+    <span class="comment"># method create karna</span>
+    def speed(self, s):
+
+        <span class="comment"># speed print karna</span>
+        print("Speed :", s)
+
+<span class="comment"># user se speed input lena</span>
+speed = int(input("Enter Your Car Speed : "))
+
+<span class="comment"># object create karna</span>
+c = Car()
+
+<span class="comment"># method call karna</span>
+c.speed(speed)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Enter Your Car Speed : 120 <br>
+Speed : 120
+
+</div>
+
+</body>
+</html>

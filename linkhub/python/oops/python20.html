@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 20</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 20</h2>
+
+<pre>
+<span class="comment"># Question 20:</span>
+<span class="comment"># Ek Python program likho jo encapsulation ka use karke</span>
+<span class="comment"># private variable ko access kare.</span>
+
+<span class="comment"># class create karna</span>
+class Bank:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self):
+
+        <span class="comment"># private variable create karna</span>
+        self.__balance = 5000
+
+    <span class="comment"># method create karna</span>
+    def show(self):
+
+        <span class="comment"># private variable print karna</span>
+        print(self.__balance)
+
+<span class="comment"># object create karna</span>
+o = Bank()
+
+<span class="comment"># method call karna</span>
+o.show()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+5000
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 29</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 29</h2>
+
+<pre>
+<span class="comment"># Question 29:</span>
+<span class="comment"># Ek Python program likho jo class aur object ka use karke</span>
+<span class="comment"># bank deposit management system banaye.</span>
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Bank Deposit Management System</span>
+<span class="comment"># ==========================================</span>
+
+
+<span class="comment"># class create karna</span>
+class Bank:
+
+    <span class="comment"># ======================================</span>
+    <span class="comment"># Constructor</span>
+    <span class="comment"># ======================================</span>
+
+    def __init__(self, balance):
+
+        <span class="comment"># instance variable create karna</span>
+        self.balance = balance
+
+        <span class="comment"># account creation message print karna</span>
+        print("\n========== BANK ACCOUNT CREATED ==========\n")
+
+        print("Current Balance :", self.balance)
+
+
+    <span class="comment"># ======================================</span>
+    <span class="comment"># Deposit Method</span>
+    <span class="comment"># ======================================</span>
+
+    def deposit(self, amount):
+
+        <span class="comment"># deposit amount check karna</span>
+        if amount > 0:
+
+            <span class="comment"># balance update karna</span>
+            self.balance += amount
+
+            <span class="comment"># success message print karna</span>
+            print("\n========== DEPOSIT SUCCESSFUL ==========\n")
+
+            print("Deposit Amount :", amount)
+
+            print("Updated Balance :", self.balance)
+
+        else:
+
+            <span class="comment"># invalid amount message print karna</span>
+            print("\n========== INVALID DEPOSIT AMOUNT ==========\n")
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Create Bank Account</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># object create karna</span>
+b = Bank(5000)
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># User Input</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># user se deposit amount input lena</span>
+amount = int(input("\nEnter Deposit Amount : "))
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Deposit Money</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># deposit method call karna</span>
+b.deposit(amount)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+========== BANK ACCOUNT CREATED ========== <br><br>
+
+Current Balance : 5000 <br><br>
+
+Enter Deposit Amount : 2000 <br><br>
+
+========== DEPOSIT SUCCESSFUL ========== <br><br>
+
+Deposit Amount : 2000 <br>
+Updated Balance : 7000
+
+</div>
+
+</body>
+</html>

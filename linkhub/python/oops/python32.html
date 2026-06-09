@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 32</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 32</h2>
+
+<pre>
+<span class="comment"># Question 32:</span>
+<span class="comment"># Ek Python program likho jo constructor ka use karke</span>
+<span class="comment"># mobile ki brand aur price print kare.</span>
+
+<span class="comment"># class create karna</span>
+class Mobile:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self, brand, price):
+
+        <span class="comment"># instance variables create karna</span>
+        self.brand = brand
+        self.price = price
+
+<span class="comment"># object create karna</span>
+m = Mobile("Samsung", 20000)
+
+<span class="comment"># mobile brand print karna</span>
+print(m.brand)
+
+<span class="comment"># mobile price print karna</span>
+print(m.price)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Samsung <br>
+20000
+
+</div>
+
+</body>
+</html>

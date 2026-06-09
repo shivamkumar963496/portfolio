@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 30</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 30</h2>
+
+<pre>
+<span class="comment"># Question 30:</span>
+<span class="comment"># Ek Python program likho jo class aur object ka use karke</span>
+<span class="comment"># bank withdrawal management system banaye.</span>
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Bank Withdrawal Management System</span>
+<span class="comment"># ==========================================</span>
+
+
+<span class="comment"># class create karna</span>
+class Bank:
+
+    <span class="comment"># ======================================</span>
+    <span class="comment"># Constructor</span>
+    <span class="comment"># ======================================</span>
+
+    def __init__(self, balance):
+
+        <span class="comment"># instance variable create karna</span>
+        self.balance = balance
+
+        <span class="comment"># account creation message print karna</span>
+        print("\n========== BANK ACCOUNT CREATED ==========\n")
+
+        print("Current Balance :", self.balance)
+
+
+    <span class="comment"># ======================================</span>
+    <span class="comment"># Withdrawal Method</span>
+    <span class="comment"># ======================================</span>
+
+    def withdraw(self, amount):
+
+        <span class="comment"># invalid amount check karna</span>
+        if amount <= 0:
+
+            print("\nInvalid Withdrawal Amount")
+
+
+        <span class="comment"># sufficient balance check karna</span>
+        elif amount <= self.balance:
+
+            <span class="comment"># balance update karna</span>
+            self.balance -= amount
+
+            <span class="comment"># success message print karna</span>
+            print("\n========== WITHDRAWAL SUCCESSFUL ==========\n")
+
+            print("Withdrawal Amount :", amount)
+
+            print("Remaining Balance :", self.balance)
+
+
+        else:
+
+            <span class="comment"># insufficient balance message print karna</span>
+            print("\n========== TRANSACTION FAILED ==========\n")
+
+            print("Insufficient Balance")
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Create Bank Account</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># object create karna</span>
+bank_account = Bank(5000)
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># User Input</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># user se withdrawal amount input lena</span>
+amount = int(input("\nEnter Withdrawal Amount : "))
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Withdraw Money</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># withdraw method call karna</span>
+bank_account.withdraw(amount)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+========== BANK ACCOUNT CREATED ========== <br><br>
+
+Current Balance : 5000 <br><br>
+
+Enter Withdrawal Amount : 2000 <br><br>
+
+========== WITHDRAWAL SUCCESSFUL ========== <br><br>
+
+Withdrawal Amount : 2000 <br>
+Remaining Balance : 3000
+
+</div>
+
+</body>
+</html>

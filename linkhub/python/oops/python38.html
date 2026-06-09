@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 38</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 38</h2>
+
+<pre>
+<span class="comment"># Question 38:</span>
+<span class="comment"># Ek Python program likho jo constructor ka use karke</span>
+<span class="comment"># laptop ka brand aur RAM print kare.</span>
+
+<span class="comment"># class create karna</span>
+class Laptop:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self, brand, ram):
+
+        <span class="comment"># instance variables create karna</span>
+        self.brand = brand
+        self.ram = ram
+
+<span class="comment"># object create karna</span>
+l = Laptop("Dell", "16GB")
+
+<span class="comment"># laptop brand print karna</span>
+print(l.brand)
+
+<span class="comment"># laptop RAM print karna</span>
+print(l.ram)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Dell <br>
+16GB
+
+</div>
+
+</body>
+</html>

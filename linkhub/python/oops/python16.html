@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 16</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 16</h2>
+
+<pre>
+<span class="comment"># Question 16:</span>
+<span class="comment"># Ek Python program likho jo multiple inheritance ka use karke</span>
+<span class="comment"># father aur mother class ke methods ko access kare.</span>
+
+<span class="comment"># father class create karna</span>
+class Father:
+
+    <span class="comment"># father class method create karna</span>
+    def home(self):
+
+        <span class="comment"># message print karna</span>
+        print("Home")
+
+<span class="comment"># mother class create karna</span>
+class Mother:
+
+    <span class="comment"># mother class method create karna</span>
+    def car(self):
+
+        <span class="comment"># message print karna</span>
+        print("Car")
+
+<span class="comment"># child class create karna</span>
+class Child(Father, Mother):
+
+    pass
+
+<span class="comment"># object create karna</span>
+c = Child()
+
+<span class="comment"># father class method call karna</span>
+c.home()
+
+<span class="comment"># mother class method call karna</span>
+c.car()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Home <br>
+Car
+
+</div>
+
+</body>
+</html>

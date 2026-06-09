@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 33</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 33</h2>
+
+<pre>
+<span class="comment"># Question 33:</span>
+<span class="comment"># Ek Python program likho jo constructor ka use karke</span>
+<span class="comment"># book ka name aur author name print kare.</span>
+
+<span class="comment"># class create karna</span>
+class Book:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self, book_name, author):
+
+        <span class="comment"># instance variables create karna</span>
+        self.book_name = book_name
+        self.author = author
+
+<span class="comment"># object create karna</span>
+b = Book("Python", "Shivam")
+
+<span class="comment"># book name print karna</span>
+print("Book Name :", b.book_name)
+
+<span class="comment"># author name print karna</span>
+print("Author Name :", b.author)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Book Name : Python <br>
+Author Name : Shivam
+
+</div>
+
+</body>
+</html>

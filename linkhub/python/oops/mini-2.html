@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Mini Project 2</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    overflow-x:auto;
+    line-height:1.6;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+    line-height:1.8;
+}
+
+h2{
+    color:#38bdf8;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Mini Project 2</h2>
+
+<pre>
+<span class="comment"># Question:</span>
+<span class="comment"># Ek Python mini project likho jo bank account management system banaye.</span>
+<span class="comment"># Program me deposit, withdraw aur balance check system hona chahiye.</span>
+
+
+<span class="comment"># =====================================</span>
+<span class="comment"># Bank Account Management System</span>
+<span class="comment"># =====================================</span>
+
+
+<span class="comment"># class create karna</span>
+class BankAccount:
+
+    <span class="comment"># =================================</span>
+    <span class="comment"># Constructor</span>
+    <span class="comment"># =================================</span>
+
+    def __init__(self, name, balance):
+
+        <span class="comment"># instance variables create karna</span>
+        self.name = name
+        self.__balance = balance
+
+
+    <span class="comment"># =================================</span>
+    <span class="comment"># Deposit Method</span>
+    <span class="comment"># =================================</span>
+
+    def deposit(self, amount):
+
+        <span class="comment"># deposit amount check karna</span>
+        if amount > 0:
+
+            <span class="comment"># balance update karna</span>
+            self.__balance += amount
+
+            print(amount, "Deposited Successfully")
+
+        else:
+
+            print("Invalid Deposit Amount")
+
+
+    <span class="comment"># =================================</span>
+    <span class="comment"># Withdraw Method</span>
+    <span class="comment"># =================================</span>
+
+    def withdraw(self, amount):
+
+        <span class="comment"># sufficient balance check karna</span>
+        if amount <= self.__balance:
+
+            <span class="comment"># balance update karna</span>
+            self.__balance -= amount
+
+            print(amount, "Withdraw Successfully")
+
+        else:
+
+            print("Insufficient Balance")
+
+
+    <span class="comment"># =================================</span>
+    <span class="comment"># Get Balance Method</span>
+    <span class="comment"># =================================</span>
+
+    def get_balance(self):
+
+        <span class="comment"># current balance return karna</span>
+        return self.__balance
+
+
+<span class="comment"># =====================================</span>
+<span class="comment"># Create Account</span>
+<span class="comment"># =====================================</span>
+
+<span class="comment"># object create karna</span>
+acc1 = BankAccount("Shivam", 10000)
+
+
+<span class="comment"># =====================================</span>
+<span class="comment"># Current Balance</span>
+<span class="comment"># =====================================</span>
+
+print("Current Balance :", acc1.get_balance())
+
+
+<span class="comment"># =====================================</span>
+<span class="comment"># Deposit Money</span>
+<span class="comment"># =====================================</span>
+
+<span class="comment"># deposit method call karna</span>
+acc1.deposit(5000)
+
+print("After Deposit :", acc1.get_balance())
+
+
+<span class="comment"># =====================================</span>
+<span class="comment"># Withdraw Money</span>
+<span class="comment"># =====================================</span>
+
+<span class="comment"># withdraw method call karna</span>
+acc1.withdraw(2000)
+
+print("After Withdraw :", acc1.get_balance())
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Current Balance : 10000 <br><br>
+
+5000 Deposited Successfully <br>
+After Deposit : 15000 <br><br>
+
+2000 Withdraw Successfully <br>
+After Withdraw : 13000
+
+</div>
+
+</body>
+</html>

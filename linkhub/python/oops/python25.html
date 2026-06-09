@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 25</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 25</h2>
+
+<pre>
+<span class="comment"># Question 25:</span>
+<span class="comment"># Ek Python program likho jo operator overloading ka use karke</span>
+<span class="comment"># do objects ko add kare.</span>
+
+<span class="comment"># class create karna</span>
+class Number:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self, x):
+
+        <span class="comment"># instance variable create karna</span>
+        self.x = x
+
+    <span class="comment"># operator overloading method create karna</span>
+    def __add__(self, other):
+
+        <span class="comment"># objects ki values add karna</span>
+        return self.x + other.x
+
+<span class="comment"># first object create karna</span>
+n1 = Number(10)
+
+<span class="comment"># second object create karna</span>
+n2 = Number(20)
+
+<span class="comment"># objects ko add karke result print karna</span>
+print(n1 + n2)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+30
+
+</div>
+
+</body>
+</html>

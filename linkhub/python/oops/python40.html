@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 40</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 40</h2>
+
+<pre>
+<span class="comment"># Question 40:</span>
+<span class="comment"># Ek Python program likho jo magic method __len__() ka use karke</span>
+<span class="comment"># object ki custom length return kare.</span>
+
+<span class="comment"># class create karna</span>
+class Demo:
+
+    <span class="comment"># magic method create karna</span>
+    def __len__(self):
+
+        <span class="comment"># custom length return karna</span>
+        return 5
+
+<span class="comment"># object create karna</span>
+d = Demo()
+
+<span class="comment"># len() function call karna</span>
+print(len(d))
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+5
+
+</div>
+
+</body>
+</html>

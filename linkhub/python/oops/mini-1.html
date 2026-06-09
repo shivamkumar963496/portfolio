@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Mini Project 1</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    overflow-x:auto;
+    line-height:1.6;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+    line-height:1.8;
+}
+
+h2{
+    color:#38bdf8;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Mini Project 1</h2>
+
+<pre>
+<span class="comment"># Question:</span>
+<span class="comment"># Ek Python mini project likho jo student management system banaye.</span>
+<span class="comment"># Program me student information store ho, marks update ho,</span>
+<span class="comment"># aur grade calculate ho.</span>
+
+
+<span class="comment"># ==============================</span>
+<span class="comment"># Student Management Program</span>
+<span class="comment"># ==============================</span>
+
+
+<span class="comment"># ---------- Student 1 Data ----------</span>
+s1_name = "Shivam"
+s1_marks = 88
+s1_age = 19
+s1_college = "NIET"
+
+
+<span class="comment"># ---------- Student 2 Data ----------</span>
+s2_name = "Yograj"
+s2_marks = 70
+s2_age = 21
+s2_college = "NIET"
+
+
+<span class="comment"># ==============================</span>
+<span class="comment"># Grade Function</span>
+<span class="comment"># ==============================</span>
+
+<span class="comment"># grade calculate karne ke liye function</span>
+def grade(marks):
+
+    if marks >= 90:
+        return "Grade A"
+
+    elif marks >= 75:
+        return "Grade B"
+
+    else:
+        return "Grade C"
+
+
+<span class="comment"># ==============================</span>
+<span class="comment"># Update Marks Function</span>
+<span class="comment"># ==============================</span>
+
+<span class="comment"># marks update karne ke liye function</span>
+def update_marks(old_marks, new_marks):
+
+    return new_marks
+
+
+<span class="comment"># ==============================</span>
+<span class="comment"># Display Old Student Data</span>
+<span class="comment"># ==============================</span>
+
+print("\n========== OLD DATA ==========\n")
+
+print("Student 1 Information")
+print("----------------------")
+print("Name    :", s1_name)
+print("Marks   :", s1_marks)
+print("Age     :", s1_age)
+print("College :", s1_college)
+
+
+print("\nStudent 2 Information")
+print("----------------------")
+print("Name    :", s2_name)
+print("Marks   :", s2_marks)
+print("Age     :", s2_age)
+print("College :", s2_college)
+
+
+<span class="comment"># ==============================</span>
+<span class="comment"># Update Student Marks</span>
+<span class="comment"># ==============================</span>
+
+print("\n========== UPDATE DATA ==========\n")
+
+<span class="comment"># user se new marks input lena</span>
+new_marks = int(input("Enter New Marks : "))
+
+
+<span class="comment"># marks update karna</span>
+updated_s1_marks = update_marks(s1_marks, new_marks)
+updated_s2_marks = update_marks(s2_marks, new_marks)
+
+
+<span class="comment"># ==============================</span>
+<span class="comment"># Display Updated Data</span>
+<span class="comment"># ==============================</span>
+
+print("\nStudent 1 Updated Information")
+print("------------------------------")
+print("Name    :", s1_name)
+print("Marks   :", updated_s1_marks)
+print("Age     :", s1_age)
+print("Grade   :", grade(updated_s1_marks))
+
+
+print("\nStudent 2 Updated Information")
+print("------------------------------")
+print("Name    :", s2_name)
+print("Marks   :", updated_s2_marks)
+print("Age     :", s2_age)
+print("Grade   :", grade(updated_s2_marks))
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+========== OLD DATA ========== <br><br>
+
+Student 1 Information <br>
+---------------------- <br>
+Name : Shivam <br>
+Marks : 88 <br>
+Age : 19 <br>
+College : NIET <br><br>
+
+Student 2 Information <br>
+---------------------- <br>
+Name : Yograj <br>
+Marks : 70 <br>
+Age : 21 <br>
+College : NIET <br><br>
+
+========== UPDATE DATA ========== <br><br>
+
+Enter New Marks : 95 <br><br>
+
+Student 1 Updated Information <br>
+------------------------------ <br>
+Name : Shivam <br>
+Marks : 95 <br>
+Age : 19 <br>
+Grade : Grade A <br><br>
+
+Student 2 Updated Information <br>
+------------------------------ <br>
+Name : Yograj <br>
+Marks : 95 <br>
+Age : 21 <br>
+Grade : Grade A
+
+</div>
+
+</body>
+</html>

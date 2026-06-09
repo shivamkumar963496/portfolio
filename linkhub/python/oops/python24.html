@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 24</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 24</h2>
+
+<pre>
+<span class="comment"># Question 24:</span>
+<span class="comment"># Ek Python program likho jo polymorphism ka use karke</span>
+<span class="comment"># alag-alag classes ke same method ko call kare.</span>
+
+<span class="comment"># first class create karna</span>
+class Bird:
+
+    <span class="comment"># method create karna</span>
+    def sound(self):
+
+        <span class="comment"># bird sound print karna</span>
+        print("Bird Fly")
+
+<span class="comment"># second class create karna</span>
+class Dog:
+
+    <span class="comment"># method create karna</span>
+    def sound(self):
+
+        <span class="comment"># dog sound print karna</span>
+        print("Dog Bark")
+
+<span class="comment"># loop ke through methods call karna</span>
+for obj in [Bird(), Dog()]:
+
+    obj.sound()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Bird Fly <br>
+Dog Bark
+
+</div>
+
+</body>
+</html>

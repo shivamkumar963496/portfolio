@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 15</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 15</h2>
+
+<pre>
+<span class="comment"># Question 15:</span>
+<span class="comment"># Ek Python program likho jo multilevel inheritance ka use karke</span>
+<span class="comment"># teen classes ke methods ko access kare.</span>
+
+<span class="comment"># first parent class create karna</span>
+class A:
+
+    <span class="comment"># method create karna</span>
+    def showA(self):
+
+        <span class="comment"># message print karna</span>
+        print("A")
+
+<span class="comment"># second class create karna</span>
+class B(A):
+
+    <span class="comment"># method create karna</span>
+    def showB(self):
+
+        <span class="comment"># message print karna</span>
+        print("B")
+
+<span class="comment"># third class create karna</span>
+class C(B):
+
+    <span class="comment"># method create karna</span>
+    def showC(self):
+
+        <span class="comment"># message print karna</span>
+        print("C")
+
+<span class="comment"># object create karna</span>
+obj = C()
+
+<span class="comment"># methods call karna</span>
+obj.showA()
+obj.showB()
+obj.showC()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+A <br>
+B <br>
+C
+
+</div>
+
+</body>
+</html>

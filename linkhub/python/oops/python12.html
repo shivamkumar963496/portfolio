@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 12</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 12</h2>
+
+<pre>
+<span class="comment"># Question 12:</span>
+<span class="comment"># Ek Python program likho jo inheritance ka use karke</span>
+<span class="comment"># parent class method ko child class se access kare.</span>
+
+<span class="comment"># parent class create karna</span>
+class Parent:
+
+    <span class="comment"># parent class method create karna</span>
+    def show():
+
+        <span class="comment"># message print karna</span>
+        print("Parent Class")
+
+<span class="comment"># child class create karna</span>
+class Child(Parent):
+
+    pass
+
+<span class="comment"># child class ko variable me store karna</span>
+c = Child
+
+<span class="comment"># inherited method call karna</span>
+c.show()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Parent Class
+
+</div>
+
+</body>
+</html>

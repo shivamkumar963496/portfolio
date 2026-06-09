@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Mini Project 3</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    overflow-x:auto;
+    line-height:1.6;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+    line-height:1.8;
+}
+
+h2{
+    color:#38bdf8;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python Mini Project 3</h2>
+
+<pre>
+<span class="comment"># Question:</span>
+<span class="comment"># Ek Python mini project likho jo college students record</span>
+<span class="comment"># management system banaye.</span>
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># College Students Record Management System</span>
+<span class="comment"># ==========================================</span>
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Student Class</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># class create karna</span>
+class Student:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self, name, age, course, college):
+
+        <span class="comment"># instance variables create karna</span>
+        self.name = name
+        self.age = age
+        self.course = course
+        self.college = college
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Display Heading</span>
+<span class="comment"># ==========================================</span>
+
+print("\n========== COLLEGE STUDENTS RECORD ==========\n")
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Student 1 Record</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># first object create karna</span>
+student1 = Student("Shivam", 21, "Polytechnic", "NIET")
+
+print("========== STUDENT - 1 RECORD ==========")
+
+print("Name    :", student1.name)
+print("Age     :", student1.age)
+print("Course  :", student1.course)
+print("College :", student1.college)
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Student 2 Record</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># second object create karna</span>
+student2 = Student("Yograj", 22, "BTech", "NIET")
+
+print("\n========== STUDENT - 2 RECORD ==========")
+
+print("Name    :", student2.name)
+print("Age     :", student2.age)
+print("Course  :", student2.course)
+print("College :", student2.college)
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Student 3 Record</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># third object create karna</span>
+student3 = Student("Rohit", 19, "DPharma", "NCP")
+
+print("\n========== STUDENT - 3 RECORD ==========")
+
+print("Name    :", student3.name)
+print("Age     :", student3.age)
+print("Course  :", student3.course)
+print("College :", student3.college)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+========== COLLEGE STUDENTS RECORD ========== <br><br>
+
+========== STUDENT - 1 RECORD ========== <br>
+Name : Shivam <br>
+Age : 21 <br>
+Course : Polytechnic <br>
+College : NIET <br><br>
+
+========== STUDENT - 2 RECORD ========== <br>
+Name : Yograj <br>
+Age : 22 <br>
+Course : BTech <br>
+College : NIET <br><br>
+
+========== STUDENT - 3 RECORD ========== <br>
+Name : Rohit <br>
+Age : 19 <br>
+Course : DPharma <br>
+College : NCP
+
+</div>
+
+</body>
+</html>

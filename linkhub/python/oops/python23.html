@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 23</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 23</h2>
+
+<pre>
+<span class="comment"># Question 23:</span>
+<span class="comment"># Ek Python program likho jo encapsulation ka use karke</span>
+<span class="comment"># setter aur getter method se marks update aur access kare.</span>
+
+<span class="comment"># class create karna</span>
+class Student:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self):
+
+        <span class="comment"># private variable create karna</span>
+        self.__marks = 0
+
+    <span class="comment"># setter method create karna</span>
+    def set_marks(self, m):
+
+        <span class="comment"># private variable update karna</span>
+        self.__marks = m
+
+    <span class="comment"># getter method create karna</span>
+    def get_marks(self):
+
+        <span class="comment"># private variable return karna</span>
+        return self.__marks
+
+<span class="comment"># object create karna</span>
+s = Student()
+
+<span class="comment"># setter method call karke marks set karna</span>
+s.set_marks(95)
+
+<span class="comment"># getter method call karke marks print karna</span>
+print(s.get_marks())
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+95
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 9</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 9</h2>
+
+<pre>
+<span class="comment"># Question 9:</span>
+<span class="comment"># Ek Python program likho jo class method ka use karke</span>
+<span class="comment"># rectangle ka area calculate kare.</span>
+
+<span class="comment"># class create karna</span>
+class Rectangle:
+
+    <span class="comment"># method create karna</span>
+    def area(self, l, b):
+
+        <span class="comment"># rectangle ka area print karna</span>
+        print("Area of the Rectangle :", l * b)
+
+<span class="comment"># user se length input lena</span>
+l = int(input("Enter Length of the Rectangle : "))
+
+<span class="comment"># user se breadth input lena</span>
+b = int(input("Enter Breadth of the Rectangle : "))
+
+<span class="comment"># object create karna</span>
+r = Rectangle()
+
+<span class="comment"># method call karna</span>
+r.area(l, b)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Enter Length of the Rectangle : 10 <br>
+Enter Breadth of the Rectangle : 5 <br>
+Area of the Rectangle : 50
+
+</div>
+
+</body>
+</html>

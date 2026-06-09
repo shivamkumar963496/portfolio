@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 19</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 19</h2>
+
+<pre>
+<span class="comment"># Question 19:</span>
+<span class="comment"># Ek Python program likho jo inheritance aur super() method ka use karke</span>
+<span class="comment"># parent aur child constructor ko call kare.</span>
+
+<span class="comment"># parent class create karna</span>
+class Father:
+
+    <span class="comment"># parent constructor create karna</span>
+    def __init__(self):
+
+        <span class="comment"># parent constructor message print karna</span>
+        print("Parent Constructor")
+
+<span class="comment"># child class create karna</span>
+class Child(Father):
+
+    <span class="comment"># child constructor create karna</span>
+    def __init__(self):
+
+        <span class="comment"># parent constructor call karna</span>
+        super().__init__()
+
+        <span class="comment"># child constructor message print karna</span>
+        print("Child Constructor")
+
+<span class="comment"># object create karna</span>
+c = Child()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Parent Constructor <br>
+Child Constructor
+
+</div>
+
+</body>
+</html>

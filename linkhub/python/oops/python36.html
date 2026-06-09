@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 36</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 36</h2>
+
+<pre>
+<span class="comment"># Question 36:</span>
+<span class="comment"># Ek Python program likho jo class aur method ka use karke</span>
+<span class="comment"># student ka grade calculate kare.</span>
+
+<span class="comment"># class create karna</span>
+class Student:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self, marks):
+
+        <span class="comment"># instance variable create karna</span>
+        self.marks = marks
+
+    <span class="comment"># grade method create karna</span>
+    def grade(self):
+
+        <span class="comment"># grade check karna</span>
+        if self.marks >= 90:
+
+            print("Grade A")
+
+        elif self.marks >= 75:
+
+            print("Grade B")
+
+        elif self.marks >= 40:
+
+            print("Grade C")
+
+        else:
+
+            print("Fail")
+
+<span class="comment"># user se marks input lena</span>
+m = int(input("Enter Your Marks : "))
+
+<span class="comment"># object create karna</span>
+s = Student(m)
+
+<span class="comment"># grade method call karna</span>
+s.grade()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Enter Your Marks : 85 <br>
+Grade B
+
+</div>
+
+</body>
+</html>

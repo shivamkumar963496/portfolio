@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 28</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 28</h2>
+
+<pre>
+<span class="comment"># Question 28:</span>
+<span class="comment"># Ek Python program likho jo class aur object ka use karke</span>
+<span class="comment"># student result management system banaye.</span>
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Student Result Management System</span>
+<span class="comment"># ==========================================</span>
+
+
+<span class="comment"># class create karna</span>
+class Student:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self, name, marks, age, college):
+
+        <span class="comment"># instance variables create karna</span>
+        self.name = name
+        self.marks = marks
+        self.age = age
+        self.college = college
+
+
+    <span class="comment"># result method create karna</span>
+    def result(self):
+
+        <span class="comment"># pass or fail check karna</span>
+        if self.marks >= 33:
+
+            print("\nResult : Pass")
+
+        else:
+
+            print("\nResult : Fail")
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Object Creation</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># object create karna</span>
+Student1 = Student("Shivam", 89, 21, "NIET")
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Student Information</span>
+<span class="comment"># ==========================================</span>
+
+print("\n========== STUDENT RECORD ==========\n")
+
+print("Name    :", Student1.name)
+print("Marks   :", Student1.marks)
+print("Age     :", Student1.age)
+print("College :", Student1.college)
+
+
+<span class="comment"># ==========================================</span>
+<span class="comment"># Result</span>
+<span class="comment"># ==========================================</span>
+
+<span class="comment"># result method call karna</span>
+Student1.result()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+========== STUDENT RECORD ========== <br><br>
+
+Name : Shivam <br>
+Marks : 89 <br>
+Age : 21 <br>
+College : NIET <br><br>
+
+Result : Pass
+
+</div>
+
+</body>
+</html>

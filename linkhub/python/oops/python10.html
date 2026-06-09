@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 10</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 10</h2>
+
+<pre>
+<span class="comment"># Question 10:</span>
+<span class="comment"># Ek Python program likho jo constructor ka use karke</span>
+<span class="comment"># employee ki details print kare.</span>
+
+<span class="comment"># class create karna</span>
+class Employee:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self, name, salary, company):
+
+        <span class="comment"># instance variables create karna</span>
+        self.name = name
+        self.salary = salary
+        self.company = company
+
+<span class="comment"># object create karna</span>
+e = Employee("Shivam", 50000, "Google")
+
+<span class="comment"># employee details print karna</span>
+print("Name    :", e.name)
+print("Salary  :", e.salary)
+print("Company :", e.company)
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Name : Shivam <br>
+Salary : 50000 <br>
+Company : Google
+
+</div>
+
+</body>
+</html>

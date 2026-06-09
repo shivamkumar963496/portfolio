@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 26</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 26</h2>
+
+<pre>
+<span class="comment"># Question 26:</span>
+<span class="comment"># Ek Python program likho jo abstract class aur abstract method ka use karke</span>
+<span class="comment"># vehicle start method implement kare.</span>
+
+<span class="comment"># abstract class import karna</span>
+from abc import ABC, abstractmethod
+
+<span class="comment"># abstract class create karna</span>
+class Vehicle(ABC):
+
+    <span class="comment"># abstract method create karna</span>
+    @abstractmethod
+    def start(self):
+
+        pass
+
+<span class="comment"># child class create karna</span>
+class Car(Vehicle):
+
+    <span class="comment"># abstract method implement karna</span>
+    def start(self):
+
+        <span class="comment"># message print karna</span>
+        print("Car Start")
+
+<span class="comment"># object create karna</span>
+c = Car()
+
+<span class="comment"># method call karna</span>
+c.start()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Car Start
+
+</div>
+
+</body>
+</html>

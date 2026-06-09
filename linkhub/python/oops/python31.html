@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python OOP Program 31</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python OOP Program 31</h2>
+
+<pre>
+<span class="comment"># Question 31:</span>
+<span class="comment"># Ek Python program likho jo constructor aur method ka use karke</span>
+<span class="comment"># ATM balance check kare.</span>
+
+<span class="comment"># class create karna</span>
+class Atm:
+
+    <span class="comment"># constructor create karna</span>
+    def __init__(self, balance):
+
+        <span class="comment"># instance variable create karna</span>
+        self.balance = balance
+
+    <span class="comment"># balance check method create karna</span>
+    def check(self):
+
+        <span class="comment"># balance print karna</span>
+        print("Balance :", self.balance)
+
+<span class="comment"># object create karna</span>
+a = Atm(50000)
+
+<span class="comment"># method call karna</span>
+a.check()
+</pre>
+
+<div class="box">
+<b>📊 Output:</b><br><br>
+
+Balance : 50000
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================= -->
+    <!-- Basic Meta Tags -->
+    <!-- ========================================= -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========================================= -->
+    <!-- Website Title -->
+    <!-- ========================================= -->
+
+    <title>Python Modules Complete Revision | Shivam Kumar</title>
+
+    <!-- ========================================= -->
+    <!-- Internal CSS Start -->
+    <!-- ========================================= -->
+
+    <style>
+
+        /* ========================================= */
+        /* Universal Selector */
+        /* ========================================= */
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        /* ========================================= */
+        /* Body Styling */
+        /* ========================================= */
+
+        body{
+            background:#020617;
+            color:#e2e8f0;
+            font-family:Arial, sans-serif;
+            line-height:1.8;
+            padding:20px;
+        }
+
+        /* ========================================= */
+        /* Main Container */
+        /* ========================================= */
+
+        .container{
+            max-width:1200px;
+            margin:auto;
+        }
+
+        /* ========================================= */
+        /* Header Section */
+        /* ========================================= */
+
+        header{
+            text-align:center;
+            padding:50px 20px;
+        }
+
+        header h1{
+            font-size:50px;
+            color:#38bdf8;
+            margin-bottom:20px;
+        }
+
+        header p{
+            color:#94a3b8;
+            font-size:20px;
+        }
+
+        /* ========================================= */
+        /* Card Design */
+        /* ========================================= */
+
+        .card{
+            background:#0f172a;
+            border:1px solid #1e293b;
+            padding:30px;
+            border-radius:20px;
+            margin-bottom:30px;
+            transition:0.3s;
+        }
+
+        /* Hover Effect */
+
+        .card:hover{
+            transform:translateY(-5px);
+            border-color:#38bdf8;
+        }
+
+        /* ========================================= */
+        /* Heading Styling */
+        /* ========================================= */
+
+        .card h2{
+            color:#38bdf8;
+            margin-bottom:20px;
+        }
+
+        .card h3{
+            color:#facc15;
+            margin-top:20px;
+            margin-bottom:10px;
+        }
+
+        /* ========================================= */
+        /* Paragraph Styling */
+        /* ========================================= */
+
+        .card p{
+            margin-bottom:15px;
+            color:#cbd5e1;
+        }
+
+        /* ========================================= */
+        /* Code Box Styling */
+        /* ========================================= */
+
+        pre{
+            background:#000;
+            padding:20px;
+            border-radius:12px;
+            overflow-x:auto;
+            margin-top:15px;
+            margin-bottom:20px;
+        }
+
+        code{
+            color:#22c55e;
+            font-size:15px;
+        }
+
+        /* ========================================= */
+        /* Table Styling */
+        /* ========================================= */
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        table th,
+        table td{
+            border:1px solid #334155;
+            padding:15px;
+            text-align:left;
+        }
+
+        table th{
+            background:#1e293b;
+            color:#38bdf8;
+        }
+
+        /* ========================================= */
+        /* Highlight Text */
+        /* ========================================= */
+
+        .highlight{
+            color:#facc15;
+            font-weight:bold;
+        }
+
+        /* ========================================= */
+        /* Footer Styling */
+        /* ========================================= */
+
+        footer{
+            text-align:center;
+            padding:40px;
+            color:#94a3b8;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- Main Container Start -->
+    <!-- ========================================= -->
+
+    <div class="container">
+
+        <!-- ========================================= -->
+        <!-- Header Section -->
+        <!-- ========================================= -->
+
+        <header>
+
+            <h1>Python Modules Complete Revision 🚀</h1>
+
+            <p>
+                Complete Notes with Explanation, Examples and Comments
+            </p>
+
+        </header>
+
+        <!-- ========================================= -->
+        <!-- Card 1 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>1. What is Module?</h2>
+
+            <p>
+
+                Python में ऐसी file जिसमें functions, variables,
+                classes और reusable code होता है उसे
+                <span class="highlight">Module</span> कहते हैं।
+
+            </p>
+
+            <h3>Example</h3>
+
+<pre><code>
+# math.py
+
+def add(a,b):
+    return a+b
+</code></pre>
+
+            <p>
+
+                ऊपर की file एक module है क्योंकि इसमें reusable function है।
+
+            </p>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 2 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>2. Import Module</h2>
+
+            <p>
+
+                Module को use करने के लिए
+                <span class="highlight">import</span>
+                keyword का use करते हैं।
+
+            </p>
+
+<pre><code>
+# math module import
+
+import math
+
+# square root निकालना
+
+print(math.sqrt(25))
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+5.0
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 3 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>3. Specific Function Import</h2>
+
+            <p>
+
+                अगर पूरा module import नहीं करना चाहते
+                तो specific function import कर सकते हैं।
+
+            </p>
+
+<pre><code>
+# sqrt function import
+
+from math import sqrt
+
+# direct use
+
+print(sqrt(36))
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 4 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>4. Alias Name</h2>
+
+            <p>
+
+                बड़े module names को छोटा करने के लिए
+                alias name use करते हैं।
+
+            </p>
+
+<pre><code>
+# math module को m नाम दिया
+
+import math as m
+
+print(m.pi)
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 5 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>5. Random Module</h2>
+
+            <p>
+
+                Random numbers generate करने के लिए
+                random module use होता है।
+
+            </p>
+
+<pre><code>
+import random
+
+# 1 से 10 तक random number
+
+print(random.randint(1,10))
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 6 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>6. Datetime Module</h2>
+
+            <p>
+
+                Date और Time handle करने के लिए
+                datetime module use होता है।
+
+            </p>
+
+<pre><code>
+from datetime import datetime
+
+# current date & time
+
+now = datetime.now()
+
+print(now)
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 7 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>7. OS Module</h2>
+
+            <p>
+
+                Operating System related काम करने के लिए
+                os module use होता है।
+
+            </p>
+
+<pre><code>
+import os
+
+# current folder path
+
+print(os.getcwd())
+
+# current folder files
+
+print(os.listdir())
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 8 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>8. SYS Module</h2>
+
+            <p>
+
+                Python interpreter information के लिए
+                sys module use होता है।
+
+            </p>
+
+<pre><code>
+import sys
+
+# python version
+
+print(sys.version)
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 9 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>9. Calendar Module</h2>
+
+            <p>
+
+                Calendar print करने के लिए
+                calendar module use होता है।
+
+            </p>
+
+<pre><code>
+import calendar
+
+# June 2026 calendar
+
+print(calendar.month(2026,6))
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 10 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>10. JSON Module</h2>
+
+            <p>
+
+                JSON data handle करने के लिए
+                json module use होता है।
+
+            </p>
+
+<pre><code>
+import json
+
+x='{"name":"Shivam"}'
+
+# JSON to Python dictionary
+
+print(json.loads(x))
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 11 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>11. Custom Module</h2>
+
+            <p>
+
+                हम अपनी खुद की module file भी बना सकते हैं।
+
+            </p>
+
+            <h3>mymodule.py</h3>
+
+<pre><code>
+# function create
+
+def greet():
+
+    print("Hello Shivam")
+</code></pre>
+
+            <h3>main.py</h3>
+
+<pre><code>
+# custom module import
+
+import mymodule
+
+# function call
+
+mymodule.greet()
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 12 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>12. Package Example</h2>
+
+            <p>
+
+                कई modules के collection को Package कहते हैं।
+
+            </p>
+
+<pre><code>
+mypackage/
+
+    add.py
+    sub.py
+</code></pre>
+
+            <h3>Import Example</h3>
+
+<pre><code>
+from mypackage.add import sum
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 13 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>13. __name__ Variable</h2>
+
+            <p>
+
+                यह check करता है कि file direct run हुई है
+                या import हुई है।
+
+            </p>
+
+<pre><code>
+def show():
+
+    print("Hello")
+
+# direct run check
+
+if __name__ == "__main__":
+
+    show()
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 14 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>14. Reload Module</h2>
+
+            <p>
+
+                Module को दुबारा reload करने के लिए
+                importlib module use होता है।
+
+            </p>
+
+<pre><code>
+import importlib
+import math
+
+# reload module
+
+importlib.reload(math)
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 15 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>15. Important Built-in Modules</h2>
+
+            <table>
+
+                <tr>
+                    <th>Module</th>
+                    <th>Use</th>
+                </tr>
+
+                <tr>
+                    <td>math</td>
+                    <td>Mathematical Calculations</td>
+                </tr>
+
+                <tr>
+                    <td>random</td>
+                    <td>Random Numbers</td>
+                </tr>
+
+                <tr>
+                    <td>os</td>
+                    <td>File & Folder Handling</td>
+                </tr>
+
+                <tr>
+                    <td>datetime</td>
+                    <td>Date & Time</td>
+                </tr>
+
+                <tr>
+                    <td>json</td>
+                    <td>JSON Data</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 16 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>16. Module vs Package</h2>
+
+            <table>
+
+                <tr>
+                    <th>Module</th>
+                    <th>Package</th>
+                </tr>
+
+                <tr>
+                    <td>Single .py File</td>
+                    <td>Collection of Modules</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 17 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>17. Golden Revision Points ⭐</h2>
+
+            <p>✔ Module = Reusable Python File</p>
+
+            <p>✔ Package = Collection of Modules</p>
+
+            <p>✔ import keyword से modules use होते हैं</p>
+
+            <p>✔ Python में Built-in और Custom दोनों modules होते हैं</p>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Footer -->
+        <!-- ========================================= -->
+
+        <footer>
+
+            <p>
+                Made with ❤️ by Shivam Kumar
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

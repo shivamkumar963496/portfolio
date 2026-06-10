@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Python Exception Handling Program 38</title>
+
+<style>
+
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:Arial;
+    padding:20px;
+    margin:0;
+}
+
+/* ========================= */
+/* Top Navigation */
+/* ========================= */
+
+.topbar{
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.topbar a{
+    text-decoration:none;
+}
+
+.topbar button{
+    background:#0f172a;
+    color:#38bdf8;
+    border:1px solid #38bdf8;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.topbar button:hover{
+    background:#1e293b;
+    color:#22d3ee;
+}
+
+/* ========================= */
+/* Heading */
+/* ========================= */
+
+h2{
+    color:#facc15;
+    margin-bottom:20px;
+}
+
+/* ========================= */
+/* Code Box */
+/* ========================= */
+
+pre{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    overflow-x:auto;
+    font-family:monospace;
+    line-height:1.7;
+    border-left:5px solid #38bdf8;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+/* ========================= */
+/* Output Box */
+/* ========================= */
+
+.box{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+    line-height:1.8;
+    border-left:5px solid #22c55e;
+}
+
+/* ========================= */
+/* Copy Button */
+/* ========================= */
+
+.copy-btn{
+    margin-top:15px;
+    background:#38bdf8;
+    color:#020617;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.copy-btn:hover{
+    background:#0ea5e9;
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    color:#94a3b8;
+    font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- Navigation Buttons -->
+<!-- ========================= -->
+
+<div class="topbar">
+
+<a href="python37.html">
+<button>⬅ Prev</button>
+</a>
+
+<a href="../Exception.html">
+<button>🏠 Home</button>
+</a>
+
+<a href="python39.html">
+<button>Next ➡</button>
+</a>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- Heading -->
+<!-- ========================= -->
+
+<h2>📌 Python Exception Handling Program 38</h2>
+
+
+<!-- ========================= -->
+<!-- Python Code -->
+<!-- ========================= -->
+
+<pre id="code">
+
+<span class="comment"># Question 38:</span>
+<span class="comment"># Ek Python class method banao jo exception handle kare.</span>
+
+<span class="comment"># class create karna</span>
+class Demo:
+
+    <span class="comment"># method create karna</span>
+    def show(self):
+
+        <span class="comment"># try block create karna</span>
+        try:
+
+            <span class="comment"># zero se divide karna</span>
+            print(10 / 0)
+
+        <span class="comment"># exception handle karna</span>
+        except:
+
+            <span class="comment"># error message print karna</span>
+            print("Class Error")
+
+<span class="comment"># object create karna</span>
+d = Demo()
+
+<span class="comment"># method call karna</span>
+d.show()
+
+</pre>
+
+
+<!-- ========================= -->
+<!-- Copy Code Button -->
+<!-- ========================= -->
+
+<button class="copy-btn" onclick="copyCode()">
+📋 Copy Code
+</button>
+
+
+<!-- ========================= -->
+<!-- Output Section -->
+<!-- ========================= -->
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Class Error
+
+</div>
+
+
+<!-- ========================= -->
+<!-- Footer -->
+<!-- ========================= -->
+
+<footer>
+
+© 2026 | coding_with_shivam
+
+</footer>
+
+
+<!-- ========================= -->
+<!-- JavaScript -->
+<!-- ========================= -->
+
+<script>
+
+function copyCode(){
+
+    let code = document.getElementById("code").innerText;
+
+    navigator.clipboard.writeText(code);
+
+    alert("Code Copied Successfully");
+
+}
+
+</script>
+
+</body>
+</html>

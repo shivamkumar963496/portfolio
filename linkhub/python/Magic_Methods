@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ========================================= -->
+    <!-- Basic Meta Tags -->
+    <!-- ========================================= -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========================================= -->
+    <!-- Website Title -->
+    <!-- ========================================= -->
+
+    <title>Python Magic Methods Complete Revision</title>
+
+    <!-- ========================================= -->
+    <!-- Internal CSS -->
+    <!-- ========================================= -->
+
+    <style>
+
+        /* ========================================= */
+        /* Universal Selector */
+        /* ========================================= */
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        /* ========================================= */
+        /* Body Styling */
+        /* ========================================= */
+
+        body{
+            background:#020617;
+            color:#e2e8f0;
+            font-family:Arial, sans-serif;
+            line-height:1.8;
+            padding:20px;
+        }
+
+        /* ========================================= */
+        /* Main Container */
+        /* ========================================= */
+
+        .container{
+            max-width:1200px;
+            margin:auto;
+        }
+
+        /* ========================================= */
+        /* Header Styling */
+        /* ========================================= */
+
+        header{
+            text-align:center;
+            padding:50px 20px;
+        }
+
+        header h1{
+            font-size:50px;
+            color:#38bdf8;
+            margin-bottom:20px;
+        }
+
+        header p{
+            color:#94a3b8;
+            font-size:20px;
+        }
+
+        /* ========================================= */
+        /* Card Design */
+        /* ========================================= */
+
+        .card{
+            background:#0f172a;
+            border:1px solid #1e293b;
+            padding:30px;
+            border-radius:20px;
+            margin-bottom:30px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+            border-color:#38bdf8;
+        }
+
+        /* ========================================= */
+        /* Headings */
+        /* ========================================= */
+
+        .card h2{
+            color:#38bdf8;
+            margin-bottom:20px;
+        }
+
+        .card h3{
+            color:#facc15;
+            margin-top:20px;
+            margin-bottom:10px;
+        }
+
+        /* ========================================= */
+        /* Paragraph */
+        /* ========================================= */
+
+        .card p{
+            color:#cbd5e1;
+            margin-bottom:15px;
+        }
+
+        /* ========================================= */
+        /* Code Box */
+        /* ========================================= */
+
+        pre{
+            background:#000;
+            padding:20px;
+            border-radius:12px;
+            overflow-x:auto;
+            margin-top:15px;
+            margin-bottom:20px;
+        }
+
+        code{
+            color:#22c55e;
+            font-size:15px;
+        }
+
+        /* ========================================= */
+        /* Table Styling */
+        /* ========================================= */
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        table th,
+        table td{
+            border:1px solid #334155;
+            padding:15px;
+            text-align:left;
+        }
+
+        table th{
+            background:#1e293b;
+            color:#38bdf8;
+        }
+
+        /* ========================================= */
+        /* Highlight */
+        /* ========================================= */
+
+        .highlight{
+            color:#facc15;
+            font-weight:bold;
+        }
+
+        /* ========================================= */
+        /* Footer */
+        /* ========================================= */
+
+        footer{
+            text-align:center;
+            padding:40px;
+            color:#94a3b8;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- Main Container -->
+    <!-- ========================================= -->
+
+    <div class="container">
+
+        <!-- ========================================= -->
+        <!-- Header -->
+        <!-- ========================================= -->
+
+        <header>
+
+            <h1>Python Magic Methods Complete Revision 🚀</h1>
+
+            <p>
+                Complete Notes with Hindi Explanation & Examples
+            </p>
+
+        </header>
+
+        <!-- ========================================= -->
+        <!-- Card 1 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>1. __init__() Method</h2>
+
+            <p>
+
+                <span class="highlight">__init__()</span>
+                एक Constructor है जो object create होते ही automatically call होता है।
+
+            </p>
+
+<pre><code>
+class Demo:
+
+    def __init__(self):
+        print("Constructor Called")
+
+d = Demo()
+</code></pre>
+
+            <h3>Internal Working</h3>
+
+<pre><code>
+d.__init__()
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+Constructor Called
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 2 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>2. __str__() Method</h2>
+
+            <p>
+
+                Object को print करने पर
+                <span class="highlight">__str__()</span>
+                method call होता है।
+
+            </p>
+
+<pre><code>
+class Demo:
+
+    def __str__(self):
+        return "Hello Shivam"
+
+d = Demo()
+
+print(d)
+</code></pre>
+
+            <h3>Internal Working</h3>
+
+<pre><code>
+d.__str__()
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+Hello Shivam
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 3 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>3. __len__() Method</h2>
+
+            <p>
+
+                Object की length return करने के लिए
+                <span class="highlight">__len__()</span>
+                method use होता है।
+
+            </p>
+
+<pre><code>
+class Demo:
+
+    def __len__(self):
+        return 5
+
+d = Demo()
+
+print(len(d))
+</code></pre>
+
+            <h3>Internal Working</h3>
+
+<pre><code>
+d.__len__()
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+5
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 4 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>4. __add__() Method</h2>
+
+            <p>
+
+                <span class="highlight">+</span>
+                operator overload करने के लिए use होता है।
+
+            </p>
+
+<pre><code>
+class Number:
+
+    def __init__(self,x):
+        self.x = x
+
+    def __add__(self,other):
+        return self.x + other.x
+
+n1 = Number(10)
+n2 = Number(20)
+
+print(n1 + n2)
+</code></pre>
+
+            <h3>Internal Working</h3>
+
+<pre><code>
+n1.__add__(n2)
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+30
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 5 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>5. __sub__() Method</h2>
+
+            <p>
+
+                <span class="highlight">-</span>
+                operator overload करने के लिए use होता है।
+
+            </p>
+
+<pre><code>
+class Number:
+
+    def __init__(self,x):
+        self.x = x
+
+    def __sub__(self,other):
+        return self.x - other.x
+
+n1 = Number(50)
+n2 = Number(20)
+
+print(n1 - n2)
+</code></pre>
+
+            <h3>Internal Working</h3>
+
+<pre><code>
+n1.__sub__(n2)
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+30
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 6 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>6. __mul__() Method</h2>
+
+            <p>
+
+                <span class="highlight">*</span>
+                operator overload करने के लिए use होता है।
+
+            </p>
+
+<pre><code>
+class Number:
+
+    def __init__(self,x):
+        self.x = x
+
+    def __mul__(self,other):
+        return self.x * other.x
+
+n1 = Number(5)
+n2 = Number(4)
+
+print(n1 * n2)
+</code></pre>
+
+            <h3>Internal Working</h3>
+
+<pre><code>
+n1.__mul__(n2)
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+20
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 7 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>7. __truediv__() Method</h2>
+
+            <p>
+
+                <span class="highlight">/</span>
+                operator overload करने के लिए use होता है।
+
+            </p>
+
+<pre><code>
+class Number:
+
+    def __init__(self,x):
+        self.x = x
+
+    def __truediv__(self,other):
+        return self.x / other.x
+
+n1 = Number(20)
+n2 = Number(5)
+
+print(n1 / n2)
+</code></pre>
+
+            <h3>Internal Working</h3>
+
+<pre><code>
+n1.__truediv__(n2)
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+4.0
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 8 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>8. __gt__() Method</h2>
+
+            <p>
+
+                <span class="highlight">></span>
+                comparison operator overload करने के लिए use होता है।
+
+            </p>
+
+<pre><code>
+class Demo:
+
+    def __init__(self,x):
+        self.x = x
+
+    def __gt__(self,other):
+        return self.x > other.x
+
+d1 = Demo(30)
+d2 = Demo(10)
+
+print(d1 > d2)
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+True
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 9 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>9. __lt__() Method</h2>
+
+            <p>
+
+                <span class="highlight"><</span>
+                comparison operator overload करने के लिए use होता है।
+
+            </p>
+
+<pre><code>
+class Demo:
+
+    def __init__(self,x):
+        self.x = x
+
+    def __lt__(self,other):
+        return self.x < other.x
+
+d1 = Demo(5)
+d2 = Demo(10)
+
+print(d1 < d2)
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+True
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 10 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>10. __eq__() Method</h2>
+
+            <p>
+
+                <span class="highlight">==</span>
+                comparison operator overload करने के लिए use होता है।
+
+            </p>
+
+<pre><code>
+class Demo:
+
+    def __init__(self,x):
+        self.x = x
+
+    def __eq__(self,other):
+        return self.x == other.x
+
+d1 = Demo(10)
+d2 = Demo(10)
+
+print(d1 == d2)
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+True
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 11 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>11. __call__() Method</h2>
+
+            <p>
+
+                Object को function की तरह callable बनाने के लिए
+                use होता है।
+
+            </p>
+
+<pre><code>
+class Demo:
+
+    def __call__(self):
+        print("Object Called")
+
+d = Demo()
+
+d()
+</code></pre>
+
+            <h3>Internal Working</h3>
+
+<pre><code>
+d.__call__()
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+Object Called
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 12 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>12. __del__() Method</h2>
+
+            <p>
+
+                Object delete होने पर
+                <span class="highlight">__del__()</span>
+                method call होता है।
+
+            </p>
+
+<pre><code>
+class Demo:
+
+    def __del__(self):
+        print("Object Deleted")
+
+d = Demo()
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+Object Deleted
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Card 13 -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>13. __contains__() Method</h2>
+
+            <p>
+
+                <span class="highlight">in</span>
+                operator overload करने के लिए use होता है।
+
+            </p>
+
+<pre><code>
+class Demo:
+
+    def __contains__(self,item):
+        return item in [1,2,3,4]
+
+d = Demo()
+
+print(2 in d)
+</code></pre>
+
+            <h3>Internal Working</h3>
+
+<pre><code>
+d.__contains__(2)
+</code></pre>
+
+            <h3>Output</h3>
+
+<pre><code>
+True
+</code></pre>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Final Summary -->
+        <!-- ========================================= -->
+
+        <div class="card">
+
+            <h2>Magic Methods Summary Table</h2>
+
+            <table>
+
+                <tr>
+                    <th>Method</th>
+                    <th>Work</th>
+                </tr>
+
+                <tr>
+                    <td>__init__()</td>
+                    <td>Constructor</td>
+                </tr>
+
+                <tr>
+                    <td>__str__()</td>
+                    <td>Object Print</td>
+                </tr>
+
+                <tr>
+                    <td>__len__()</td>
+                    <td>Length</td>
+                </tr>
+
+                <tr>
+                    <td>__add__()</td>
+                    <td>Addition</td>
+                </tr>
+
+                <tr>
+                    <td>__sub__()</td>
+                    <td>Subtraction</td>
+                </tr>
+
+                <tr>
+                    <td>__mul__()</td>
+                    <td>Multiplication</td>
+                </tr>
+
+                <tr>
+                    <td>__truediv__()</td>
+                    <td>Division</td>
+                </tr>
+
+                <tr>
+                    <td>__gt__()</td>
+                    <td>Greater Than</td>
+                </tr>
+
+                <tr>
+                    <td>__lt__()</td>
+                    <td>Less Than</td>
+                </tr>
+
+                <tr>
+                    <td>__eq__()</td>
+                    <td>Equality</td>
+                </tr>
+
+                <tr>
+                    <td>__call__()</td>
+                    <td>Callable Object</td>
+                </tr>
+
+                <tr>
+                    <td>__del__()</td>
+                    <td>Destructor</td>
+                </tr>
+
+                <tr>
+                    <td>__contains__()</td>
+                    <td>in Operator</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- ========================================= -->
+        <!-- Footer -->
+        <!-- ========================================= -->
+
+        <footer>
+
+            <p>
+                Made with ❤️ by Shivam Kumar
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

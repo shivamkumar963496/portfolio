@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 20</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 20</h2>
+
+<pre>
+<span class="comment"># Question 20:</span>
+<span class="comment"># Ek Python program likho jo file ki empty lines</span>
+<span class="comment"># remove karke nayi file me save kare.</span>
+
+<span class="comment"># source file ko read mode me open karna</span>
+with open("file1.txt","r") as f:
+
+    <span class="comment"># sirf non-empty lines store karna</span>
+    lines = [line for line in f if line.strip()]
+
+<span class="comment"># new file ko write mode me open karna</span>
+with open("file2.txt","w") as f:
+
+    <span class="comment"># filtered lines write karna</span>
+    f.writelines(lines)
+
+<span class="comment"># success message print karna</span>
+print("Empty Lines Removed Successfully")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Empty Lines Removed Successfully
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>file1.txt</b> ko read mode me open kiya gaya hai.<br>
+2. <b>line.strip()</b> line ke starting aur ending spaces remove karta hai.<br>
+3. Agar line empty nahi hai to use list me store kiya jata hai.<br>
+4. <b>file2.txt</b> ko write mode me open kiya jata hai.<br>
+5. <b>writelines()</b> filtered lines ko new file me save karta hai.<br>
+6. Is tarah empty lines remove hokar clean file create ho jati hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ <b>strip()</b> spaces aur newline characters remove karta hai.<br>
+✔ Empty line detect karne ke liye strip() bahut useful hai.<br>
+✔ Data cleaning aur preprocessing me ye technique frequently use hoti hai.
+
+</div>
+
+</body>
+</html>

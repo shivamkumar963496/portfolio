@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 17</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 17</h2>
+
+<pre>
+<span class="comment"># Question 17:</span>
+<span class="comment"># Ek Python program likho jo do files ka</span>
+<span class="comment"># data merge karke print kare.</span>
+
+<span class="comment"># first file ko read mode me open karna</span>
+f1 = open("file1.txt","r")
+
+<span class="comment"># second file ko read mode me open karna</span>
+f2 = open("file2.txt","r")
+
+<span class="comment"># dono files ka data read karna</span>
+data1 = f1.read()
+data2 = f2.read()
+
+<span class="comment"># merged data print karna</span>
+print(data1 + data2)
+
+<span class="comment"># files close karna</span>
+f1.close()
+f2.close()
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Hello World<br>
+Welcome to Python
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>file1.txt</b> aur <b>file2.txt</b> ko read mode me open kiya gaya hai.<br>
+2. <b>read()</b> function dono files ka content read karta hai.<br>
+3. <b>data1 + data2</b> dono strings ko merge karta hai.<br>
+4. Merged content screen par print hota hai.<br>
+5. Last me dono files ko close kar diya jata hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ String concatenation (+) se multiple files ka data combine kiya ja sakta hai.<br>
+✔ File merging data processing aur report generation me useful hai.<br>
+✔ Large files ke liye chunk-wise merging zyada efficient hoti hai.
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 18</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 18</h2>
+
+<pre>
+<span class="comment"># Question 18:</span>
+<span class="comment"># Ek Python program likho jo do files ke</span>
+<span class="comment"># content ko compare kare.</span>
+
+<span class="comment"># first file ka data read karna</span>
+f1 = open("file1.txt","r")
+data1 = f1.read()
+
+<span class="comment"># second file ka data read karna</span>
+f2 = open("file2.txt","r")
+data2 = f2.read()
+
+<span class="comment"># dono files compare karna</span>
+if data1 == data2:
+
+    <span class="comment"># agar content same ho</span>
+    print("Files are Same")
+
+else:
+
+    <span class="comment"># agar content different ho</span>
+    print("Files are Different")
+
+<span class="comment"># files close karna</span>
+f1.close()
+f2.close()
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Files are Same
+
+<br><br>
+<b>OR</b>
+<br><br>
+
+Files are Different
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>file1.txt</b> aur <b>file2.txt</b> ko read mode me open kiya jata hai.<br>
+2. <b>read()</b> function dono files ka pura content read karta hai.<br>
+3. <b>==</b> operator dono contents ko compare karta hai.<br>
+4. Agar content same hota hai to <b>Files are Same</b> print hota hai.<br>
+5. Agar content alag hota hai to <b>Files are Different</b> print hota hai.<br>
+6. Last me dono files ko close kar diya jata hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ == operator values compare karta hai.<br>
+✔ Comparison case-sensitive hoti hai.<br>
+✔ File comparison data verification aur backup checking me useful hai.
+
+</div>
+
+</body>
+</html>

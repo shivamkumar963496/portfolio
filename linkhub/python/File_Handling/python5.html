@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 5</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 5</h2>
+
+<pre>
+<span class="comment"># Question 5:</span>
+<span class="comment"># Ek Python program likho jo file ko</span>
+<span class="comment"># line by line read karke print kare.</span>
+
+<span class="comment"># demo.txt file ko read mode me open karna</span>
+file = open("demo.txt","r")
+
+<span class="comment"># file ki har line ko ek-ek karke read karna</span>
+for line in file:
+
+    <span class="comment"># current line print karna</span>
+    print(line)
+
+<span class="comment"># file close karna</span>
+file.close()
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+demo.txt file ki sabhi lines ek-ek karke print hongi.
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>open("demo.txt","r")</b> file ko read mode me open karta hai.<br>
+2. <b>for line in file</b> loop file ki har line ko automatically read karta hai.<br>
+3. Har iteration me ek line <b>line</b> variable me store hoti hai.<br>
+4. <b>print(line)</b> us line ko screen par display karta hai.<br>
+5. Last me <b>file.close()</b> file ko band kar deta hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ Large files ko line-by-line read karna memory efficient hota hai.<br>
+✔ Puri file ek saath load nahi hoti.<br>
+✔ Ye method log files aur large text files ke liye bahut useful hai.
+
+</div>
+
+</body>
+</html>

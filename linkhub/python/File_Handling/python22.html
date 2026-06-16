@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 22</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 22</h2>
+
+<pre>
+<span class="comment"># Question 22:</span>
+<span class="comment"># Ek Python program likho jo ek image file ko</span>
+<span class="comment"># copy karke dusri image file me save kare.</span>
+
+<span class="comment"># source image ko binary read mode me open karna</span>
+with open("image1.jpg","rb") as f1:
+
+    <span class="comment"># destination image ko binary write mode me open karna</span>
+    with open("image2.jpg","wb") as f2:
+
+        <span class="comment"># source image ka data read karke</span>
+        <span class="comment"># destination image me write karna</span>
+        f2.write(f1.read())
+
+<span class="comment"># success message print karna</span>
+print("Image Copied Successfully")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Image Copied Successfully
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>image1.jpg</b> ko binary read mode <b>("rb")</b> me open kiya gaya hai.<br>
+2. <b>image2.jpg</b> ko binary write mode <b>("wb")</b> me open kiya gaya hai.<br>
+3. <b>f1.read()</b> source image ka pura binary data read karta hai.<br>
+4. <b>f2.write()</b> us data ko destination image me save karta hai.<br>
+5. Program complete hone ke baad image2.jpg image1.jpg ki exact copy ban jati hai.<br>
+6. <b>with</b> statement files ko automatically close kar deta hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ <b>rb = Read Binary Mode</b><br>
+✔ <b>wb = Write Binary Mode</b><br>
+✔ Binary files (Image, Audio, Video, PDF) copy karte waqt binary mode use karna zaroori hai.<br>
+✔ with statement use karne se close() manually likhne ki zaroorat nahi hoti.
+
+</div>
+
+</body>
+</html>

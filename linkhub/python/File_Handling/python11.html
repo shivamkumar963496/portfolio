@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 11</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 11</h2>
+
+<pre>
+<span class="comment"># Question 11:</span>
+<span class="comment"># Ek Python program likho jo ek file ka data</span>
+<span class="comment"># dusri file me copy kare.</span>
+
+<span class="comment"># source file ko read mode me open karna</span>
+f1 = open("source.txt","r")
+
+<span class="comment"># destination file ko write mode me open karna</span>
+f2 = open("destination.txt","w")
+
+<span class="comment"># source file ka data read karke</span>
+<span class="comment"># destination file me write karna</span>
+f2.write(f1.read())
+
+<span class="comment"># dono files close karna</span>
+f1.close()
+f2.close()
+
+<span class="comment"># success message print karna</span>
+print("File Copied Successfully")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+File Copied Successfully
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>source.txt</b> ko read mode me open kiya gaya hai.<br>
+2. <b>destination.txt</b> ko write mode me open kiya gaya hai.<br>
+3. <b>f1.read()</b> source file ka pura content read karta hai.<br>
+4. <b>f2.write()</b> us content ko destination file me save karta hai.<br>
+5. Dono files ko close kar diya jata hai.<br>
+6. Program execute hone ke baad source file ka pura data destination file me copy ho jata hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ File copy karne ke liye read() aur write() ka combination use hota hai.<br>
+✔ Destination file pehle se exist ho to uska purana data overwrite ho sakta hai.<br>
+✔ Backup aur data transfer ke liye ye technique useful hai.
+
+</div>
+
+</body>
+</html>

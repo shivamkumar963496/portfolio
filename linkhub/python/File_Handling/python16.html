@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 16</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 16</h2>
+
+<pre>
+<span class="comment"># Question 16:</span>
+<span class="comment"># Ek Python program likho jo file ki</span>
+<span class="comment"># second line display kare.</span>
+
+<span class="comment"># demo.txt file ko read mode me open karna</span>
+file = open("demo.txt","r")
+
+<span class="comment"># file ki sabhi lines read karna</span>
+lines = file.readlines()
+
+<span class="comment"># second line print karna</span>
+print(lines[1])
+
+<span class="comment"># file close karna</span>
+file.close()
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Welcome to Python
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>open("demo.txt","r")</b> file ko read mode me open karta hai.<br>
+2. <b>readlines()</b> file ki sabhi lines ko list me store karta hai.<br>
+3. Python me indexing 0 se start hoti hai.<br>
+4. <b>lines[0]</b> first line ko represent karta hai.<br>
+5. <b>lines[1]</b> second line ko represent karta hai.<br>
+6. Isliye second line screen par print hoti hai.<br>
+7. Last me file ko close kar diya jata hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ Python list indexing 0 se start hoti hai.<br>
+✔ lines[1] second line ko access karta hai.<br>
+✔ Agar file me 2 lines se kam hongi to IndexError aa sakta hai.
+
+</div>
+
+</body>
+</html>

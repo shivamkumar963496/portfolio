@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 28</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 28</h2>
+
+<pre>
+<span class="comment"># Question 28:</span>
+<span class="comment"># Ek Python program likho jo CSV file ka data</span>
+<span class="comment"># read karke display kare.</span>
+
+<span class="comment"># csv module import karna</span>
+import csv
+
+<span class="comment"># CSV file ko read mode me open karna</span>
+with open("student.csv","r") as file:
+
+    <span class="comment"># csv reader object create karna</span>
+    reader = csv.reader(file)
+
+    <span class="comment"># har row ko read karke print karna</span>
+    for row in reader:
+
+        print(row)
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+['ID', 'Name']<br>
+['101', 'Shivam']
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>import csv</b> CSV files ko handle karne ke liye use kiya jata hai.<br>
+2. <b>student.csv</b> file read mode me open ki jati hai.<br>
+3. <b>csv.reader()</b> CSV file ko row-by-row read karta hai.<br>
+4. <b>for row in reader</b> loop har row ko access karta hai.<br>
+5. Har row list ke form me return hoti hai.<br>
+6. <b>print(row)</b> row ka data screen par display karta hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ CSV file ki har row Python list ke roop me read hoti hai.<br>
+✔ csv.reader() tabular data ko process karne ke liye use hota hai.<br>
+✔ CSV files Excel aur database exports me bahut commonly use hoti hain.<br>
+✔ Large CSV files ko row-by-row process karna memory efficient hota hai.
+
+</div>
+
+</body>
+</html>

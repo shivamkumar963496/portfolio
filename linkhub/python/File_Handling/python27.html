@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 27</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 27</h2>
+
+<pre>
+<span class="comment"># Question 27:</span>
+<span class="comment"># Ek Python program likho jo CSV file create kare</span>
+<span class="comment"># aur usme student data store kare.</span>
+
+<span class="comment"># csv module import karna</span>
+import csv
+
+<span class="comment"># CSV file ko write mode me open karna</span>
+with open("student.csv","w",newline="") as file:
+
+    <span class="comment"># csv writer object create karna</span>
+    writer = csv.writer(file)
+
+    <span class="comment"># heading row add karna</span>
+    writer.writerow(["ID","Name"])
+
+    <span class="comment"># student record add karna</span>
+    writer.writerow([101,"Shivam"])
+
+<span class="comment"># success message print karna</span>
+print("CSV File Created Successfully")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+CSV File Created Successfully
+
+<br><br>
+
+<b>student.csv Content:</b>
+
+<pre>
+ID,Name
+101,Shivam
+</pre>
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>import csv</b> CSV files handle karne ke liye use kiya jata hai.<br>
+2. <b>student.csv</b> file write mode me open ki jati hai.<br>
+3. <b>csv.writer()</b> writer object create karta hai.<br>
+4. <b>writer.writerow()</b> ek row CSV file me add karta hai.<br>
+5. Pehli row heading hai aur doosri row student record hai.<br>
+6. <b>with</b> statement file ko automatically close kar deta hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ CSV = Comma Separated Values.<br>
+✔ CSV files spreadsheet aur Excel data store karne ke liye use hoti hain.<br>
+✔ <b>newline=""</b> extra blank lines ko avoid karne ke liye use kiya jata hai.<br>
+✔ CSV files database export/import me bahut common hain.
+
+</div>
+
+</body>
+</html>

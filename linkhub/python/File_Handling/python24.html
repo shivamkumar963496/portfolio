@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 24</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 24</h2>
+
+<pre>
+<span class="comment"># Question 24:</span>
+<span class="comment"># Ek Python program likho jo ek file ka naam</span>
+<span class="comment"># badal kar naya naam de.</span>
+
+<span class="comment"># os module import karna</span>
+import os
+
+<span class="comment"># file ka naam change karna</span>
+os.rename("old.txt","new.txt")
+
+<span class="comment"># success message print karna</span>
+print("File Renamed Successfully")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+File Renamed Successfully
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>import os</b> operating system functions use karne ke liye import kiya jata hai.<br>
+2. <b>os.rename("old.txt","new.txt")</b> old file ka naam badal kar new naam de deta hai.<br>
+3. Rename operation ke baad purana naam exist nahi karta.<br>
+4. File ka content same rehta hai, sirf naam change hota hai.<br>
+5. Success hone par message display hota hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ <b>os.rename(old_name, new_name)</b> file ya folder dono ka naam change kar sakta hai.<br>
+✔ Agar old file exist nahi karti to <b>FileNotFoundError</b> aa sakta hai.<br>
+✔ Rename karte samay naya naam unique hona chahiye.
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 14</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 14</h2>
+
+<pre>
+<span class="comment"># Question 14:</span>
+<span class="comment"># Ek Python program likho jo file me</span>
+<span class="comment"># total vowels (a, e, i, o, u) count kare.</span>
+
+<span class="comment"># demo.txt file ko read mode me open karna</span>
+file = open("demo.txt","r")
+
+<span class="comment"># file ka pura data read karna</span>
+data = file.read()
+
+<span class="comment"># data ko lowercase me convert karna</span>
+data = data.lower()
+
+<span class="comment"># vowel counter variable</span>
+count = 0
+
+<span class="comment"># har character check karna</span>
+for ch in data:
+
+    <span class="comment"># agar character vowel hai</span>
+    if ch in "aeiou":
+
+        <span class="comment"># counter increase karna</span>
+        count += 1
+
+<span class="comment"># total vowels print karna</span>
+print("Total Vowels:", count)
+
+<span class="comment"># file close karna</span>
+file.close()
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Total Vowels: 12
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>open("demo.txt","r")</b> file ko read mode me open karta hai.<br>
+2. <b>read()</b> file ka pura content read karta hai.<br>
+3. <b>lower()</b> text ko lowercase me convert karta hai taaki A aur a dono count ho sakein.<br>
+4. <b>for loop</b> har character ko check karta hai.<br>
+5. Agar character <b>aeiou</b> me milta hai to count 1 se badh jata hai.<br>
+6. Last me total vowels display kiye jate hain.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ Vowels = a, e, i, o, u<br>
+✔ lower() use karne se uppercase vowels bhi count ho jate hain.<br>
+✔ Ye program String Handling aur File Handling dono concepts use karta hai.
+
+</div>
+
+</body>
+</html>

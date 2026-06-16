@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 23</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 23</h2>
+
+<pre>
+<span class="comment"># Question 23:</span>
+<span class="comment"># Ek Python program likho jo kisi file ko delete kare.</span>
+
+<span class="comment"># os module import karna</span>
+import os
+
+<span class="comment"># file delete karna</span>
+os.remove("demo.txt")
+
+<span class="comment"># success message print karna</span>
+print("File Deleted Successfully")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+File Deleted Successfully
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>import os</b> operating system related functions use karne ke liye import kiya jata hai.<br>
+2. <b>os.remove("demo.txt")</b> specified file ko permanently delete kar deta hai.<br>
+3. Agar file successfully delete ho jati hai to success message display hota hai.<br>
+4. Delete hone ke baad file folder se remove ho jati hai.<br>
+5. Program execute karne se pehle file ka naam sahi hona chahiye.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ <b>os.remove()</b> file delete karne ke liye use hota hai.<br>
+✔ Agar file exist nahi karti to <b>FileNotFoundError</b> aa sakta hai.<br>
+✔ Important files delete karne se pehle existence check karna achhi practice hai.
+
+</div>
+
+</body>
+</html>

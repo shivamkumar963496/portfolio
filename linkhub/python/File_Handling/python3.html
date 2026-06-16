@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 3</title>
+
+<style>
+
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 3</h2>
+
+<pre>
+<span class="comment"># Question 3:</span>
+<span class="comment"># Ek Python program likho jo existing file me</span>
+<span class="comment"># naya data append kare bina purana data delete kiye.</span>
+
+<span class="comment"># data.txt file ko append mode me open karna</span>
+file = open("data.txt","a")
+
+<span class="comment"># file ke end me naya text add karna</span>
+file.write(" Welcome to Python")
+
+<span class="comment"># file close karna</span>
+file.close()
+
+<span class="comment"># success message print karna</span>
+print("Data Appended Successfully")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Data Appended Successfully
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>open("data.txt","a")</b> file ko append mode me open karta hai.<br>
+2. Append mode purane data ko delete nahi karta.<br>
+3. <b>write()</b> function file ke end me naya data add karta hai.<br>
+4. <b>close()</b> file ko properly band karta hai.<br>
+5. Agar file me pehle <b>Hello World</b> tha to append ke baad file me:<br><br>
+
+<b>Hello World Welcome to Python</b>
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ "a" mode existing data ko preserve karta hai.<br>
+✔ Agar file exist nahi karti to Python new file create kar deta hai.<br>
+✔ Append mode logs aur records store karne ke liye bahut useful hai.
+
+</div>
+
+</body>
+</html>

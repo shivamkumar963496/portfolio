@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 4</title>
+
+<style>
+
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 4</h2>
+
+<pre>
+<span class="comment"># Question 4:</span>
+<span class="comment"># Ek Python program likho jo file ke</span>
+<span class="comment"># first 20 characters read karke print kare.</span>
+
+<span class="comment"># data.txt file ko read mode me open karna</span>
+file = open("data.txt","r")
+
+<span class="comment"># file ke pehle 20 characters read karna</span>
+data = file.read(20)
+
+<span class="comment"># data print karna</span>
+print(data)
+
+<span class="comment"># file close karna</span>
+file.close()
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Hello World Welcome
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>open("data.txt","r")</b> file ko read mode me open karta hai.<br>
+2. <b>read(20)</b> file ke sirf pehle 20 characters read karta hai.<br>
+3. Puri file read nahi hoti, sirf specified characters hi read hote hain.<br>
+4. <b>print()</b> data ko screen par display karta hai.<br>
+5. <b>close()</b> file ko properly band karta hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ <b>read(n)</b> me n characters read hote hain.<br>
+✔ Large files me limited data read karne ke liye useful hai.<br>
+✔ Character count me spaces bhi include hote hain.
+
+</div>
+
+</body>
+</html>

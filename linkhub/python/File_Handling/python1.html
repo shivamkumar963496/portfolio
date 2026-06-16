@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 1</title>
+
+<style>
+
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 1</h2>
+
+<pre>
+<span class="comment"># Question 1:</span>
+<span class="comment"># Ek Python program likho jo ek text file create kare</span>
+<span class="comment"># aur usme "Hello World" write kare.</span>
+
+<span class="comment"># data.txt file ko write mode me open karna</span>
+file = open("data.txt","w")
+
+<span class="comment"># file ke andar text likhna</span>
+file.write("Hello World")
+
+<span class="comment"># file close karna</span>
+file.close()
+
+<span class="comment"># success message print karna</span>
+print("Data Written Successfully")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Data Written Successfully
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>open("data.txt","w")</b> file ko write mode me open karta hai.<br>
+2. Agar file exist nahi karti to Python automatically new file create kar deta hai.<br>
+3. <b>write()</b> function file ke andar data save karta hai.<br>
+4. <b>close()</b> file ko properly band karta hai.<br>
+5. Program run hone ke baad data.txt file me <b>Hello World</b> save ho jayega.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ "w" mode purani file ka data overwrite kar deta hai.<br>
+✔ File Handling ka ye sabse basic program hai.
+
+</div>
+
+</body>
+</html>

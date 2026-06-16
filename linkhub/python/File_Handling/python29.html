@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 29</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 29</h2>
+
+<pre>
+<span class="comment"># Question 29:</span>
+<span class="comment"># Ek Python program likho jo JSON file me</span>
+<span class="comment"># data write kare.</span>
+
+<span class="comment"># json module import karna</span>
+import json
+
+<span class="comment"># dictionary data create karna</span>
+data = {
+    "name":"Shivam"
+}
+
+<span class="comment"># JSON file ko write mode me open karna</span>
+with open("data.json","w") as file:
+
+    <span class="comment"># dictionary data JSON file me save karna</span>
+    json.dump(data,file)
+
+<span class="comment"># success message print karna</span>
+print("JSON File Created Successfully")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+JSON File Created Successfully
+
+<br><br>
+
+<b>data.json Content:</b>
+
+<pre>
+{"name":"Shivam"}
+</pre>
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>import json</b> JSON files handle karne ke liye use kiya jata hai.<br>
+2. Ek Python dictionary <b>data</b> create ki gayi hai.<br>
+3. <b>data.json</b> file write mode me open ki jati hai.<br>
+4. <b>json.dump()</b> dictionary ko JSON format me convert karke file me save karta hai.<br>
+5. <b>with</b> statement file ko automatically close kar deta hai.<br>
+6. Program execute hone ke baad data.json file create ho jati hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ JSON = JavaScript Object Notation.<br>
+✔ JSON data exchange ke liye bahut popular format hai.<br>
+✔ Python dictionary ko JSON file me save karne ke liye <b>json.dump()</b> use hota hai.<br>
+✔ APIs aur web applications me JSON ka bahut use hota hai.
+
+</div>
+
+</body>
+</html>

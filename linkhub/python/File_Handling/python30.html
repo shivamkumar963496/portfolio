@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 30</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 30</h2>
+
+<pre>
+<span class="comment"># Question 30:</span>
+<span class="comment"># Ek Python program likho jo JSON file ka</span>
+<span class="comment"># data read karke display kare.</span>
+
+<span class="comment"># json module import karna</span>
+import json
+
+<span class="comment"># JSON file ko read mode me open karna</span>
+with open("data.json","r") as file:
+
+    <span class="comment"># JSON data ko Python object me convert karna</span>
+    data = json.load(file)
+
+<span class="comment"># data print karna</span>
+print(data)
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+{'name': 'Shivam'}
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>import json</b> JSON data ko handle karne ke liye use kiya jata hai.<br>
+2. <b>data.json</b> file read mode me open ki jati hai.<br>
+3. <b>json.load(file)</b> JSON file ke data ko read karta hai.<br>
+4. JSON data Python dictionary me convert ho jata hai.<br>
+5. Converted data <b>data</b> variable me store hota hai.<br>
+6. <b>print(data)</b> dictionary ko screen par display karta hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ <b>json.dump()</b> data ko JSON file me write karta hai.<br>
+✔ <b>json.load()</b> JSON file se data read karta hai.<br>
+✔ JSON file read karne ke baad data Python dictionary ke form me milta hai.<br>
+✔ APIs se aane wala data aksar JSON format me hota hai.
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 15</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 15</h2>
+
+<pre>
+<span class="comment"># Question 15:</span>
+<span class="comment"># Ek Python program likho jo user se</span>
+<span class="comment"># 3 students ke naam input lekar file me save kare.</span>
+
+<span class="comment"># students.txt file ko write mode me open karna</span>
+file = open("students.txt","w")
+
+<span class="comment"># 3 baar loop chalana</span>
+for i in range(3):
+
+    <span class="comment"># student ka naam input lena</span>
+    name = input("Enter Student Name : ")
+
+    <span class="comment"># naam ko file me save karna</span>
+    file.write(name + "\n")
+
+<span class="comment"># file close karna</span>
+file.close()
+
+<span class="comment"># success message print karna</span>
+print("Student Names Saved Successfully")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Enter Student Name : Rahul<br>
+Enter Student Name : Mohit<br>
+Enter Student Name : Aman<br><br>
+
+Student Names Saved Successfully
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>students.txt</b> file ko write mode me open kiya gaya hai.<br>
+2. <b>for i in range(3)</b> loop 3 baar execute hota hai.<br>
+3. Har baar user se ek student ka naam input liya jata hai.<br>
+4. <b>file.write()</b> naam ko file me save karta hai.<br>
+5. <b>\n</b> new line ke liye use hota hai taaki har naam alag line me save ho.<br>
+6. Last me file close karke success message display kiya jata hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ <b>\n</b> new line character hai.<br>
+✔ Loop ka use karke multiple records store kiye ja sakte hain.<br>
+✔ File Handling me user input save karne ka ye basic example hai.
+
+</div>
+
+</body>
+</html>

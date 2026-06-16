@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 25</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 25</h2>
+
+<pre>
+<span class="comment"># Question 25:</span>
+<span class="comment"># Ek Python program likho jo kisi file ka</span>
+<span class="comment"># size bytes me display kare.</span>
+
+<span class="comment"># os module import karna</span>
+import os
+
+<span class="comment"># file ka size nikalna</span>
+size = os.path.getsize("demo.txt")
+
+<span class="comment"># file size print karna</span>
+print("File Size:", size, "bytes")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+File Size: 120 bytes
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>import os</b> operating system related functions use karne ke liye import kiya jata hai.<br>
+2. <b>os.path.getsize("demo.txt")</b> file ka size bytes me return karta hai.<br>
+3. Returned value <b>size</b> variable me store hoti hai.<br>
+4. <b>print()</b> ke through file size display kiya jata hai.<br>
+5. File ka actual size content ke according different ho sakta hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ File size hamesha bytes me return hota hai.<br>
+✔ 1024 bytes = 1 KB<br>
+✔ 1024 KB = 1 MB<br>
+✔ Storage aur file management applications me ye function bahut useful hai.
+
+</div>
+
+</body>
+</html>

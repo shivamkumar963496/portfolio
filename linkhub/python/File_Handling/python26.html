@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 26</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 26</h2>
+
+<pre>
+<span class="comment"># Question 26:</span>
+<span class="comment"># Ek Python program likho jo FileNotFoundError</span>
+<span class="comment"># ko handle kare.</span>
+
+<span class="comment"># try block me risky code likhna</span>
+try:
+
+    <span class="comment"># non-existing file open karna</span>
+    file = open("abc.txt","r")
+
+    <span class="comment"># file ka data print karna</span>
+    print(file.read())
+
+    <span class="comment"># file close karna</span>
+    file.close()
+
+<span class="comment"># agar file nahi mile to exception handle karna</span>
+except FileNotFoundError:
+
+    <span class="comment"># error message print karna</span>
+    print("File Not Found")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+File Not Found
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>try</b> block me wo code likha jata hai jahan error aane ki possibility hoti hai.<br>
+2. Program <b>abc.txt</b> file ko open karne ki koshish karta hai.<br>
+3. Agar file exist nahi karti to Python <b>FileNotFoundError</b> raise karta hai.<br>
+4. Control automatically <b>except FileNotFoundError</b> block me chala jata hai.<br>
+5. Error aane par program crash nahi hota aur user-friendly message display hota hai.<br>
+6. Is process ko <b>Exception Handling</b> kehte hain.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ Exception Handling program ko crash hone se bachati hai.<br>
+✔ <b>try</b> me risky code aur <b>except</b> me error handling code likha jata hai.<br>
+✔ File Handling me FileNotFoundError sabse common exceptions me se ek hai.<br>
+✔ Professional applications me hamesha proper exception handling use karni chahiye.
+
+</div>
+
+</body>
+</html>

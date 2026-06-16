@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 6</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 6</h2>
+
+<pre>
+<span class="comment"># Question 6:</span>
+<span class="comment"># Ek Python program likho jo file me total</span>
+<span class="comment"># words ki sankhya count kare.</span>
+
+<span class="comment"># demo.txt file ko read mode me open karna</span>
+file = open("demo.txt","r")
+
+<span class="comment"># file ka pura data read karna</span>
+data = file.read()
+
+<span class="comment"># data ko words me divide karna</span>
+words = data.split()
+
+<span class="comment"># total words print karna</span>
+print("Total words:", len(words))
+
+<span class="comment"># file close karna</span>
+file.close()
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Total words: 15
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>open("demo.txt","r")</b> file ko read mode me open karta hai.<br>
+2. <b>read()</b> file ka pura content read karta hai.<br>
+3. <b>split()</b> text ko words me convert karta hai.<br>
+4. <b>len(words)</b> total words count karta hai.<br>
+5. Result screen par print hota hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ split() default roop se spaces ke basis par words ko alag karta hai.<br>
+✔ len() list ke total elements count karta hai.<br>
+✔ Word counting text analysis me bahut useful hai.
+
+</div>
+
+</body>
+</html>

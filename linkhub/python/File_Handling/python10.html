@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 10</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 10</h2>
+
+<pre>
+<span class="comment"># Question 10:</span>
+<span class="comment"># Ek Python program likho jo check kare</span>
+<span class="comment"># ki file exist karti hai ya nahi.</span>
+
+<span class="comment"># os module import karna</span>
+import os
+
+<span class="comment"># file exist karti hai ya nahi check karna</span>
+if os.path.exists("demo.txt"):
+
+    <span class="comment"># agar file mil jaye</span>
+    print("File Exists")
+
+else:
+
+    <span class="comment"># agar file na mile</span>
+    print("File Not Found")
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+File Exists
+
+<br><br>
+<b>OR</b>
+<br><br>
+
+File Not Found
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>import os</b> operating system related functions use karne ke liye import kiya jata hai.<br>
+2. <b>os.path.exists()</b> check karta hai ki specified file ya folder available hai ya nahi.<br>
+3. Agar file mil jati hai to <b>File Exists</b> print hota hai.<br>
+4. Agar file nahi milti to <b>File Not Found</b> print hota hai.<br>
+5. Is method se error aane se pehle file availability verify ki ja sakti hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ File open karne se pehle existence check karna good practice hai.<br>
+✔ FileNotFoundError se bachne ke liye os.path.exists() bahut useful hai.<br>
+✔ Ye files aur folders dono par kaam karta hai.
+
+</div>
+
+</body>
+</html>

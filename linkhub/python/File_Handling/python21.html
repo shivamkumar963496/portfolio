@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 21</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 21</h2>
+
+<pre>
+<span class="comment"># Question 21:</span>
+<span class="comment"># Ek Python program likho jo binary file</span>
+<span class="comment"># (image file) ko read kare.</span>
+
+<span class="comment"># image file ko binary read mode me open karna</span>
+file = open("image.jpg","rb")
+
+<span class="comment"># binary data read karna</span>
+data = file.read()
+
+<span class="comment"># binary data print karna</span>
+print(data)
+
+<span class="comment"># file close karna</span>
+file.close()
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+b'\\xff\\xd8\\xff\\xe0\\x00\\x10JFIF...'
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>image.jpg</b> ko binary read mode <b>("rb")</b> me open kiya gaya hai.<br>
+2. Binary mode images, audio, videos aur other non-text files ke liye use hota hai.<br>
+3. <b>read()</b> pura binary data bytes ke form me read karta hai.<br>
+4. Output bytes format me display hota hai, jaise <b>b'...'</b>.<br>
+5. Last me file ko close kar diya jata hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ <b>rb = Read Binary Mode</b><br>
+✔ Text files ke liye "r" aur binary files ke liye "rb" use kiya jata hai.<br>
+✔ Images aur multimedia files ko handle karne ke liye binary mode zaroori hota hai.
+
+</div>
+
+</body>
+</html>

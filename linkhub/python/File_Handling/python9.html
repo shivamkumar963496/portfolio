@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 9</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 9</h2>
+
+<pre>
+<span class="comment"># Question 9:</span>
+<span class="comment"># Ek Python program likho jo file ka content</span>
+<span class="comment"># UPPERCASE me print kare.</span>
+
+<span class="comment"># demo.txt file ko read mode me open karna</span>
+file = open("demo.txt","r")
+
+<span class="comment"># file ka data read karna</span>
+data = file.read()
+
+<span class="comment"># data ko uppercase me convert karke print karna</span>
+print(data.upper())
+
+<span class="comment"># file close karna</span>
+file.close()
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+HELLO WORLD<br>
+WELCOME TO PYTHON
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>open("demo.txt","r")</b> file ko read mode me open karta hai.<br>
+2. <b>read()</b> file ka pura content read karta hai.<br>
+3. <b>upper()</b> string ke sabhi lowercase letters ko uppercase me convert karta hai.<br>
+4. <b>print()</b> converted text ko screen par display karta hai.<br>
+5. <b>close()</b> file ko properly band karta hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ upper() original file ka data change nahi karta.<br>
+✔ Sirf display ke liye uppercase version banata hai.<br>
+✔ String manipulation aur file handling ka combination hai.
+
+</div>
+
+</body>
+</html>

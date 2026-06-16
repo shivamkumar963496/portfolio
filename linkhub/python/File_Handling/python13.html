@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python File Handling Program 13</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📌 Python File Handling Program 13</h2>
+
+<pre>
+<span class="comment"># Question 13:</span>
+<span class="comment"># Ek Python program likho jo file me</span>
+<span class="comment"># kisi specific word ko search kare.</span>
+
+<span class="comment"># demo.txt file ko read mode me open karna</span>
+file = open("demo.txt","r")
+
+<span class="comment"># file ka pura data read karna</span>
+data = file.read()
+
+<span class="comment"># search karne wala word</span>
+word = "Python"
+
+<span class="comment"># word file me hai ya nahi check karna</span>
+if word in data:
+
+    <span class="comment"># word mil gaya</span>
+    print("Word Found")
+
+else:
+
+    <span class="comment"># word nahi mila</span>
+    print("Word Not Found")
+
+<span class="comment"># file close karna</span>
+file.close()
+</pre>
+
+<div class="box">
+
+<b>📊 Output:</b><br><br>
+
+Word Found
+
+<br><br>
+<b>OR</b>
+<br><br>
+
+Word Not Found
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. <b>open("demo.txt","r")</b> file ko read mode me open karta hai.<br>
+2. <b>read()</b> file ka pura content read karta hai.<br>
+3. Search karne wala word <b>word</b> variable me store kiya gaya hai.<br>
+4. <b>if word in data</b> check karta hai ki word file me present hai ya nahi.<br>
+5. Agar word mil jata hai to <b>Word Found</b> print hota hai.<br>
+6. Agar word nahi milta to <b>Word Not Found</b> print hota hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Important Point:</b><br><br>
+
+✔ <b>in</b> operator string searching ke liye use hota hai.<br>
+✔ Search case-sensitive hoti hai.<br>
+✔ "Python" aur "python" alag-alag values mani jati hain.
+
+</div>
+
+</body>
+</html>

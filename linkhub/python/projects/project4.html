@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Mini Project 4 - Even Odd Counter</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>🔢 Python Mini Project 4 - Even Odd Counter</h2>
+
+<pre>
+<span class="comment"># -----------------------------------------------------------</span>
+<span class="comment"># Question:</span>
+<span class="comment"># Python me ek program likhiye jo user se kuch numbers le</span>
+<span class="comment"># aur unme se even aur odd numbers ki sankhya count kare</span>
+<span class="comment"># using loops aur conditions.</span>
+<span class="comment"># -----------------------------------------------------------</span>
+
+<span class="comment"># User se puchna kitne numbers input karne hain</span>
+n = int(input("Enter How Many Numbers : "))
+
+<span class="comment"># Even aur odd counters initialize karna</span>
+even = 0
+odd = 0
+
+<span class="comment"># Loop chalana numbers input ke liye</span>
+for i in range(n):
+
+    <span class="comment"># User se number lena</span>
+    num = int(input("Enter Number : "))
+
+    <span class="comment"># Check karna even ya odd</span>
+    if num % 2 == 0:
+
+        <span class="comment"># Even count increase</span>
+        even += 1
+
+    else:
+
+        <span class="comment"># Odd count increase</span>
+        odd += 1
+
+<span class="comment"># Final result print karna</span>
+print("\nTotal Even Numbers =", even)
+print("Total Odd Numbers  =", odd)
+</pre>
+
+<div class="box">
+
+<b>📊 Sample Output:</b><br><br>
+
+Enter How Many Numbers : 5<br><br>
+
+Enter Number : 10<br>
+Enter Number : 15<br>
+Enter Number : 20<br>
+Enter Number : 25<br>
+Enter Number : 30<br><br>
+
+Total Even Numbers = 3<br>
+Total Odd Numbers = 2
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. User se total numbers ki quantity li jati hai.<br>
+2. Even aur Odd ke liye alag counters banaye jate hain.<br>
+3. Loop ke through numbers input liye jate hain.<br>
+4. num % 2 == 0 se even number check kiya jata hai.<br>
+5. Even hone par even counter increase hota hai.<br>
+6. Odd hone par odd counter increase hota hai.<br>
+7. Last me total even aur odd numbers display kiye jate hain.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Concepts Used:</b><br><br>
+
+✔ For Loop<br>
+✔ If-Else Condition<br>
+✔ Modulus Operator (%)<br>
+✔ Counter Variables<br>
+✔ User Input<br>
+✔ Logic Building Project
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Mini Project 2 - Simple Calculator</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>🧮 Python Mini Project 2 - Simple Calculator</h2>
+
+<pre>
+<span class="comment"># -----------------------------------------------------------</span>
+<span class="comment"># Question:</span>
+<span class="comment"># Python me ek Simple Calculator program likhiye jo user se</span>
+<span class="comment"># do numbers le aur addition, subtraction, multiplication aur</span>
+<span class="comment"># division perform kare. Program menu driven ho aur loop ka use kare.</span>
+<span class="comment"># -----------------------------------------------------------</span>
+
+<span class="comment"># welcome message</span>
+print("Welcome to Simple Calculator")
+
+<span class="comment"># loop tab tak chalega jab tak user exit na kare</span>
+while True:
+
+    <span class="comment"># menu display</span>
+    print("\n1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Division")
+    print("5. Exit")
+
+    <span class="comment"># user se choice lena</span>
+    choice = int(input("Enter your choice: "))
+
+    <span class="comment"># exit condition</span>
+    if choice == 5:
+        print("Code Ended... Bye!")
+        break
+
+    <span class="comment"># user se do numbers lena</span>
+    a = int(input("Enter 1st Number: "))
+    b = int(input("Enter 2nd Number: "))
+
+    <span class="comment"># operation perform karna</span>
+    if choice == 1:
+        print("Result =", a + b)
+
+    elif choice == 2:
+        print("Result =", a - b)
+
+    elif choice == 3:
+        print("Result =", a * b)
+
+    elif choice == 4:
+        print("Result =", a / b)
+
+    else:
+        print("Invalid Choice")
+</pre>
+
+<div class="box">
+
+<b>📊 Sample Output:</b><br><br>
+
+Welcome to Simple Calculator<br><br>
+
+1. Add<br>
+2. Subtract<br>
+3. Multiply<br>
+4. Division<br>
+5. Exit<br><br>
+
+Enter your choice: 1<br>
+Enter 1st Number: 10<br>
+Enter 2nd Number: 20<br>
+Result = 30<br><br>
+
+Enter your choice: 5<br>
+Code Ended... Bye!
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. User ko menu display kiya jata hai.<br>
+2. User operation choose karta hai.<br>
+3. Program do numbers input leta hai.<br>
+4. Choice ke according calculation perform karta hai.<br>
+5. Invalid choice par error message show hota hai.<br>
+6. Exit option select karne par program band ho jata hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Concepts Used:</b><br><br>
+
+✔ While Loop<br>
+✔ If-Elif-Else<br>
+✔ User Input<br>
+✔ Arithmetic Operators<br>
+✔ Menu Driven Program<br>
+✔ Mini Project Development
+
+</div>
+
+</body>
+</html>

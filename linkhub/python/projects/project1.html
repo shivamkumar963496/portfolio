@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Mini Project 1 - Number Guessing Game</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>🎮 Python Mini Project 1 - Number Guessing Game</h2>
+
+<pre>
+<span class="comment"># -----------------------------------------------------------</span>
+<span class="comment"># Question:</span>
+<span class="comment"># Python me ek program likhiye jo 1 se 100 ke beech ek random</span>
+<span class="comment"># number generate kare aur user se us number ko guess karvaye.</span>
+<span class="comment"># Har guess par bataye ki number bada hai ya chota.</span>
+<span class="comment"># Jab sahi guess ho jaye to total attempts print kare.</span>
+<span class="comment"># -----------------------------------------------------------</span>
+
+<span class="comment"># random module import kar rahe hain</span>
+import random
+
+<span class="comment"># 1 se 100 ke beech random number generate kar rahe hain</span>
+number = random.randint(1, 100)
+
+<span class="comment"># attempts count karne ke liye variable</span>
+attempts = 0
+
+<span class="comment"># welcome message display</span>
+print("\nWelcome to Number Guessing Game")
+
+<span class="comment"># loop tab tak chalega jab tak correct guess na ho</span>
+while True:
+
+    <span class="comment"># user se input lena</span>
+    guess = int(input("Enter your guess (1-100): "))
+
+    <span class="comment"># check karna ki input valid range me hai ya nahi</span>
+    if guess < 1 or guess > 100:
+        print("Please enter number between 1 and 100")
+        continue
+
+    <span class="comment"># har valid guess par attempts badhana</span>
+    attempts += 1
+
+    <span class="comment"># condition check karna</span>
+    if guess > number:
+        print("YE NUMBER BADA HO GAYA")
+
+    elif guess < number:
+        print("YE NUMBER CHOTA HO GAYA")
+
+    else:
+        print("Correct Guess!")
+        print("AAPNE TOTAL ATTEMPTS LIYE :", attempts)
+        break
+</pre>
+
+<div class="box">
+
+<b>📊 Sample Output:</b><br><br>
+
+Welcome to Number Guessing Game<br><br>
+
+Enter your guess (1-100): 50<br>
+YE NUMBER CHOTA HO GAYA<br><br>
+
+Enter your guess (1-100): 75<br>
+YE NUMBER BADA HO GAYA<br><br>
+
+Enter your guess (1-100): 68<br>
+Correct Guess!<br>
+AAPNE TOTAL ATTEMPTS LIYE : 3
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. random.randint(1,100) random secret number generate karta hai.<br>
+2. User baar-baar number guess karta hai.<br>
+3. Agar guess bada ho to "YE NUMBER BADA HO GAYA" print hota hai.<br>
+4. Agar guess chota ho to "YE NUMBER CHOTA HO GAYA" print hota hai.<br>
+5. Sahi guess hone par game stop ho jata hai.<br>
+6. Total attempts bhi display kiye jate hain.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Concepts Used:</b><br><br>
+
+✔ Random Module<br>
+✔ While Loop<br>
+✔ If-Elif-Else<br>
+✔ User Input<br>
+✔ Logic Building<br>
+✔ Mini Project Development
+
+</div>
+
+</body>
+</html>

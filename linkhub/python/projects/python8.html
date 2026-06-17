@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Mini Project 8 - Library Management System</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>📚 Python Mini Project 8 - Library Management System</h2>
+
+<pre>
+<span class="comment"># -----------------------------------------------------------</span>
+<span class="comment"># Question:</span>
+<span class="comment"># Python me ek Library Management System program likhiye jo</span>
+<span class="comment"># user ko book add, view, issue, return aur search karne ki</span>
+<span class="comment"># facility de.</span>
+<span class="comment"># -----------------------------------------------------------</span>
+
+<span class="comment"># library books store karne ke liye list</span>
+library = []
+
+<span class="comment"># menu loop</span>
+while True:
+
+    print("\n===== LIBRARY MANAGEMENT SYSTEM =====")
+
+    print("1. Add Book")
+    print("2. View Books")
+    print("3. Issue Book")
+    print("4. Return Book")
+    print("5. Search Book")
+    print("6. Exit")
+
+    choice = input("Enter Your Choice : ")
+
+    <span class="comment"># Add Book</span>
+    if choice == "1":
+
+        book = input("Enter Book Name : ")
+
+        library.append(book)
+
+        print("Book Added Successfully")
+
+    <span class="comment"># View Books</span>
+    elif choice == "2":
+
+        if len(library) == 0:
+
+            print("No Books Available")
+
+        else:
+
+            print("\nAvailable Books:")
+
+            for i, book in enumerate(library, start=1):
+
+                print(i, ".", book)
+
+    <span class="comment"># Issue Book</span>
+    elif choice == "3":
+
+        book = input("Enter Book Name To Issue : ")
+
+        found = False
+
+        for item in library:
+
+            if item.lower() == book.lower():
+
+                library.remove(item)
+
+                print("Book Issued Successfully")
+
+                found = True
+                break
+
+        if not found:
+
+            print("Book Not Found")
+
+    <span class="comment"># Return Book</span>
+    elif choice == "4":
+
+        book = input("Enter Return Book Name : ")
+
+        library.append(book)
+
+        print("Book Returned Successfully")
+
+    <span class="comment"># Search Book</span>
+    elif choice == "5":
+
+        book = input("Enter Book Name To Search : ")
+
+        found = False
+
+        for item in library:
+
+            if item.lower() == book.lower():
+
+                found = True
+                break
+
+        if found:
+
+            print("Book Available")
+
+        else:
+
+            print("Book Not Available")
+
+    <span class="comment"># Exit Program</span>
+    elif choice == "6":
+
+        print("Thank You Bye Bye")
+
+        break
+
+    <span class="comment"># Invalid Choice</span>
+    else:
+
+        print("Invalid Input")
+</pre>
+
+<div class="box">
+
+<b>📊 Sample Output:</b><br><br>
+
+===== LIBRARY MANAGEMENT SYSTEM =====<br><br>
+
+1. Add Book<br>
+2. View Books<br>
+3. Issue Book<br>
+4. Return Book<br>
+5. Search Book<br>
+6. Exit<br><br>
+
+Enter Your Choice : 1<br>
+Enter Book Name : Python Basics<br><br>
+
+Book Added Successfully
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. Library books ko List me store kiya gaya hai.<br>
+2. Add Book option new book add karta hai.<br>
+3. View Books option saari available books dikhata hai.<br>
+4. Issue Book option book ko library se remove karta hai.<br>
+5. Return Book option issued book ko wapas add karta hai.<br>
+6. Search Book option book available hai ya nahi check karta hai.<br>
+7. Program menu driven hai aur loop ke through continuously chalta hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Concepts Used:</b><br><br>
+
+✔ List<br>
+✔ For Loop<br>
+✔ If-Elif-Else<br>
+✔ String Methods (lower)<br>
+✔ Search Logic<br>
+✔ CRUD Operations<br>
+✔ Menu Driven Program<br>
+✔ Library Management Project
+
+</div>
+
+</body>
+</html>

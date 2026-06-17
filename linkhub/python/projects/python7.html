@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Mini Project 7 - Bank Management System</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>🏦 Python Mini Project 7 - Bank Management System</h2>
+
+<pre>
+<span class="comment"># -----------------------------------------------------------</span>
+<span class="comment"># Question:</span>
+<span class="comment"># Python me ek Simple Bank Management System program likhiye</span>
+<span class="comment"># jo user ko Deposit, Withdraw, Balance Check aur Exit ki</span>
+<span class="comment"># facility de.</span>
+<span class="comment"># -----------------------------------------------------------</span>
+
+<span class="comment"># account ka initial balance</span>
+balance = 1000.0
+
+<span class="comment"># welcome message display karna</span>
+print("\n===== BANK MANAGEMENT SYSTEM =====")
+
+<span class="comment"># loop tab tak chalega jab tak user exit na kare</span>
+while True:
+
+    print("\n1. Deposit")
+    print("2. Withdraw")
+    print("3. Check Balance")
+    print("4. Exit")
+
+    <span class="comment"># user se choice lena</span>
+    choice = input("Enter Your Choice (1-4) : ")
+
+    <span class="comment"># Deposit Amount</span>
+    if choice == "1":
+
+        amount = float(input("Enter Deposit Amount : ₹"))
+
+        if amount > 0:
+
+            balance += amount
+
+            print("Deposit Successful")
+            print("Current Balance : ₹", balance)
+
+        else:
+
+            print("Deposit Amount Must Be Greater Than 0")
+
+    <span class="comment"># Withdraw Amount</span>
+    elif choice == "2":
+
+        amount = float(input("Enter Withdrawal Amount : ₹"))
+
+        if amount <= 0:
+
+            print("Withdrawal Amount Must Be Greater Than 0")
+
+        elif amount <= balance:
+
+            balance -= amount
+
+            print("Withdrawal Successful")
+            print("Current Balance : ₹", balance)
+
+        else:
+
+            print("Insufficient Balance")
+
+    <span class="comment"># Check Balance</span>
+    elif choice == "3":
+
+        print("Available Balance : ₹", balance)
+
+    <span class="comment"># Exit Program</span>
+    elif choice == "4":
+
+        print("\nTHANK YOU FOR BANKING WITH US")
+        print("Visit Again")
+
+        break
+
+    <span class="comment"># Invalid Choice</span>
+    else:
+
+        print("Invalid Choice")
+        print("Please Enter A Number Between 1 To 4")
+</pre>
+
+<div class="box">
+
+<b>📊 Sample Output:</b><br><br>
+
+===== BANK MANAGEMENT SYSTEM =====<br><br>
+
+1. Deposit<br>
+2. Withdraw<br>
+3. Check Balance<br>
+4. Exit<br><br>
+
+Enter Your Choice (1-4) : 1<br>
+Enter Deposit Amount : ₹500<br><br>
+
+Deposit Successful<br>
+Current Balance : ₹1500.0
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. Initial balance ₹1000 set kiya gaya hai.<br>
+2. User Deposit, Withdraw, Balance Check aur Exit kar sakta hai.<br>
+3. Negative amount deposit ya withdraw nahi ho sakta.<br>
+4. Withdrawal se pehle balance check kiya jata hai.<br>
+5. Insufficient balance hone par warning message aata hai.<br>
+6. Menu driven system loop ke through baar-baar chalta hai.<br>
+7. Exit option program ko safely close karta hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Concepts Used:</b><br><br>
+
+✔ While Loop<br>
+✔ If-Elif-Else<br>
+✔ User Input<br>
+✔ Banking Logic<br>
+✔ Balance Management<br>
+✔ Error Handling Logic<br>
+✔ Menu Driven Program<br>
+✔ Real World Mini Project
+
+</div>
+
+</body>
+</html>

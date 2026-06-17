@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Mini Project 3 - Password Strength Checker</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>🔐 Python Mini Project 3 - Password Strength Checker</h2>
+
+<pre>
+<span class="comment"># -----------------------------------------------------------</span>
+<span class="comment"># Question:</span>
+<span class="comment"># Python me ek program likhiye jo user se password le aur</span>
+<span class="comment"># uski strength (Weak, Medium, Strong) check kare using</span>
+<span class="comment"># string aur conditions.</span>
+<span class="comment"># -----------------------------------------------------------</span>
+
+<span class="comment"># user se password lena</span>
+password = input("Enter your password: ")
+
+<span class="comment"># password ki length nikalna</span>
+length = len(password)
+
+<span class="comment"># flags create karna</span>
+has_digit = False
+has_special = False
+
+<span class="comment"># password ke har character ko check karna</span>
+for ch in password:
+
+    <span class="comment"># digit check karna</span>
+    if ch.isdigit():
+        has_digit = True
+
+    <span class="comment"># special character check karna</span>
+    if ch in "!@#$%^&*":
+        has_special = True
+
+<span class="comment"># password strength check karna</span>
+if length < 6:
+
+    print("Weak Password")
+
+elif length >= 6 and has_digit and has_special:
+
+    print("Strong Password")
+
+else:
+
+    print("Medium Password")
+</pre>
+
+<div class="box">
+
+<b>📊 Sample Output 1:</b><br><br>
+
+Enter your password: 123<br>
+Weak Password
+
+</div>
+
+<div class="box">
+
+<b>📊 Sample Output 2:</b><br><br>
+
+Enter your password: Shivam123<br>
+Medium Password
+
+</div>
+
+<div class="box">
+
+<b>📊 Sample Output 3:</b><br><br>
+
+Enter your password: Shivam@123<br>
+Strong Password
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. User se password input liya jata hai.<br>
+2. len() function password ki length nikalta hai.<br>
+3. Loop password ke har character ko check karta hai.<br>
+4. isdigit() digit ko identify karta hai.<br>
+5. Special characters (!@#$%^&*) ko alag se check kiya jata hai.<br>
+6. Length 6 se kam ho to Weak Password.<br>
+7. Length 6+ ho aur digit + special character dono ho to Strong Password.<br>
+8. Baaki cases me Medium Password display hota hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Concepts Used:</b><br><br>
+
+✔ String Handling<br>
+✔ For Loop<br>
+✔ If-Elif-Else<br>
+✔ Boolean Flags<br>
+✔ Password Validation<br>
+✔ Mini Project Development
+
+</div>
+
+</body>
+</html>

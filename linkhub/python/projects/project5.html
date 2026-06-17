@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Mini Project 5 - Student Management System</title>
+
+<style>
+body{
+    background:#020617;
+    color:#e5e7eb;
+    font-family:monospace;
+    padding:20px;
+}
+
+pre{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
+}
+
+.comment{
+    color:#22c55e;
+}
+
+.box{
+    background:#1e293b;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>🎓 Python Mini Project 5 - Student Management System</h2>
+
+<pre>
+<span class="comment"># =========================================</span>
+<span class="comment"># Question:</span>
+<span class="comment"># Python program banao jo Student Management</span>
+<span class="comment"># System create kare using List aur Dictionary.</span>
+<span class="comment">#</span>
+<span class="comment"># Features:</span>
+<span class="comment"># 1. Add Student</span>
+<span class="comment"># 2. Show Students</span>
+<span class="comment"># 3. Search Student</span>
+<span class="comment"># 4. Exit</span>
+<span class="comment"># =========================================</span>
+
+students = []
+
+while True:
+
+    print("\n======= STUDENT MANAGEMENT SYSTEM =======")
+
+    print("1. Add Student")
+    print("2. Show Students")
+    print("3. Search Student")
+    print("4. Exit")
+
+    choice = input("Enter Your Choice : ")
+
+    if choice == "1":
+
+        name = input("Enter Student Name : ")
+        roll = input("Enter Roll Number : ")
+        marks = int(input("Enter Student Marks : "))
+
+        student = {
+
+            "Name": name,
+            "Roll": roll,
+            "Marks": marks
+        }
+
+        students.append(student)
+
+        print("Student Added Successfully!")
+
+    elif choice == "2":
+
+        if len(students) == 0:
+
+            print("No Student Record Found")
+
+        else:
+
+            for student in students:
+
+                if student["Marks"] >= 90:
+                    grade = "A"
+
+                elif student["Marks"] >= 75:
+                    grade = "B"
+
+                elif student["Marks"] >= 50:
+                    grade = "C"
+
+                elif student["Marks"] >= 33:
+                    grade = "D"
+
+                else:
+                    grade = "Fail"
+
+                print("-----------------------")
+                print("Name :", student["Name"])
+                print("Roll :", student["Roll"])
+                print("Marks:", student["Marks"])
+                print("Grade:", grade)
+
+    elif choice == "3":
+
+        search_roll = input("Enter Roll Number : ")
+
+        found = False
+
+        for student in students:
+
+            if student["Roll"] == search_roll:
+
+                print("Student Found")
+                print("Name :", student["Name"])
+                print("Roll :", student["Roll"])
+                print("Marks:", student["Marks"])
+
+                found = True
+
+        if found == False:
+
+            print("Student Not Found")
+
+    elif choice == "4":
+
+        print("PROGRAM CLOSED")
+        break
+
+    else:
+
+        print("Invalid Choice")
+</pre>
+
+<div class="box">
+
+<b>📊 Sample Output:</b><br><br>
+
+======= STUDENT MANAGEMENT SYSTEM =======<br>
+1. Add Student<br>
+2. Show Students<br>
+3. Search Student<br>
+4. Exit<br><br>
+
+Enter Your Choice : 1<br>
+Enter Student Name : Shivam<br>
+Enter Roll Number : 101<br>
+Enter Student Marks : 92<br><br>
+
+Student Added Successfully!
+
+</div>
+
+<div class="box">
+
+<b>📝 Explanation:</b><br><br>
+
+1. Student records ko List me store kiya gaya hai.<br>
+2. Har student ki details Dictionary me save hoti hain.<br>
+3. Add Student option new record add karta hai.<br>
+4. Show Students option saare records display karta hai.<br>
+5. Marks ke according grade calculate hota hai.<br>
+6. Search Student roll number ke basis par search karta hai.<br>
+7. Exit option program ko band karta hai.
+
+</div>
+
+<div class="box">
+
+<b>⭐ Concepts Used:</b><br><br>
+
+✔ List<br>
+✔ Dictionary<br>
+✔ Nested Data Structure<br>
+✔ For Loop<br>
+✔ If-Elif-Else<br>
+✔ Search Logic<br>
+✔ Grade Calculation<br>
+✔ Menu Driven Program<br>
+✔ Student Management System Project
+
+</div>
+
+</body>
+</html>
